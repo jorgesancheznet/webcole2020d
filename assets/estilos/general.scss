@@ -1,0 +1,53 @@
+//**********************GENERALES
+@import "constantes";
+@import "fonts";
+@import "mixins";
+* {
+  @include letraNormal(normal,1em,black);
+}
+body{
+  margin:0;
+  padding:0;
+}
+
+a{
+  text-decoration: none;
+}
+
+button,.boton {
+  display:inline-block;
+  padding: 1em;
+  border-radius: .2em;
+  @include letraNormal(normal,1.2em,$colorFondoServicios);
+  background-color: lighten($colorGrisSalesiano, 20%);
+  border: none;
+  outline: none;
+  transition: .5s;
+  cursor:pointer;
+
+  &:hover {
+    background-color: $colorGrisSalesiano;
+    transition: 1s;
+  }
+
+  &:disabled {
+    background-color: lighten($colorGrisSalesiano, 10%);
+    color: $colorGrisSalesiano;
+  }
+}
+
+main{
+  position:relative;
+  width:100%;
+  margin:0;
+  z-index: $zMain;
+
+  &>section {
+    position:relative;
+    h1 {
+      font-size: 4em;
+      text-align: center;
+      color: white;
+    }
+  }
+}

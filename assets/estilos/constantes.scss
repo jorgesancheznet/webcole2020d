@@ -1,0 +1,75 @@
+//colores
+$colorNormal:black;
+$colorGrisSalesiano: #51626F  ;
+$colorRojoSalesiano: #dc001b;
+$colorRojoSalesianoOscuro: #53393b;
+$colorNaranja: #dc9869;
+$colorCabecera:white;
+$colorFondoClaro:white;
+$colorMover:white;
+$colorMoverHover: #dddddd;
+$colorFondoInfo: #dad4cb;
+$colorSubMenu: $colorFondoInfo ;
+$colorFondoServicios: #d9d9d9;
+$colorFichaHover: #fff8b7;
+$colorFondoPie:rgb(46,46,46);
+$colorBotonPie: rgb(72, 76, 162);
+$colorTenue: #999999;
+$colorTenueHover:#333;
+$colorTenueBrillo:white;
+$colorVelo:rgba(0,0,0,.95);
+//posición
+$zMain:100;
+$zCabecera:950;
+$zMenu:900;
+$zSubMenu:850;
+$zImagenSuelta:1000;
+$zPantallaCompleta:1100;
+$zLoading:850;
+$zFondoSplash:-1;
+$zMain:500;
+$zBotonesDesplazamiento:700;
+
+//cabecera
+$altoCabecera:120px;
+
+//menu
+$altoMenuGrande:100px;
+$altoMenuPequeno:50px;
+$anchoLogoFinal:60px;
+$anchoLogoFinalAlto:90px;
+$anchoLogoFinalCorto:30px;
+
+//fichas
+$anchoFicha:300px;
+$anchoFichaMin:200px;
+$margenFicha:40px;
+$margenFichaMin:30px;
+$paddingFicha:30px;
+$paddingFichaMin:15px;
+$colorFicha:white;
+$colorLuz: #f1f1d0;
+$radioFicha:20px;
+$radioFichaMin:10px;
+$colorMas: #4a8089;
+
+//ficha servicios
+$anchoFichaServicios:150px;
+$anchoFichaServiciosMin:100px;
+$tamBtnDesplazamiento:100px;
+
+//infoCentral
+$anchoImgInfoCentral:150px;
+$altoImgInfoCentral:150px;
+$margenImgInfoCentral:30px;
+$anchoImgInfoCentralMedio:300px;
+$altoImgInfoCentralMedio:300px;
+$margenImgInfoCentralMedio:0;
+
+//ancho para que aparezca el icono del menú
+$anchoMedio:850px;
+$anchoMovil:500px;
+$anchoMiniMovil:350px;
+
+//main del detalle
+$anchoMaximoMain:1200px;
