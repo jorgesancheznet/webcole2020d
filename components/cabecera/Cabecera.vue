@@ -15,13 +15,14 @@
           </li>
         </ul>
       </nav>
-      <div id="capaIconoMenuCabecera" v-if="mostrarIconoMenu" :click.preventDefault="clickIconoMenu">
+      <div id="capaIconoMenuCabecera" v-if="mostrarIconoMenu" @click.preventDefault="clickIconoMenu">
         <IconoSVG v-if="hayIconoMenu" :ancho="38" :d="iconoMenu.d" :view-box="iconoMenu.viewBox" />
-        <IconoSVG v-else :ancho="38" :d="iconoMenu.d" :view-box="iconoMenu.viewBox" />
+        <IconoSVG v-else :ancho="38" :d="iconoCierre.d" :view-box="iconoCierre.viewBox" />
       </div>
     </div>
     <transition name="acordeon" mode="out-in">
-      <SubmenuCabecera v-for="submenu in submenuCabecera" :key="submenu.nombre" v-if="comprobarSubmenuVisible(submenu.nombre)" :datos="submenu" :tope="tope" @cierreSubmenu="ocultaSubmenu"></SubmenuCabecera>
+      <SubmenuCabecera v-for="submenu in submenuCabecera" :key="submenu.nombre" v-if="comprobarSubmenuVisible(submenu.nombre)"
+                       :datos="submenu" :tope="tope" @cierreSubmenu="ocultaSubmenu"></SubmenuCabecera>
     </transition>
   </header>
 </template>
@@ -51,7 +52,6 @@ export default {
       mostrarIconoMenu : false,
       mostrarLogo : true,
       submenuVisible : "",
-      arriba : ALTO_CABECERA + "px",
       iconoMenu:iconoMenu,
       iconoCierre:iconoCierre,
       tope:ALTO_CABECERA
@@ -72,7 +72,7 @@ export default {
     },
 
     clickIconoMenu() {
-      if (!hayIconoMenu) {
+      if (!this.hayIconoMenu) {
         this.hayIconoMenu = true;
         this.mostrarLogo = true;
         this.mostrarMenu = false;
@@ -115,11 +115,11 @@ export default {
       if (window.scrollY > 5) {
         cabecera.style.height = ALTO_CABECERA_MIN + "px";
         //recolocación submenú
-        this.arriba = ALTO_CABECERA_MIN + "px";
+        this.tope = ALTO_CABECERA_MIN;
       } else {
         cabecera.style.height = ALTO_CABECERA + "px";
         //recolocación submenú
-        this.arriba = ALTO_CABECERA + "px";
+        this.tope = ALTO_CABECERA;
       }
 
     });
