@@ -1,6 +1,7 @@
 <template>
-  <div class="filaLogos" >
-    <img src="/img/logos/tic5.png" alt="Cisco NetWorking Academy">
+  <div class="filaLogos" data-aos="zoom-in-up" data-aos-delay="300"
+       data-aos-duration="500" data-aos-easing="ease-out-cubic">
+    <img src="/img/logos/tic5.png" alt="Cisco NetWorking Academy" >
     <img class="logoAlto" src="/img/logos/calidad.png" alt="Cisco NetWorking Academy">
     <img class="logoAlto" src="/img/logos/cisco.png" alt="Cisco NetWorking Academy">
     <img src="/img/logos/ms-reverse.png" class="logoLargo" alt="Microsoft Imagine Academy">
