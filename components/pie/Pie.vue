@@ -9,7 +9,33 @@
           <a href="mailto:colegio@salesianosvillamuriel.es">colegio@salesianosvillamuriel.es</a> <br> <br>
           Horario de atención: De 9:00 a 14:00
         </p>
+        <div class="mapaContenedor">
+          <img class="img400" src="/img/mapa.jpg" alt="Ubicación de Salesianos de Villamuriel">
+          <div class="mapaLink">
+            <p><a href="https://goo.gl/maps/dTQNZjREAZymheM77" target="_blank"
+                  class="enlaceIcono">Haz clic para ir a Google
+              Maps <br>
+              <IconoSVG :d="link.d" :view-box="link.viewBox" :ancho="80"></IconoSVG>
+            </a>
+
+            </p>
+          </div>
+        </div>
       </ColumnaFooter>
+      <ColumnaFooter :titulo="'PEDIR INFORMACIÓN'">
+        <p class="bordePie">Si deseas información o nos quieres consultar algo, puedes utilizar este formulario.
+          Por favor, indica correctamente tu email para que la respuesta se envíe correctamente</p>
+        <form id="formInfo">
+          <p><label for="email">Email del remitente</label></p>
+          <p><input type="email" id="email" name="email" required></p>
+          <p><label for="texto">Texto de consulta</label></p>
+          <p><textarea name="texto" id="texto" cols="30" rows="10" required></textarea></p>
+          <div class="g-recaptcha" data-sitekey="6LcZ5MUUAAAAAJM0YcMWOWt6p4T3sSL92GNGQrDP"></div>
+          <button id="btInfoConsulta">ENVIAR CONSULTA</button>
+        </form>
+        <div class="infoConsulta"></div>
+      </ColumnaFooter>
+      <FilaLogos />
     </div>
   </footer>
 
@@ -17,9 +43,35 @@
 
 <script>
 import ColumnaFooter from "~/components/pie/ColumnaFooter";
+import IconoSVG from "@/components/IconoSVG";
+import FilaLogos from "@/components/pie/FilaLogos";
+import {link} from "~/assets/svg/iconos";
+
+
 export default {
   name: "Pie",
-  components: {ColumnaFooter}
+  components: {FilaLogos, IconoSVG, ColumnaFooter},
+  data(){
+    return{
+      link:link
+    }
+  },
+  head:{
+    script:[{
+      src:"https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+    },
+    {
+      src:"https://www.google.com/recaptcha/api.js",
+      async:true,
+      defer:true
+    }]
+  },
+  beforeMount() {
+    //emailJS
+    (function () {
+      emailjs.init("user_nvnuVtAepni7Uh7umJm4V");
+    })();
+  }
 }
 </script>
 

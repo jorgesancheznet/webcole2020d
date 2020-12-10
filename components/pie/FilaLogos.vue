@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style type="scss" scoped>
+<style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
 
 .filaLogos{
