@@ -1,0 +1,23 @@
+.fade-enter-active{
+  transition: opacity .5s ease-out;
+}
+.fade-leave-active{
+  transition: opacity .3s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to{
+  opacity:0;
+}
+
+.acordeon-enter-active{
+  transition: transform .5s ease-out;
+}
+.acordeon-leave-active{
+  transition: transform .3s ease-out;
+}
+
+.acordeon-enter-from,
+.acordeon-leave-to{
+  transform:translateY(-100%) scaleY(0)
+}

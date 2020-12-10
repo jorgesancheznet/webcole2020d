@@ -3,6 +3,7 @@ export let submenuCabecera=[
         nombre:"ESTUDIOS",
         secciones:[
             {
+                id:"subESO",
                 titulo: "EDUCACIÓN SECUNDARIA OBLIGATORIA",
                 enlaces:[
                     {
@@ -12,7 +13,8 @@ export let submenuCabecera=[
                 ]
             },
             {
-                titulo: "FORMACIÓN PROFESIONAL BÁSICA (FPB)",
+              id:"subFPB",
+              titulo: "FORMACIÓN PROFESIONAL BÁSICA (FPB)",
                 enlaces:[
                     {
                         texto:"MANTENIMIENTO DE VEHÍCULOS",
@@ -21,6 +23,7 @@ export let submenuCabecera=[
                 ]
             },
             {
+                id:"subFPGM",
                 titulo: "FORMACIÓN PROFESIONAL DE GRADO MEDIO",
                 enlaces:[
                     {
@@ -38,6 +41,7 @@ export let submenuCabecera=[
                 ]
             },
             {
+                id:"subFPGS",
                 titulo: "FORMACIÓN PROFESIONAL DE GRADO SUPERIOR",
                 enlaces:[
                     {

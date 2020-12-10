@@ -1,27 +1,38 @@
 <template>
   <header id="cabecera">
-    <div id="contenidoCabecera" v-if="mostrarLogo">
-      <figure id="logoPrincipal">
+    <div id="contenidoCabecera">
+      <figure id="logoPrincipal" v-if="mostrarLogo">
         <a href="/">
           <img src="/img/logos/logo-grande.svg" alt="Salesianos de Villamuriel de cerrato">
         </a>
       </figure>
       <nav id="menuCabecera" v-if="mostrarMenu">
         <ul>
-          <li v-for="submenu in submenuCabecera">
-            <a href="#" :click.preventDefault="mostrarSubmenu">
+          <li v-for="submenu in submenuCabecera" >
+            <a href="#" @click.prevent="mostrarSubmenu">
                {{submenu.nombre}}
             </a>
           </li>
         </ul>
       </nav>
+      <div id="capaIconoMenuCabecera" v-if="mostrarIconoMenu" :click.preventDefault="clickIconoMenu">
+        <IconoSVG v-if="hayIconoMenu" :ancho="38" :d="iconoMenu.d" :view-box="iconoMenu.viewBox" />
+        <IconoSVG v-else :ancho="38" :d="iconoMenu.d" :view-box="iconoMenu.viewBox" />
+      </div>
     </div>
+    <transition name="acordeon" mode="out-in">
+      <SubmenuCabecera v-for="submenu in submenuCabecera" :key="submenu.nombre" v-if="comprobarSubmenuVisible(submenu.nombre)" :datos="submenu" :tope="tope" @cierreSubmenu="ocultaSubmenu"></SubmenuCabecera>
+    </transition>
   </header>
 </template>
 
 <script>
 import {iconoCierre,iconoMenu} from "~/assets/svg/iconos";
+import {submenuCabecera} from "~/assets/data/submenuCabecera";
+
 import IconoSVG from "~/components/IconoSVG";
+import SubmenuCabecera from "~/components/cabecera/SubmenuCabecera";
+
 const ALTO_CABECERA = 120;
 const ALTO_CABECERA_MIN = 60
 const TRANSICION_CABECERA = 1;
@@ -29,6 +40,7 @@ const ANCHO_MEDIO = 850;
 
 export default {
   name: "Cabecera",
+  components: {IconoSVG, SubmenuCabecera},
   props:{
     submenuCabecera:Array
   },
@@ -39,10 +51,16 @@ export default {
       mostrarIconoMenu : false,
       mostrarLogo : true,
       submenuVisible : "",
-      arriba : ALTO_CABECERA + "px"
+      arriba : ALTO_CABECERA + "px",
+      iconoMenu:iconoMenu,
+      iconoCierre:iconoCierre,
+      tope:ALTO_CABECERA
     }
   },
   methods:{
+    comprobarSubmenuVisible(texto){
+      return this.submenuVisible.trim()==texto.trim();
+    },
     recalculoCabecera() {
       if (innerWidth >= ANCHO_MEDIO) {
         this.mostrarMenu = true;
@@ -70,7 +88,6 @@ export default {
     },
 
     ocultaSubmenu(e) {
-      //console.log(e.detail.text);
       this.submenuVisible = "";
     }
   },
@@ -112,6 +129,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
+@import "~assets/estilos/transiciones.scss";
 
 header {
   position: fixed;
@@ -174,6 +192,7 @@ header {
   }
   width:50px;
 }
+
 
 @media (max-width: $anchoMovil) {
   #logoPrincipal {

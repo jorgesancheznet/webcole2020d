@@ -1,6 +1,6 @@
 <template>
-  <svg class="icono" width={ancho} height={ancho} viewBox={viewBox} xmlns="http://www.w3.org/2000/svg">
-    <path d={d} stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <svg class="icono" :width="ancho" :height="ancho" :viewBox="viewBox" xmlns="http://www.w3.org/2000/svg" :fill="fill">
+    <path :d="d" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
 </template>
 
@@ -19,6 +19,10 @@ export default {
     ancho:{
       type:Number,
       default:24
+    },
+    fill:{
+      type:String,
+      default:"black"
     }
   }
 }
