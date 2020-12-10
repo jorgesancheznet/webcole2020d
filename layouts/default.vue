@@ -1,9 +1,10 @@
 <script>
-import Cabecera from "~/components/cabecera/Cabecera";
 import {submenuCabecera} from "~/assets/data/submenuCabecera";
+import Cabecera from "~/components/cabecera/Cabecera";
+import Pie from "~/components/pie/Pie";
 
 export default {
-  components: {Cabecera},
+  components: {Pie, Cabecera},
   data() {
     return {
       submenu:submenuCabecera
@@ -19,6 +20,7 @@ export default {
     <div id="prueba" style="background-color: gray;width:100%;position:relative;height:200vh">
 
     </div>
+    <Pie />
   </div>
 </template>
 
