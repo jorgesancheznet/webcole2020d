@@ -56,16 +56,6 @@ export default {
       link:link
     }
   },
-  head:{
-    script:[{
-      src:"https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
-    },
-    {
-      src:"https://www.google.com/recaptcha/api.js",
-      async:true,
-      defer:true
-    }]
-  },
   beforeMount() {
     //emailJS
     (function () {

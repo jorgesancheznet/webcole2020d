@@ -12,6 +12,16 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script:[
+      {
+        src:"https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"
+      },
+      {
+        src:"https://www.google.com/recaptcha/api.js",
+        async:true,
+        defer:true
+      }
     ]
   },
 
