@@ -32,7 +32,8 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    "~/plugins/client-only/aos.client.js"
+    "~/plugins/client-only/aos.client.js",
+    "~/plugins/client-only/swiper.client.js"
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

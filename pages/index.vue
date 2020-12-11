@@ -4,6 +4,7 @@
       <PanelNovedades titulo="NOVEDADES" :entradas="listaNovedades" tiempoTransicion="1000"  tiempoAparicion="300" />
 
     </SplashPanel>
+    <ContenedorCarrusel />
   </main>
 </template>
 
@@ -11,12 +12,13 @@
 import Cabecera from "~/components/cabecera/Cabecera";
 import SplashPanel from "~/components/secciones/SplashPanel";
 import PanelNovedades from "~/components/PanelNovedades";
+import ContenedorCarrusel from "@/components/ContenedorCarrusel";
 
 import {listaNovedades} from "~/assets/data/novedades";
 import {mapMutations} from "vuex";
 
 export default {
-  components: {PanelNovedades, SplashPanel, Cabecera},
+  components: {ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
   computed:{
     fondo(){
       return this.$store.state.fondo
