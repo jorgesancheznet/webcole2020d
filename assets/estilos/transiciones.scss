@@ -11,10 +11,10 @@
 }
 
 .acordeon-enter-active{
-  transition: transform 2s ease-out;
+  transition: transform .3s ease-out;
 }
 .acordeon-leave-active{
-  transition: transform 2s ease-out;
+  transition: transform .3s ease-out;
 }
 
 .acordeon-enter-from,

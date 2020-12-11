@@ -21,8 +21,7 @@
       </div>
     </div>
     <transition name="acordeon" mode="out-in">
-      <SubmenuCabecera v-for="submenu in submenuCabecera" :key="submenu.nombre" v-if="comprobarSubmenuVisible(submenu.nombre)"
-                       :datos="submenu" :tope="tope" @cierreSubmenu="ocultaSubmenu"></SubmenuCabecera>
+      <SubmenuCabecera v-for="submenu in submenuCabecera" :key="submenu.nombre" v-if="comprobarSubmenuVisible(submenu.nombre)" :datos="submenu" :tope="tope" @cierreSubmenu="ocultaSubmenu"></SubmenuCabecera>
     </transition>
   </header>
 </template>
@@ -140,7 +139,6 @@ header {
   background-color: $colorCabecera;
   padding: 5px;
   z-index: $zCabecera;
-
 }
 
 #contenidoCabecera {

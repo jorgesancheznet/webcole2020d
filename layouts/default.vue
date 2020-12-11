@@ -2,12 +2,20 @@
 import {submenuCabecera} from "~/assets/data/submenuCabecera";
 import Cabecera from "~/components/cabecera/Cabecera";
 import Pie from "~/components/pie/Pie";
+import TelonFondo from "~/components/secciones/TelonFondo";
+
+import {mapMutations} from "vuex";
 
 export default {
-  components: {Pie, Cabecera},
+  components: {TelonFondo, Pie, Cabecera},
   data() {
     return {
       submenu:submenuCabecera
+    }
+  },
+  computed:{
+    fondo(){
+      return this.$store.state.fondo
     }
   }
 }
@@ -15,6 +23,7 @@ export default {
 </script>
 <template>
   <div>
+    <TelonFondo :imagen="fondo" :alt="'fondo'" />
     <Cabecera :submenuCabecera="submenu"></Cabecera>
     <Nuxt/>
     <Pie />
