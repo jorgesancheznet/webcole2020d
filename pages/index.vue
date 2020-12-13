@@ -1,10 +1,12 @@
 <template>
   <main>
-    <SplashPanel idSeccion="Portada" imagen="/img/neonbrand-426918-unsplash.jpg" titulo="Excelencia adaptada<br>a cada estudiante" subtitulo="En búsqueda permanente de nuevos caminos que permitan el éxito educativo">
+    <SplashPanel idSeccion="seccionPortada" imagen="/img/neonbrand-426918-unsplash.jpg" titulo="Excelencia adaptada<br>a cada estudiante" subtitulo="En búsqueda permanente de nuevos caminos que permitan el éxito educativo">
       <PanelNovedades titulo="NOVEDADES" :entradas="listaNovedades" tiempoTransicion="1000"  tiempoAparicion="300" />
-
     </SplashPanel>
-    <ContenedorCarrusel />
+
+    <SeccionTransparente idSeccion="seccionNovedades" titulo="NOTICIAS">
+      <ContenedorCarrusel :datos="listaNovedades" />
+    </SeccionTransparente>
   </main>
 </template>
 
@@ -15,10 +17,12 @@ import PanelNovedades from "~/components/PanelNovedades";
 import ContenedorCarrusel from "@/components/ContenedorCarrusel";
 
 import {listaNovedades} from "~/assets/data/novedades";
+
 import {mapMutations} from "vuex";
+import SeccionTransparente from "@/components/secciones/SeccionTransparente";
 
 export default {
-  components: {ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
+  components: {SeccionTransparente, ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
   computed:{
     fondo(){
       return this.$store.state.fondo

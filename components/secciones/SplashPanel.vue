@@ -1,5 +1,5 @@
 <template>
-  <section id={idSeccion}>
+  <section :id="idSeccion">
     <div class="titulosPortada" v-if="mostrarTitulos"
     data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
       <h1 v-html="titulo"></h1>

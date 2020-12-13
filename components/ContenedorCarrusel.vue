@@ -3,45 +3,39 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
+      <Ficha v-for="ficha in datos" :contenido="ficha" :key="ficha.id" />
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
 
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
 
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
 </template>
 
 <script>
+import Ficha from "~/components/Ficha";
 export default {
   name: "ContenedorCarrusel",
+  components: {Ficha},
+  props:{
+    datos:Array
+  },
   mounted() {
+    console.log(this.datos)
     var swiper = new this.$swiper('.swiper-container',
       {
         loop:true,
-        pagination:{
-          el:".swiper-pagination"
-        },
         navigation:{
           nextEl:".swiper-button-next",
-          prevEl:".swiper-button-next",
-        },
-        scrollbar: {
-          el: '.swiper-scrollbar',
+          prevEl:".swiper-button-prev",
         },
       })
   }
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+@import "~assets/estilos/mixins.scss";
+@import "~swiper/swiper.scss";
 </style>
