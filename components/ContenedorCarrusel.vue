@@ -6,9 +6,10 @@
       <Ficha v-for="ficha in datos" :contenido="ficha" :key="ficha.id" />
     </div>
 
-    <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+
+    <div class="swiper-pagination"></div>
 
   </div>
 </template>
@@ -25,11 +26,15 @@ export default {
     console.log(this.datos)
     var swiper = new this.$swiper('.swiper-container',
       {
-        loop:true,
         navigation:{
           nextEl:".swiper-button-next",
           prevEl:".swiper-button-prev",
         },
+        pagination:{
+          el:".swiper-pagination",
+          clickable:true
+        },
+        slidesPerView:"auto"
       })
   }
 }
@@ -38,4 +43,15 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
 @import "~swiper/swiper.scss";
+.swiper-button-next,.swiper-button-prev{
+  color:$colorNaranja;
+  text-shadow: black 0 0 10px;
+  &:hover{
+    color:lighten($colorNaranja, 20%);
+  }
+  &:after{
+    font-size:5em;
+  }
+}
+
 </style>

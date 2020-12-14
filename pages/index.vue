@@ -30,7 +30,7 @@ export default {
   },
   data(){
     return{
-      listaNovedades:listaNovedades.slice(0,3)
+      listaNovedades:listaNovedades
     }
   },
   methods:{

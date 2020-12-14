@@ -57,3 +57,24 @@ main{
     }
   }
 }
+
+
+/** Swiper */
+
+
+.swiper-pagination {
+  .swiper-pagination-bullet{
+    background: darken($colorNaranja,20%);
+  }
+  .swiper-pagination-bullet-active{
+    background: $colorNaranja;
+  }
+}
+
+.swiper-slide{
+  opacity:.8;
+  transition:1s opacity;
+  &.swiper-slide-active{
+    opacity:.8;
+  }
+}

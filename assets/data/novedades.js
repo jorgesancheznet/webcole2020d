@@ -39,8 +39,8 @@ export let listaNovedades = [
         contenido: "Os dejamos los listados de admitidos en " +
             "<a href=''>Formación Profesional Básica</a> y en " +
             "<a href=''>Ciclos de Grado Medio</a> " +
-            "y <a href=''>Superior</a> para el curso 2020-21." /*,
-        urlMas: "/noticias/20200616/lista-admitidos-2020-21"*/,
-        id:"n1"
+            "y <a href=''>Superior</a> para el curso 2020-21." ,
+        urlMas: "/noticias/20200616/lista-admitidos-2020-21",
+        id:"n1",
     }
 ];

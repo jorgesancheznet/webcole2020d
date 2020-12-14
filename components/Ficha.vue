@@ -1,10 +1,10 @@
 <template>
-<div class="itemCarrusel ficha" :class="{mini:mini}">
+<div class="ficha swiper-slide" @click="lanzarEnlace" :class="{mini:mini}">
   <figure v-if="contenido.imagen">
     <img :src="contenido.imagen" :alt="contenido.alt">
   </figure>
   <h3 v-if="contenido.titulo">
-    <a :href="contenido.urlMas" :target="(contenido.blank?'_blank':'_self')">{{contenido.titulo}}></a>
+    <a :href="contenido.urlMas" :target="(contenido.blank?'_blank':'_self')">{{contenido.titulo}}</a>
   </h3>
   <p v-if="contenido.subtitulo" class="subtituloH3">
     {{contenido.subtitulo}}
@@ -28,6 +28,14 @@ name: "Ficha",
       type:Boolean,
       default:false
     }
+  },
+  methods:{
+    lanzarEnlace(e){
+      let enlace=e.target.querySelector(".mas a");
+      if(enlace){
+        enlace.click();
+      }
+    }
   }
 }
 </script>
@@ -40,9 +48,9 @@ name: "Ficha",
   color: red;
 }
 
-.ficha {
-  display: inline-block;
-  width: $anchoFicha;
+
+.ficha{
+  width: $anchoFicha !important;
   padding: $paddingFicha;
   border-radius: $radioFicha;
   margin: $margenFicha;
@@ -50,7 +58,7 @@ name: "Ficha",
   background-color: $colorFicha;
 
   &:hover {
-    box-shadow: 0 0 10px 10px $colorLuz;
+    opacity:1;
 
     figure {
       img {
@@ -126,7 +134,7 @@ name: "Ficha",
 @media (max-width: $anchoMovil) {
 
   .ficha {
-    width: $anchoFichaMin;
+    width: $anchoFichaMin !important;
     padding: $paddingFichaMin;
     border-radius: $radioFichaMin;
     margin: $margenFichaMin;
