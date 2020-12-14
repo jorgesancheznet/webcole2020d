@@ -12,7 +12,7 @@ export default {
   name: "SeccionInfo",
   components: {FilaInfo},
   props: {
-    informacion:Array
+    informacion:Object
   }
 }
 </script>

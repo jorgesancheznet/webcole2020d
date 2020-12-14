@@ -1,5 +1,9 @@
 <template>
-<div class="ficha swiper-slide" @click="lanzarEnlace" :class="{mini:mini}">
+<div class="ficha swiper-slide" @click="lanzarEnlace" :class="{mini:mini}"
+     :data-aos-delay="aleatorio(retardoMin,retardoMax)"
+     :data-aos="efecto"
+     :data-aos-duration="aleatorio(duracionMin,duracionMax)"
+     :data-aos-easing="easing"  :data-aos-once="once">
   <figure v-if="contenido.imagen">
     <img :src="contenido.imagen" :alt="contenido.alt">
   </figure>
@@ -17,8 +21,9 @@
 </template>
 
 <script>
+import {aleatorio, utiles} from "~/assets/lib/utiles";
 export default {
-name: "Ficha",
+  name: "Ficha",
   props:{
     contenido:{
       type:Object,
@@ -27,6 +32,34 @@ name: "Ficha",
     mini:{
       type:Boolean,
       default:false
+    },
+    retardoMin:{
+      type:Number,
+      default:0
+    },
+    retardoMax:{
+      type:Number,
+      default:0
+    },
+    efecto:{
+      type:String,
+      default:"flip-up"
+    },
+    duracionMin:{
+      type:Number,
+      default:0
+    },
+    duracionMax:{
+      type:Number,
+      default:0
+    },
+    easing:{
+      type:String,
+      default:"ease-out-cubic"
+    },
+    once:{
+      type: Boolean,
+      default: "true"
     }
   },
   methods:{
@@ -35,6 +68,9 @@ name: "Ficha",
       if(enlace){
         enlace.click();
       }
+    },
+    aleatorio(min,max){
+      return   Math.round(Math.random()*(max-min)+parseInt(min))
     }
   }
 }

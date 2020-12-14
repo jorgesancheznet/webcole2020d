@@ -3,7 +3,7 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
-      <Ficha v-for="ficha in datos" :contenido="ficha" :key="ficha.id" />
+      <Ficha v-for="ficha in datos" :contenido="ficha" :key="ficha.id" :retardoMin="200" :retardoMax="600" :duracionMin="400" :duracionMax="1200"/>
     </div>
 
     <div class="swiper-button-prev"></div>

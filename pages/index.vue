@@ -11,11 +11,11 @@
     <SeccionInfo :informacion="listaInfoIndex"/>
 
     <SeccionTransparente id-seccion="seccionOfertaEducativa" titulo="OFERTA EDUCATIVA">
-      <ContenedorFichas :fichas="listaOferta"></ContenedorFichas>
+      <ContenedorFichas :fichas="listaOferta"/>
     </SeccionTransparente>
 
     <SeccionOpaca idSeccion="seccionServicios" titulo="SERVICIOS">
-      <ContenedorFichas :fichas="listaServicios" :mini="true" />
+      <ContenedorFichas :fichas="listaServicios" :mini="true"  />
     </SeccionOpaca>
   </main>
 </template>

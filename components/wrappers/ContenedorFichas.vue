@@ -1,6 +1,6 @@
 <template>
 <article class="contenedorFichas">
-  <Ficha v-for="ficha in fichas" :contenido="ficha" :mini="mini" :key="ficha.id"/>
+  <Ficha v-for="ficha in fichas" :contenido="ficha" :mini="mini" :key="ficha.id" :retardoMin="200" :retardoMax="800" :duracionMin="400" :duracionMax="1500"/>
 </article>
 </template>
 
