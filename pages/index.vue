@@ -13,6 +13,10 @@
     <SeccionTransparente id-seccion="seccionOfertaEducativa" titulo="OFERTA EDUCATIVA">
       <ContenedorFichas :fichas="listaOferta"></ContenedorFichas>
     </SeccionTransparente>
+
+    <SeccionOpaca idSeccion="seccionServicios" titulo="SERVICIOS">
+      <ContenedorFichas :fichas="listaServicios" :mini="true" />
+    </SeccionOpaca>
   </main>
 </template>
 
@@ -28,15 +32,19 @@ import ContenedorCarrusel from "~/components/wrappers/ContenedorCarrusel";
 import SeccionTransparente from "~/components/secciones/SeccionTransparente";
 import SeccionInfo from "~/components/secciones/SeccionInfo";
 import ContenedorFichas from "~/components/wrappers/ContenedorFichas";
+import SeccionOpaca from "@/components/secciones/SeccionOpaca";
+
 
 //datos
 import {listaNovedades} from "~/assets/data/novedades";
 import {listaInfoIndex} from "~/assets/data/panelInfoIndex";
 import {listaOfertaEducativa} from "~/assets/data/ofertaEducativa";
+import {listaServicios} from "~/assets/data/servicios";
 
 
 export default {
   components: {
+    SeccionOpaca,
     ContenedorFichas,
     SeccionInfo, SeccionTransparente, ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
   computed:{
@@ -49,6 +57,7 @@ export default {
       listaNovedades:listaNovedades,
       listaInfoIndex:listaInfoIndex,
       listaOferta:listaOfertaEducativa,
+      listaServicios:listaServicios
     }
   },
   methods:{

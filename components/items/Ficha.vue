@@ -117,7 +117,7 @@ name: "Ficha",
 
   &.mini {
     padding: 5px;
-    width: $anchoFichaServicios + 20px;
+    width: $anchoFichaServicios + 20px !important;
 
     h3 {
       font-size: 1.5em;
