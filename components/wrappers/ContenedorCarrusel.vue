@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Ficha from "~/components/Ficha";
+import Ficha from "@/components/items/Ficha";
 export default {
   name: "ContenedorCarrusel",
   components: {Ficha},
@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
-@import "~swiper/swiper.scss";
+@import "../../node_modules/swiper/swiper";
 .swiper-button-next,.swiper-button-prev{
   color:$colorNaranja;
   text-shadow: black 0 0 10px;

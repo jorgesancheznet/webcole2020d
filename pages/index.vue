@@ -7,22 +7,29 @@
     <SeccionTransparente idSeccion="seccionNovedades" titulo="NOTICIAS">
       <ContenedorCarrusel :datos="listaNovedades" />
     </SeccionTransparente>
+
+    <SeccionInfo :informacion="listaInfoIndex"/>
   </main>
 </template>
 
 <script>
+//librerías
+import {mapMutations} from "vuex";
+
+//Componentes
 import Cabecera from "~/components/cabecera/Cabecera";
 import SplashPanel from "~/components/secciones/SplashPanel";
 import PanelNovedades from "~/components/PanelNovedades";
-import ContenedorCarrusel from "@/components/ContenedorCarrusel";
+import ContenedorCarrusel from "~/components/wrappers/ContenedorCarrusel";
+import SeccionTransparente from "~/components/secciones/SeccionTransparente";
+import SeccionInfo from "~/components/secciones/SeccionInfo";
 
+//datos
 import {listaNovedades} from "~/assets/data/novedades";
-
-import {mapMutations} from "vuex";
-import SeccionTransparente from "@/components/secciones/SeccionTransparente";
+import {listaInfoIndex} from "~/assets/data/panelInfoIndex";
 
 export default {
-  components: {SeccionTransparente, ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
+  components: {SeccionInfo, SeccionTransparente, ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
   computed:{
     fondo(){
       return this.$store.state.fondo
@@ -30,7 +37,8 @@ export default {
   },
   data(){
     return{
-      listaNovedades:listaNovedades
+      listaNovedades:listaNovedades,
+      listaInfoIndex:listaInfoIndex,
     }
   },
   methods:{

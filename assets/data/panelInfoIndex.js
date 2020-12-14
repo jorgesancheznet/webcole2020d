@@ -1,4 +1,4 @@
-export let infoInfoIndex = {
+export let listaInfoIndex = {
     titulo: "¿QUIÉNES SOMOS?",
     filas: [
         {
@@ -8,7 +8,8 @@ export let infoInfoIndex = {
                     "Nos adelantamos a los problemas <br>" +
                     "Siempre estamos disponible",
                 image: "/img/index/cercanos.jpg",
-                alt: "Cercanos"
+                alt: "Cercanos",
+                id:"info1"
             },
             derecha: {
                 titulo: "MOTIVADOS",
@@ -16,7 +17,8 @@ export let infoInfoIndex = {
                     "Rebosantes de entusiasmo <br>" +
                     "Creemos en lo que hacemos",
                 image: "/img/index/motivados.jpg",
-                alt: "Motivados"
+                alt: "Motivados",
+                id:"info2"
             }
         },
         {
@@ -26,7 +28,8 @@ export let infoInfoIndex = {
                     "Usamos la tecnología en nuestro provecho <br>" +
                     "Aplicamos las mejores técnicas de enseñanza",
                 image: "https://via.placeholder.com/150x150.png",
-                alt: "Innovadores"
+                alt: "Innovadores",
+                id:"info3"
             },
             derecha:{
                 titulo: "IMPLICADOS",
@@ -34,7 +37,8 @@ export let infoInfoIndex = {
                     "Comprometidos a todos los niveles <br>" +
                     "Educamos en valores",
                 image: "/img/index/implicados.jpg",
-                alt: "Implicados"
+                alt: "Implicados",
+                id:"info4"
             }
         }
     ]
