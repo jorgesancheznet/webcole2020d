@@ -50,6 +50,7 @@ name: "Ficha",
 
 
 .ficha{
+  display:inline-block;
   width: $anchoFicha !important;
   padding: $paddingFicha;
   border-radius: $radioFicha;

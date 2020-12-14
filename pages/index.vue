@@ -9,6 +9,10 @@
     </SeccionTransparente>
 
     <SeccionInfo :informacion="listaInfoIndex"/>
+
+    <SeccionTransparente id-seccion="seccionOfertaEducativa" titulo="OFERTA EDUCATIVA">
+      <ContenedorFichas :fichas="listaOferta"></ContenedorFichas>
+    </SeccionTransparente>
   </main>
 </template>
 
@@ -23,13 +27,18 @@ import PanelNovedades from "~/components/PanelNovedades";
 import ContenedorCarrusel from "~/components/wrappers/ContenedorCarrusel";
 import SeccionTransparente from "~/components/secciones/SeccionTransparente";
 import SeccionInfo from "~/components/secciones/SeccionInfo";
+import ContenedorFichas from "~/components/wrappers/ContenedorFichas";
 
 //datos
 import {listaNovedades} from "~/assets/data/novedades";
 import {listaInfoIndex} from "~/assets/data/panelInfoIndex";
+import {listaOfertaEducativa} from "~/assets/data/ofertaEducativa";
+
 
 export default {
-  components: {SeccionInfo, SeccionTransparente, ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
+  components: {
+    ContenedorFichas,
+    SeccionInfo, SeccionTransparente, ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
   computed:{
     fondo(){
       return this.$store.state.fondo
@@ -39,6 +48,7 @@ export default {
     return{
       listaNovedades:listaNovedades,
       listaInfoIndex:listaInfoIndex,
+      listaOferta:listaOfertaEducativa,
     }
   },
   methods:{
