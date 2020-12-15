@@ -20,6 +20,10 @@ a{
   }
 }
 
+p{
+  @include letraNormal(normal,1.3em,black);
+}
+
 button,.boton {
   display:inline-block;
   padding: 1em;

@@ -59,7 +59,7 @@ export default {
     },
     once:{
       type: Boolean,
-      default: "true"
+      default: true
     }
   },
   methods:{
