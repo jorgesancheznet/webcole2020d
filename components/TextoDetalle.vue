@@ -18,7 +18,7 @@ export default {
 @import "~assets/estilos/mixins.scss";
 
 .textoDetalle{
-  padding:0 3em;
+  padding:0 4.5em;
   h3{
     @include letraNormal(bold,2em,$colorFondoPie);
     text-align: center;

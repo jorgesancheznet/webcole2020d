@@ -1,7 +1,6 @@
 <template>
   <main>
-    <TituloEstudios titulo="Administración de Sistemas Informáticos en Red"
-                    subtitulo="FP de Grado Superior" />
+    <TituloEstudios titulo="Administración de Sistemas Informáticos en Red" subtitulo="FP de Grado Superior" />
     <SeccionOpaca>
       <FilaContenido>
         <ColumnaContenido>
@@ -19,6 +18,15 @@
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
+    <SeccionTransparente titulo="RAMAS PROFESIONALES">
+      <FilaIconos>
+        <IconoRama nombre="Administración de Sistemas" :icono="server" />
+        <IconoRama nombre="Gestión y Administración de Bases de Datos" :icono="database" />
+        <IconoRama nombre="Gestión y Administración de Redes" :icono="networkWired" />
+        <IconoRama nombre="Seguridad de Sistemas y Redes" :icono="lock" />
+        <IconoRama nombre="Desarrollo e Implementación de Aplicaciones Web" :icono="globe" />
+      </FilaIconos>
+    </SeccionTransparente>
   </main>
 </template>
 
@@ -32,11 +40,34 @@ import TituloEstudios from "@/components/secciones/TituloEstudios";
 import FilaContenido from "@/components/wrappers/FilaContenido";
 import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
 import TextoDetalle from "@/components/TextoDetalle";
-import ImagenDetalle from "@/components/ImagenDetalle";
+import ImagenDetalle from "@/components/items/ImagenDetalle";
+import SeccionTransparente from "@/components/secciones/SeccionTransparente";
+//datos
+import {server, database, networkWired,lock,globe} from "~/assets/svg/iconos";
+import FilaIconos from "@/components/wrappers/FilaIconos";
+import IconoRama from "@/components/items/IconoRama";
 
 export default {
   name: "asir",
-  components: {ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca},
+  data(){
+    return{
+      server:server,
+      database:database,
+      networkWired:networkWired,
+      lock:lock,
+      globe:globe
+    }
+  },
+  head(){
+    return{
+        title:"Administración de Sistemas Informáticos en Red (ASIR), Salesianos Centro Don Bosco de Villamuriel de Cerrato"
+    }
+  },
+  components: {
+    IconoRama,
+    FilaIconos,
+    SeccionTransparente,
+    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca},
   computed: {
     fondo() {
       return this.$store.state.fondo

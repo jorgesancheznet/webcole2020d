@@ -43,7 +43,7 @@
 
 <script>
 import ColumnaFooter from "~/components/pie/ColumnaFooter";
-import IconoSVG from "@/components/IconoSVG";
+import IconoSVG from "@/components/items/IconoSVG";
 import FilaLogos from "@/components/pie/FilaLogos";
 import {link} from "~/assets/svg/iconos";
 

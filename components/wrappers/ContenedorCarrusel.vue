@@ -23,7 +23,6 @@ export default {
     datos:Array
   },
   mounted() {
-    console.log(this.datos)
     var swiper = new this.$swiper('.swiper-container',
       {
         navigation:{

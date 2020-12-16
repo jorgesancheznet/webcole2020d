@@ -1,7 +1,8 @@
 <template>
   <section :id="idSeccion" class="seccionOpaca" :style="{backgroundColor:colorFondo}">
-    <h1 :style="{color:colorTitulo}">
-      <br>{{titulo}}
+    <br>
+    <h1 v-if="titulo" :style="{color:colorTitulo}">
+      {{titulo}}
     </h1>
     <slot></slot>
   </section>

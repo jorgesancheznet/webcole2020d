@@ -2,9 +2,9 @@
   <header id="cabecera">
     <div id="contenidoCabecera">
       <figure id="logoPrincipal" v-if="mostrarLogo">
-        <a href="/">
+        <NuxtLink to="/">
           <img src="/img/logos/logo-grande.svg" alt="Salesianos de Villamuriel de cerrato">
-        </a>
+        </NuxtLink>
       </figure>
       <nav id="menuCabecera" v-if="mostrarMenu">
         <ul>
@@ -30,7 +30,7 @@
 import {iconoCierre,iconoMenu} from "~/assets/svg/iconos";
 import {submenuCabecera} from "~/assets/data/submenuCabecera";
 
-import IconoSVG from "~/components/IconoSVG";
+import IconoSVG from "@/components/items/IconoSVG";
 import SubmenuCabecera from "~/components/cabecera/SubmenuCabecera";
 
 const ALTO_CABECERA = 120;

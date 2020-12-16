@@ -8,7 +8,9 @@
       <p v-if="seccion.titulo" v-html="seccion.titulo" ></p>
       <ul>
         <li v-for="enlace in seccion.enlaces" >
-          <a :href="enlace.url" :target="(enlace.blank?'_blank':'_self')" @click="console.log(datos.nombre);$emit('cierreSubmenu',datos.nombre)">{{enlace.texto}}</a>
+          <a v-if="enlace.url.indexOf('/')!==0"
+             :href="enlace.url" target="_blank" @click="$emit('cierreSubmenu',datos.nombre)">{{enlace.texto}}</a>
+          <NuxtLink v-else :to="enlace.url" @click.native="$emit('cierreSubmenu',datos.nombre)">{{enlace.texto}}</NuxtLink>
         </li>
       </ul>
     </div>
@@ -18,7 +20,7 @@
 
 <script>
 import {iconoCierre} from "~/assets/svg/iconos";
-import IconoSVG from "~/components/IconoSVG";
+import IconoSVG from "@/components/items/IconoSVG";
 export default {
   name: "SubmenuCabecera",
   components: {IconoSVG},

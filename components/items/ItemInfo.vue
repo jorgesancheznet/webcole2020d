@@ -5,7 +5,7 @@
        :data-aos-duration="aleatorio(duracionMin,duracionMax)"
        :data-aos-easing="easing" :data-aos-once="once">
     <div class="texto">
-      <h3>{{ titulo }}</h3>
+      <h3 v-if="titulo">{{ titulo }}</h3>
       <p v-html="info.descripcion"></p>
     </div>
     <img :src="info.image" alt="info.alt">
@@ -16,6 +16,7 @@
 export default {
   name: "ItemInfo",
   props: {
+    titulo:String,
     info: Object,
     retardoMin: {
       type: Number,
@@ -43,7 +44,7 @@ export default {
     },
     once:{
       type: Boolean,
-      default: "true"
+      default: true
     }
   },
   methods: {

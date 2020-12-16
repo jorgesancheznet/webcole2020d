@@ -27,7 +27,7 @@ import {mapMutations} from "vuex";
 //Componentes
 import Cabecera from "~/components/cabecera/Cabecera";
 import SplashPanel from "~/components/secciones/SplashPanel";
-import PanelNovedades from "~/components/PanelNovedades";
+import PanelNovedades from "@/components/items/PanelNovedades";
 import ContenedorCarrusel from "~/components/wrappers/ContenedorCarrusel";
 import SeccionTransparente from "~/components/secciones/SeccionTransparente";
 import SeccionInfo from "~/components/secciones/SeccionInfo";
