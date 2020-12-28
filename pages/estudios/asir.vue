@@ -27,6 +27,32 @@
         <IconoRama nombre="Desarrollo e Implementación de Aplicaciones Web" :icono="globe" />
       </FilaIconos>
     </SeccionTransparente>
+
+    <SeccionOpaca titulo="ASPECTOS DESTACABLES">
+      <FilaContenido>
+        <ColumnaContenido>
+          <ContenedorListaAspectos titulo="Requisitos de acceso" :entrada="true">
+            <p>Hay que cumplir uno de estos requisitos</p>
+            <Lista :contenidos="datosAsir.requisitos" />
+          </ContenedorListaAspectos>
+        </ColumnaContenido>
+        <ColumnaContenido>
+          <ContenedorListaAspectos titulo="Salidas Académicas" :salida="true">
+            <p>Hay que cumplir uno de estos requisitos</p>
+            <Lista :contenidos="datosAsir.academicas" />
+          </ContenedorListaAspectos>
+        </ColumnaContenido>
+        <ColumnaContenido>
+          <ContenedorListaAspectos titulo="Salidas Profesionales" :salida="true">
+            <Lista :contenidos="datosAsir.profesionales" />
+          </ContenedorListaAspectos>
+        </ColumnaContenido>
+      </FilaContenido>
+    </SeccionOpaca>
+
+    <SeccionOpaca colorFondo="#999999">
+
+    </SeccionOpaca>
   </main>
 </template>
 
@@ -42,10 +68,14 @@ import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
 import TextoDetalle from "@/components/TextoDetalle";
 import ImagenDetalle from "@/components/items/ImagenDetalle";
 import SeccionTransparente from "@/components/secciones/SeccionTransparente";
-//datos
-import {server, database, networkWired,lock,globe} from "~/assets/svg/iconos";
 import FilaIconos from "@/components/wrappers/FilaIconos";
 import IconoRama from "@/components/items/IconoRama";
+import ContenedorListaAspectos from "@/components/wrappers/ContenedorListaAspectos";
+import Lista from "@/components/wrappers/Lista";
+
+//datos
+import {server, database, networkWired,lock,globe} from "~/assets/svg/iconos";
+import * as datosAsir from "~/assets/data/estudios/asir";
 
 export default {
   name: "asir",
@@ -55,7 +85,8 @@ export default {
       database:database,
       networkWired:networkWired,
       lock:lock,
-      globe:globe
+      globe:globe,
+      datosAsir:datosAsir
     }
   },
   head(){
@@ -64,6 +95,8 @@ export default {
     }
   },
   components: {
+    Lista,
+    ContenedorListaAspectos,
     IconoRama,
     FilaIconos,
     SeccionTransparente,
@@ -84,7 +117,7 @@ export default {
 }
 </script>
 
-<style lamg="scss" scoped>
+<style lang="scss" scoped>
 
 
 
