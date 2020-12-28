@@ -51,7 +51,7 @@
     </SeccionOpaca>
 
     <SeccionOpaca colorFondo="#999999">
-
+      <ContenedorFotos :fotos="datosAsir.fotos" />
     </SeccionOpaca>
   </main>
 </template>
@@ -76,6 +76,7 @@ import Lista from "@/components/wrappers/Lista";
 //datos
 import {server, database, networkWired,lock,globe} from "~/assets/svg/iconos";
 import * as datosAsir from "~/assets/data/estudios/asir";
+import ContenedorFotos from "../../components/wrappers/ContenedorFotos";
 
 export default {
   name: "asir",
@@ -95,6 +96,7 @@ export default {
     }
   },
   components: {
+    ContenedorFotos,
     Lista,
     ContenedorListaAspectos,
     IconoRama,
