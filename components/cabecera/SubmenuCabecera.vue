@@ -1,7 +1,7 @@
 <template>
 <nav class="submenuCabecera" :style="'top:'+tope+'px'">
-  <aside class="cierreSubmenu" @click="$emit('cierreSubmenu',datos.nombre)">
-    <IconoSVG :d="iconoCierre.d" :viewBox="iconoCierre.viewBox" :ancho="50"></IconoSVG>
+  <aside @click="$emit('cierreSubmenu',datos.nombre)">
+    <IconoSVG :d="iconoCierre.d" :viewBox="iconoCierre.viewBox" :ancho="50" :enlace="true" :fill="'#666666'"></IconoSVG>
   </aside>
   <div class="submenu">
     <div class="seccion" v-for="seccion in datos.secciones">
@@ -97,13 +97,6 @@ export default {
   }
 }
 
-.cierreSubmenu{
-  cursor:pointer;
-  fill:$colorTenue;
-  &:hover{
-    fill:$colorTenueHover;
-  }
-}
 
 
 

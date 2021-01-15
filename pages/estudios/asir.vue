@@ -53,6 +53,7 @@
     <SeccionOpaca colorFondo="#999999">
       <ContenedorFotos :fotos="datosAsir.fotos" />
     </SeccionOpaca>
+
   </main>
 </template>
 

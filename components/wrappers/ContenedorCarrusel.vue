@@ -25,6 +25,7 @@ export default {
   mounted() {
     var swiper = new this.$swiper('.swiper-container',
       {
+        cssMode:true,
         navigation:{
           nextEl:".swiper-button-next",
           prevEl:".swiper-button-prev",
@@ -33,7 +34,8 @@ export default {
           el:".swiper-pagination",
           clickable:true
         },
-        slidesPerView:"auto"
+        slidesPerView:"auto",
+        keyboard:true
       })
   }
 }

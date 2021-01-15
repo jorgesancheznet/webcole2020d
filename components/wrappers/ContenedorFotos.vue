@@ -1,23 +1,49 @@
 <template>
-  <article class="contenedorFotos">
-    <figure v-for="foto in fotos">
-      <img :src="foto.rutaMini" :alt="foto.alt" :data-id="foto.id">
-    </figure>
-  </article>
+  <div>
+    <article class="contenedorFotos">
+      <figure v-for="foto in fotos">
+        <img :src="foto.rutaMini" :alt="foto.alt" :data-id="foto.id"
+        @click="mostrarPanel">
+      </figure>
+    </article>
+    <ContenedorFotosGigante v-if="panelGiganteVisible" :fotoActual="fotoActual" :fotos="fotos"/>
+  </div>
 </template>
 
 <script>
+
+import {mapMutations,mapState} from "vuex";
+import ContenedorFotosGigante from "./ContenedorFotosGigante";
+
 export default {
   name: "ContenedorFotos",
-  props:{
-    fotos:Array
-  }
-
+  components: {ContenedorFotosGigante},
+  props: {
+    fotos: Array
+  },
+  data(){
+    return{
+      fotoActual:""
+    }
+  },
+  methods:{
+    ...mapMutations([
+      "mostrarPanelGigante"
+    ]),
+    mostrarPanel(e){
+      this.fotoActual=e.target.dataset.id;
+      this.mostrarPanelGigante(true);
+    }
+  },
+  computed: mapState([
+      "panelGiganteVisible"
+  ])
 }
 </script>
 
 <style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
+
 .contenedorFotos {
   text-align: center;
   width: 100%;

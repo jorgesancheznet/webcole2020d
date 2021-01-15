@@ -4,7 +4,8 @@ import Cabecera from "~/components/cabecera/Cabecera";
 import Pie from "~/components/pie/Pie";
 import TelonFondo from "~/components/secciones/TelonFondo";
 
-import {mapMutations} from "vuex";
+
+
 
 export default {
   components: {TelonFondo, Pie, Cabecera},

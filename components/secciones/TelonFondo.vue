@@ -10,6 +10,9 @@ export default {
   props:{
     imagen:String,
     alt:String
+  },
+  mounted(){
+    document.body.insertBefore(this.$el, document.body.firstChild)
   }
 }
 </script>
