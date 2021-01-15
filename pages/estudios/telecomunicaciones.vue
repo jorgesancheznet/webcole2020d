@@ -1,33 +1,32 @@
 <template>
   <main>
-    <TituloEstudios titulo="Administración de Sistemas Informáticos en Red" subtitulo="FP de Grado Superior" />
+    <TituloEstudios titulo="Instalaciones de Telecomunicaciones" subtitulo="FP de Grado Medio" />
     <SeccionOpaca>
       <FilaContenido>
         <ColumnaContenido>
-          <ImagenDetalle src="/img/ciclos/asir01.jpg" alt="ASIR" />
+          <ImagenDetalle src="/img/ciclos/teleco01.jpg" alt="Telecomunicaciones" />
         </ColumnaContenido>
         <ColumnaContenido>
           <TextoDetalle titulo="¿Por qué estudiar este ciclo?">
-            <p>La alta demanda de profesionales en las tecnologías relacionadas con la gestión de computadoras, redes, bases de datos y sistemas operativos, así como el desarrollo y administración de aplicaciones de todo tipo, hace de estos estudios, unos de los más solicitados a nivel laboral.</p>
+            <p>Los estudios de telecomunicaciones permiten formarse en un área de alta demanda laboral. Se trata de una formación para personal muy polifacético capaz de cubrir las necesidades de un gran número de puestos de trabajo relacionados con la tecnología.</p>
 
-            <p>El ciclo permite conseguir las capacidades y habilidades que se requieren a un técnico superior en administración de sistemas, redes y tecnologías relacionadas con Internet</p>
+            <p>El ciclo permite conseguir las capacidades y habilidades que se requieren a un técnico en instalaciones de telecomunicaciones.</p>
 
-            <p>Se recorren, durante los dos años de duración del ciclo, el funcionamiento de las redes, tanto locales como de área global (especialmente Internet), el diseño, manejo y administración de sistemas de bases de datos, la administración de sistemas operativos de servidor, virtualización de sistemas, desarrollo e implementación de aplicaciones web, seguridad de sistemas, gestión y administración de servicios de red, etc.</p>
+            <p>En los dos años de duración del ciclo aprenderás lo relativo a:</p>
 
           </TextoDetalle>
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
-
     <SeccionTransparente titulo="RAMAS PROFESIONALES">
       <FilaIconos>
-        <IconoRama nombre="Administración de Sistemas" :icono="server" />
-        <IconoRama nombre="Gestión y Administración de Bases de Datos" :icono="database" />
-        <IconoRama nombre="Gestión y Administración de Redes" :icono="networkWired" />
-        <IconoRama nombre="Seguridad de Sistemas y Redes" :icono="lock" />
-        <IconoRama nombre="Desarrollo e Implementación de Aplicaciones Web" :icono="globe" />
+        <IconoRama nombre="Sistemas y Equipos Informáticos" :icono="laptopCode" />
+        <IconoRama nombre="Domótica" :icono="houseDamage" />
+        <IconoRama nombre="Sistemas de audio y vídeo" :icono="headphonesAlt" />
+        <IconoRama nombre="Infraestructuras de telecomunicaciones" :icono="satelliteDish" />
       </FilaIconos>
     </SeccionTransparente>
+
 
     <SeccionOpaca titulo="ASPECTOS DESTACABLES">
       <FilaContenido>
@@ -51,7 +50,6 @@
       </FilaContenido>
     </SeccionOpaca>
 
-
     <SeccionOpaca colorFondo="#999999">
       <ContenedorFotos :fotos="datos.fotos" />
     </SeccionOpaca>
@@ -66,8 +64,6 @@
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
-
-
   </main>
 </template>
 
@@ -89,25 +85,25 @@ import ContenedorListaAspectos from "@/components/wrappers/ContenedorListaAspect
 import Lista from "@/components/wrappers/Lista";
 
 //datos
-import {server, database, networkWired,lock,globe} from "~/assets/svg/iconos";
-import * as datosAsir from "~/assets/data/estudios/asir";
+import {laptopCode, houseDamage, networkWired,headphonesAlt,satelliteDish} from "~/assets/svg/iconos";
+import * as datosTeleco from "~/assets/data/estudios/telecomunicaciones";
 import ContenedorFotos from "../../components/wrappers/ContenedorFotos";
 
 export default {
-  name: "asir",
+  name: "telecomunicaciones",
   data(){
     return{
-      server:server,
-      database:database,
+      laptopCode:laptopCode,
+      houseDamage:houseDamage,
       networkWired:networkWired,
-      lock:lock,
-      globe:globe,
-      datos:datosAsir
+      headphonesAlt:headphonesAlt,
+      satelliteDish:satelliteDish,
+      datos:datosTeleco
     }
   },
   head(){
     return{
-        title:"Administración de Sistemas Informáticos en Red (ASIR), Salesianos Centro Don Bosco de Villamuriel de Cerrato"
+        title:"Ciclo de FPO de Grado medi en Telecomunicaciones, Salesianos Centro Don Bosco de Villamuriel de Cerrato"
     }
   },
   components: {
@@ -129,7 +125,7 @@ export default {
     ])
   },
   mounted(){
-    this.cambiarFondo("/img/ciclos/fondo-asir.jpg");
+    this.cambiarFondo("/img/ciclos/fondo-teleco.jpg");
   }
 }
 </script>

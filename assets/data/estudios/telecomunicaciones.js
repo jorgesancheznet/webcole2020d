@@ -92,22 +92,26 @@ exports.fotos = [
     {
         rutaMini: "/img/ciclos/telecomunicaciones/teleco01.jpg",
         ruta: "/img/ciclos/telecomunicaciones/teleco01-larga.jpg",
-        alt: "Telecomunicaciones"
+        alt: "Telecomunicaciones",
+        id:"foto1"
     },
     {
         rutaMini: "/img/ciclos/telecomunicaciones/teleco02.jpg",
         ruta: "/img/ciclos/telecomunicaciones/teleco02-larga.jpg",
-        alt: "Telecomunicaciones"
+        alt: "Telecomunicaciones",
+        id:"foto2"
     },
     {
         rutaMini: "/img/ciclos/telecomunicaciones/teleco03.jpg",
         ruta: "/img/ciclos/telecomunicaciones/teleco03-larga.jpg",
-        alt: "Telecomunicaciones"
+        alt: "Telecomunicaciones",
+        id:"foto3"
     },
     {
         rutaMini: "/img/ciclos/telecomunicaciones/teleco04.jpg",
         ruta: "/img/ciclos/telecomunicaciones/teleco04-larga.jpg",
-        alt: "Telecomunicaciones"
+        alt: "Telecomunicaciones",
+        id:"foto4"
     }
 ];
 
