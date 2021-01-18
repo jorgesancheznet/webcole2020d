@@ -1,5 +1,6 @@
 <template>
   <main>
+    <BarraSocial />
     <SplashPanel idSeccion="seccionPortada" imagen="/img/neonbrand-426918-unsplash.jpg" titulo="Excelencia adaptada<br>a cada estudiante" subtitulo="En búsqueda permanente de nuevos caminos que permitan el éxito educativo">
       <PanelNovedades titulo="NOVEDADES" :entradas="listaNovedades" tiempoTransicion="1000"  tiempoAparicion="300" />
     </SplashPanel>
@@ -40,10 +41,12 @@ import {listaNovedades} from "~/assets/data/novedades";
 import {listaInfoIndex} from "~/assets/data/panelInfoIndex";
 import {listaOfertaEducativa} from "~/assets/data/ofertaEducativa";
 import {listaServicios} from "~/assets/data/servicios";
+import BarraSocial from "../components/secciones/BarraSocial";
 
 
 export default {
   components: {
+    BarraSocial,
     SeccionOpaca,
     ContenedorFichas,
     SeccionInfo, SeccionTransparente, ContenedorCarrusel, PanelNovedades, SplashPanel, Cabecera},
