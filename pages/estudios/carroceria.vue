@@ -1,32 +1,31 @@
 <template>
   <main>
-    <TituloEstudios titulo="Instalaciones de Telecomunicaciones" subtitulo="FP de Grado Medio" />
+    <TituloEstudios titulo="Formación Profesional en Carrocería" subtitulo="FP de Grado Superior" />
     <SeccionOpaca>
       <FilaContenido>
         <ColumnaContenido>
-          <ImagenDetalle src="/img/ciclos/teleco01.jpg" alt="Telecomunicaciones" />
+          <ImagenDetalle src="/img/ciclos/carroceria01.jpg" alt="Carrocería" />
         </ColumnaContenido>
         <ColumnaContenido>
           <TextoDetalle titulo="¿Por qué estudiar este ciclo?">
-            <p>Los estudios de telecomunicaciones permiten formarse en un área de alta demanda laboral. Se trata de una formación para personal muy polifacético capaz de cubrir las necesidades de un gran número de puestos de trabajo relacionados con la tecnología.</p>
-
-            <p>El ciclo permite conseguir las capacidades y habilidades que se requieren a un técnico en instalaciones de telecomunicaciones.</p>
-
-            <p>En los dos años de duración del ciclo aprenderás lo relativo a:</p>
-
+            <p>
+              Estos estudios te permitirán desarrollar una carrera como especialista en el mantenimiento de vehículos.
+            </p>
+            <p>
+              Aprenderás los fundamentos de una profesión muy práctica con alta demanda que te permitirá adquirir las destrezas y técnicas que permitan una salida como profesional en trabajos de chapa, transformaciones de carrocerías, vehículos pesados, construcción y reparación de elementos de fibra y pintura
+            </p>
           </TextoDetalle>
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
+
     <SeccionTransparente titulo="RAMAS PROFESIONALES">
       <FilaIconos>
-        <IconoRama nombre="Sistemas y Equipos Informáticos" :icono="laptopCode" />
-        <IconoRama nombre="Domótica" :icono="houseDamage" />
-        <IconoRama nombre="Sistemas de audio y vídeo" :icono="headphonesAlt" />
-        <IconoRama nombre="Infraestructuras de telecomunicaciones" :icono="satelliteDish" />
+        <IconoRama nombre="Reparación de Vehículos" :icono="carCrash" />
+        <IconoRama nombre="Embellecimiento de Superficies" :icono="sprayCan" />
+        <IconoRama nombre="Mecánica" :icono="cogs" />
       </FilaIconos>
     </SeccionTransparente>
-
 
     <SeccionOpaca titulo="ASPECTOS DESTACABLES">
       <FilaContenido>
@@ -38,7 +37,7 @@
         </ColumnaContenido>
         <ColumnaContenido>
           <ContenedorListaAspectos titulo="Salidas Académicas" :salida="true">
-            <Lista :contenidos="datos.academicas" />
+             <Lista :contenidos="datos.academicas" />
           </ContenedorListaAspectos>
         </ColumnaContenido>
         <ColumnaContenido>
@@ -48,6 +47,7 @@
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
+
 
     <SeccionOpaca colorFondo="#999999">
       <ContenedorFotos :fotos="datos.fotos" />
@@ -63,6 +63,8 @@
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
+
+
   </main>
 </template>
 
@@ -84,25 +86,23 @@ import ContenedorListaAspectos from "@/components/wrappers/ContenedorListaAspect
 import Lista from "@/components/wrappers/Lista";
 
 //datos
-import {laptopCode, houseDamage, networkWired,headphonesAlt,satelliteDish} from "~/assets/svg/iconos";
-import * as datosTeleco from "~/assets/data/estudios/telecomunicaciones";
+import {carCrash,cogs, sprayCan} from "~/assets/svg/iconos";
+import * as datosCarroceria from "~/assets/data/estudios/carroceria";
 import ContenedorFotos from "../../components/wrappers/ContenedorFotos";
 
 export default {
-  name: "telecomunicaciones",
+  name: "carroceria",
   data(){
     return{
-      laptopCode:laptopCode,
-      houseDamage:houseDamage,
-      networkWired:networkWired,
-      headphonesAlt:headphonesAlt,
-      satelliteDish:satelliteDish,
-      datos:datosTeleco
+      carCrash:carCrash,
+      cogs:cogs,
+      sprayCan:sprayCan,
+      datos:datosCarroceria
     }
   },
   head(){
     return{
-        title:"Ciclo de FPO de Grado medi en Telecomunicaciones, Salesianos Centro Don Bosco de Villamuriel de Cerrato"
+        title:"Formación Profesional en Carrocería, Salesianos Centro Don Bosco de Villamuriel de Cerrato"
     }
   },
   components: {
@@ -124,7 +124,7 @@ export default {
     ])
   },
   mounted(){
-    this.cambiarFondo("/img/ciclos/fondo-teleco.jpg");
+    this.cambiarFondo("/img/ciclos/fondo-carroceria.jpg");
   }
 }
 </script>

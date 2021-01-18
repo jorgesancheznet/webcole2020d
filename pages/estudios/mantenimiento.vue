@@ -1,32 +1,32 @@
 <template>
   <main>
-    <TituloEstudios titulo="Instalaciones de Telecomunicaciones" subtitulo="FP de Grado Medio" />
+    <TituloEstudios titulo="Formación Profesional Básica en Mantenimiento de Vehículos" subtitulo="FP Básica" />
     <SeccionOpaca>
       <FilaContenido>
         <ColumnaContenido>
-          <ImagenDetalle src="/img/ciclos/teleco01.jpg" alt="Telecomunicaciones" />
+          <ImagenDetalle src="/img/ciclos/fpb01.jpg" alt="FPB Mantenimiento" />
         </ColumnaContenido>
         <ColumnaContenido>
           <TextoDetalle titulo="¿Por qué estudiar este ciclo?">
-            <p>Los estudios de telecomunicaciones permiten formarse en un área de alta demanda laboral. Se trata de una formación para personal muy polifacético capaz de cubrir las necesidades de un gran número de puestos de trabajo relacionados con la tecnología.</p>
-
-            <p>El ciclo permite conseguir las capacidades y habilidades que se requieren a un técnico en instalaciones de telecomunicaciones.</p>
-
-            <p>En los dos años de duración del ciclo aprenderás lo relativo a:</p>
-
+            <p>
+              Estos estudios te permitirán desarrollar una carrera como especialista en el mantenimiento de vehículos.
+            </p>
+            <p>
+              Se trata de un área muy práctica con alta demanda que te permitirá adquirir las destrezas y técnicas que permitan localizar y arreglar averías mecánicas, hidraúlicas, eléctricas y electrónicas.
+            </p>
+            <p>Obtendrás las capacidades necesarias para la puesta a punto de todos los sistemas de los vehículos: motor, sistema eléctrico y electrónico, suspensión, dirección, frenos, etc.</p>
           </TextoDetalle>
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
+
     <SeccionTransparente titulo="RAMAS PROFESIONALES">
       <FilaIconos>
-        <IconoRama nombre="Sistemas y Equipos Informáticos" :icono="laptopCode" />
-        <IconoRama nombre="Domótica" :icono="houseDamage" />
-        <IconoRama nombre="Sistemas de audio y vídeo" :icono="headphonesAlt" />
-        <IconoRama nombre="Infraestructuras de telecomunicaciones" :icono="satelliteDish" />
+        <IconoRama nombre="Reparación de Vehículos" :icono="carCrash" />
+        <IconoRama nombre="Electricidad" :icono="bolt" />
+        <IconoRama nombre="Mecánica" :icono="cogs" />
       </FilaIconos>
     </SeccionTransparente>
-
 
     <SeccionOpaca titulo="ASPECTOS DESTACABLES">
       <FilaContenido>
@@ -49,6 +49,7 @@
       </FilaContenido>
     </SeccionOpaca>
 
+
     <SeccionOpaca colorFondo="#999999">
       <ContenedorFotos :fotos="datos.fotos" />
     </SeccionOpaca>
@@ -63,6 +64,8 @@
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
+
+
   </main>
 </template>
 
@@ -84,25 +87,23 @@ import ContenedorListaAspectos from "@/components/wrappers/ContenedorListaAspect
 import Lista from "@/components/wrappers/Lista";
 
 //datos
-import {laptopCode, houseDamage, networkWired,headphonesAlt,satelliteDish} from "~/assets/svg/iconos";
-import * as datosTeleco from "~/assets/data/estudios/telecomunicaciones";
+import {carCrash,cogs, bolt} from "~/assets/svg/iconos";
+import * as datosMantenimiento from "~/assets/data/estudios/mantenimiento";
 import ContenedorFotos from "../../components/wrappers/ContenedorFotos";
 
 export default {
-  name: "telecomunicaciones",
+  name: "mantenimiento",
   data(){
     return{
-      laptopCode:laptopCode,
-      houseDamage:houseDamage,
-      networkWired:networkWired,
-      headphonesAlt:headphonesAlt,
-      satelliteDish:satelliteDish,
-      datos:datosTeleco
+      carCrash:carCrash,
+      cogs:cogs,
+      bolt:bolt,
+      datos:datosMantenimiento
     }
   },
   head(){
     return{
-        title:"Ciclo de FPO de Grado medi en Telecomunicaciones, Salesianos Centro Don Bosco de Villamuriel de Cerrato"
+      title:"FPB Mecánica de Vehículos, Salesianos Centro Don Bosco de Villamuriel de Cerrato"
     }
   },
   components: {
@@ -124,7 +125,7 @@ export default {
     ])
   },
   mounted(){
-    this.cambiarFondo("/img/ciclos/fondo-teleco.jpg");
+    this.cambiarFondo("/img/ciclos/fondo-asir.jpg");
   }
 }
 </script>

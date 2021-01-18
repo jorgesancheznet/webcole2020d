@@ -65,22 +65,26 @@ exports.fotos= [
     {
         rutaMini: "/img/ciclos/electromecanica/electromecanica01.jpg",
         ruta: "/img/ciclos/electromecanica/electromecanica01-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto1"
     },
     {
         rutaMini: "/img/ciclos/electromecanica/electromecanica02.jpg",
         ruta: "/img/ciclos/electromecanica/electromecanica02-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto2"
     },
     {
         rutaMini: "/img/ciclos/electromecanica/electromecanica03.jpg",
         ruta: "/img/ciclos/electromecanica/electromecanica03-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto3"
     },
     {
         rutaMini: "/img/ciclos/electromecanica/electromecanica04.jpg",
         ruta: "/img/ciclos/electromecanica/electromecanica04-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto4"
     }
 ];
 

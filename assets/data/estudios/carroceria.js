@@ -53,22 +53,26 @@ exports.fotos= [
     {
         rutaMini: "/img/ciclos/carroceria/carroceria01.jpg",
         ruta: "/img/ciclos/carroceria/carroceria01-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto1"
     },
     {
         rutaMini: "/img/ciclos/carroceria/carroceria02.jpg",
         ruta: "/img/ciclos/carroceria/carroceria02-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto2"
     },
     {
         rutaMini: "/img/ciclos/carroceria/carroceria03.jpg",
         ruta: "/img/ciclos/carroceria/carroceria03-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto3"
     },
     {
         rutaMini: "/img/ciclos/carroceria/carroceria04.jpg",
         ruta: "/img/ciclos/carroceria/carroceria04-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto4"
     }
 ];
 

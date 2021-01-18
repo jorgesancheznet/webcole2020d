@@ -27,7 +27,7 @@ export let listaInfoIndex = {
                 descripcion: "Aplicamos metodologías activas  <br>" +
                     "Usamos la tecnología en nuestro provecho <br>" +
                     "Aplicamos las mejores técnicas de enseñanza",
-                image: "https://via.placeholder.com/150x150.png",
+                image: "/img/index/innovadores.jpg",
                 alt: "Innovadores",
                 id:"info3"
             },

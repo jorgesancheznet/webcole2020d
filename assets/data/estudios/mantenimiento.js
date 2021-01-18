@@ -65,17 +65,20 @@ exports.fotos= [
     {
         rutaMini: "/img/ciclos/fpb/fpb01.jpg",
         ruta: "/img/ciclos/fpb/fpb01-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto1"
     },
     {
         rutaMini: "/img/ciclos/fpb/fpb02.jpg",
         ruta: "/img/ciclos/fpb/fpb02-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto2"
     },
     {
         rutaMini: "/img/ciclos/fpb/fpb03.jpg",
         ruta: "/img/ciclos/fpb/fpb03-larga.jpg",
-        alt: "Electromecánica"
+        alt: "Electromecánica",
+        id: "foto3"
     }
 ];
 
