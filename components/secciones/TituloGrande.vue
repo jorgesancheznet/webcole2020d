@@ -13,13 +13,13 @@
 import {mapMutations} from "vuex";
 
 export default {
-  name: "TituloEstudios",
+  name: "TituloGrande",
   props:{
     titulo:String,
     subtitulo:String,
     imagen:{
       type:String,
-      default:"/img/neonbrand-426918-unsplash.jpg"
+      default:"/img/fondos/general.jpg"
     }
   },
   computed: {

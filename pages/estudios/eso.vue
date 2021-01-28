@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TituloEstudios titulo="Educación Secundaria" subtitulo="ESO" imagen="/img/ciclos/fondo-eso.jpg" />
+    <TituloGrande titulo="Educación Secundaria" subtitulo="ESO" imagen="/img/ciclos/fondo-eso.jpg" />
 
   </main>
 </template>
@@ -8,7 +8,7 @@
 <script>
 
 
-import TituloEstudios from "@/components/secciones/TituloEstudios";
+import TituloGrande from "@/components/secciones/TituloGrande";
 
 import ContenedorFotos from "../../components/wrappers/ContenedorFotos";
 

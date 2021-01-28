@@ -59,14 +59,6 @@ export let submenuCabecera = [
         id:"subEscuela",
         enlaces: [
           {
-            texto: "MÉTODO EDUCATIVO",
-            url: "/escuela/metodo"
-          },
-          {
-            texto: "INSTALACIONES",
-            url: "/escuela/instalaciones"
-          },
-          {
             texto: "PROGRAMA ERASMUS",
             url: "/escuela/erasmus"
           },
@@ -76,7 +68,7 @@ export let submenuCabecera = [
           },
           {
             texto: "FP DUAL",
-            url: "http://www.centrodonbosco.es/web/index.php/fp-dual"
+            url: "/escuela/fp-dual"
           },
           {
             texto: "SUGERENCIAS",
@@ -116,9 +108,14 @@ export let submenuCabecera = [
         titulo: "OTROS SERVICIOS",
         enlaces:[
           {
+            texto:"AGENCIA DE COLOCACIÓN",
+            url:"http://salesianosvillamuriel.redagenciadecolocacion.com/"
+          },
+          {
             texto: "RECEPCIÓN DE CURRÍCULOS",
             url: "/servicios/curriculos"
-          },
+          }
+
         ]
       }
     ]

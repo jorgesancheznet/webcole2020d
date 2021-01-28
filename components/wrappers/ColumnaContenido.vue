@@ -1,5 +1,5 @@
 <template>
-<div class="columnaContenido">
+<div class="columnaContenido" :style="estiloFondo">
   <h3 v-if="titulo" v-html="titulo"></h3>
   <slot></slot>
 </div>
@@ -9,7 +9,18 @@
 export default {
   name: "ColumnaContenido",
   props:{
-    titulo:String
+    titulo:String,
+    colorFondo:{
+      type:String,
+      default:"transparent"
+    }
+  },
+  computed:{
+    estiloFondo(){
+      return{
+        "background-color":this.colorFondo
+      }
+    }
   }
 }
 </script>

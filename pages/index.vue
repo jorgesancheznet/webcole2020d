@@ -1,7 +1,7 @@
 <template>
   <main>
     <BarraSocial />
-    <SplashPanel idSeccion="seccionPortada" imagen="/img/neonbrand-426918-unsplash.jpg" titulo="Excelencia adaptada<br>a cada estudiante" subtitulo="En búsqueda permanente de nuevos caminos que permitan el éxito educativo">
+    <SplashPanel idSeccion="seccionPortada" imagen="/img/fondos/general.jpg" titulo="Excelencia adaptada<br>a cada estudiante" subtitulo="En búsqueda permanente de nuevos caminos que permitan el éxito educativo">
       <PanelNovedades titulo="NOVEDADES" :entradas="listaNovedades" tiempoTransicion="1000"  tiempoAparicion="300" />
     </SplashPanel>
 

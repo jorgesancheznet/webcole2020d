@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TituloEstudios imagen="/img/ciclos/fondo-electromecanica.jpg" titulo="Electromecánica de Vehículos" subtitulo="FP de Grado Superior" />
+    <TituloGrande imagen="/img/ciclos/fondo-electromecanica.jpg" titulo="Electromecánica de Vehículos" subtitulo="FP de Grado Superior" />
     <SeccionOpaca>
       <FilaContenido>
         <ColumnaContenido>
@@ -73,7 +73,7 @@
 
 //componentes
 import SeccionOpaca from "@/components/secciones/SeccionOpaca";
-import TituloEstudios from "@/components/secciones/TituloEstudios";
+import TituloGrande from "@/components/secciones/TituloGrande";
 import FilaContenido from "@/components/wrappers/FilaContenido";
 import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
 import TextoDetalle from "@/components/TextoDetalle";
@@ -111,6 +111,6 @@ export default {
     IconoRama,
     FilaIconos,
     SeccionTransparente,
-    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca}
+    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloGrande, SeccionOpaca}
 }
 </script>
