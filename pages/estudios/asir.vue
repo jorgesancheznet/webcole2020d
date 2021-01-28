@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TituloEstudios titulo="Administración de Sistemas Informáticos en Red" subtitulo="FP de Grado Superior" />
+    <TituloEstudios fondo="/img/ciclos/fondo-asir.jpg" titulo="Administración de Sistemas Informáticos en Red" subtitulo="FP de Grado Superior" />
     <SeccionOpaca>
       <FilaContenido>
         <ColumnaContenido>
@@ -117,7 +117,7 @@ export default {
     IconoRama,
     FilaIconos,
     SeccionTransparente,
-    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca},
+    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca}/*
   computed: {
     fondo() {
       return this.$store.state.fondo
@@ -130,6 +130,6 @@ export default {
   },
   mounted(){
     this.cambiarFondo("/img/ciclos/fondo-asir.jpg");
-  }
+  }*/
 }
 </script>

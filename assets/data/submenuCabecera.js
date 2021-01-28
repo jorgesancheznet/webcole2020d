@@ -78,6 +78,10 @@ export let submenuCabecera=[
                         url:"http://www.centrodonbosco.es/web/index.php/fp-dual"
                     },
                     {
+                        texto:"RECEPCIÓN DE CURRÍCULOS",
+                        url:"/escuela/curriculos"
+                    },
+                    {
                         texto:"SUGERENCIAS",
                         url:"https://docs.google.com/forms/d/e/1FAIpQLSdUXOK-3Jdzzq0KaF2su2i-6E8nhK4b68k0tqSceIiw38x1_g/viewform"
                     }

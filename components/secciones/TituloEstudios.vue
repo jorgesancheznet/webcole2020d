@@ -14,7 +14,21 @@ export default {
   name: "TituloEstudios",
   props:{
     titulo:String,
-    subtitulo:String
+    subtitulo:String,
+    fondo:String
+  },
+  computed: {
+    fondo() {
+      return this.$store.state.fondo
+    }
+  },
+  methods:{
+    ...mapMutations([
+      "cambiarFondo"
+    ])
+  },
+  mounted(){
+    this.cambiarFondo("/img/ciclos/fondo-asir.jpg");
   }
 }
 </script>
