@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TituloEstudios titulo="Instalaciones de Telecomunicaciones" subtitulo="FP de Grado Medio" />
+    <TituloEstudios imagen="/img/ciclos/fondo-teleco.jpg" titulo="Instalaciones de Telecomunicaciones" subtitulo="FP de Grado Medio" />
     <SeccionOpaca>
       <FilaContenido>
         <ColumnaContenido>
@@ -68,8 +68,6 @@
 
 <script>
 
-//librerías
-import {mapMutations} from "vuex";
 //componentes
 import SeccionOpaca from "@/components/secciones/SeccionOpaca";
 import TituloEstudios from "@/components/secciones/TituloEstudios";
@@ -102,7 +100,7 @@ export default {
   },
   head(){
     return{
-        title:"Ciclo de FPO de Grado medi en Telecomunicaciones, Salesianos Centro Don Bosco de Villamuriel de Cerrato"
+        title:"Ciclo de FPO de Grado medio en Telecomunicaciones, Salesianos Centro Don Bosco de Villamuriel de Cerrato"
     }
   },
   components: {
@@ -112,19 +110,6 @@ export default {
     IconoRama,
     FilaIconos,
     SeccionTransparente,
-    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca},
-  computed: {
-    fondo() {
-      return this.$store.state.fondo
-    }
-  },
-  methods:{
-    ...mapMutations([
-      "cambiarFondo"
-    ])
-  },
-  mounted(){
-    this.cambiarFondo("/img/ciclos/fondo-teleco.jpg");
-  }
+    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca}
 }
 </script>

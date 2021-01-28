@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TituloEstudios titulo="Formación Profesional Básica en Mantenimiento de Vehículos" subtitulo="FP Básica" />
+    <TituloEstudios imagen="/img/ciclos/fondo-electromecanica.jpg" titulo="Formación Profesional Básica en Mantenimiento de Vehículos" subtitulo="FP Básica" />
     <SeccionOpaca>
       <FilaContenido>
         <ColumnaContenido>
@@ -113,19 +113,6 @@ export default {
     IconoRama,
     FilaIconos,
     SeccionTransparente,
-    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca},
-  computed: {
-    fondo() {
-      return this.$store.state.fondo
-    }
-  },
-  methods:{
-    ...mapMutations([
-      "cambiarFondo"
-    ])
-  },
-  mounted(){
-    this.cambiarFondo("/img/ciclos/fondo-asir.jpg");
-  }
+    ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloEstudios, SeccionOpaca}
 }
 </script>

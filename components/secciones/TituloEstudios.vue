@@ -10,12 +10,17 @@
 </template>
 
 <script>
+import {mapMutations} from "vuex";
+
 export default {
   name: "TituloEstudios",
   props:{
     titulo:String,
     subtitulo:String,
-    fondo:String
+    imagen:{
+      type:String,
+      default:"/img/neonbrand-426918-unsplash.jpg"
+    }
   },
   computed: {
     fondo() {
@@ -28,7 +33,7 @@ export default {
     ])
   },
   mounted(){
-    this.cambiarFondo("/img/ciclos/fondo-asir.jpg");
+    this.cambiarFondo(this.imagen);
   }
 }
 </script>

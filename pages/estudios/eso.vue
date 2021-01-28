@@ -1,14 +1,12 @@
 <template>
   <main>
-    <TituloEstudios titulo="Educación Secundaria" subtitulo="ESO" />
+    <TituloEstudios titulo="Educación Secundaria" subtitulo="ESO" imagen="/img/ciclos/fondo-eso.jpg" />
 
   </main>
 </template>
 
 <script>
 
-//librerías
-import {mapMutations} from "vuex";
 
 import TituloEstudios from "@/components/secciones/TituloEstudios";
 
@@ -25,22 +23,6 @@ export default {
     return{
       title:"Educación Secundaria Obligatoria (ESO), Salesianos Centro Don Bosco de Villamuriel de Cerrato"
     }
-  },
-  components: {
-    TituloEstudios
-  },
-  computed: {
-    fondo() {
-      return this.$store.state.fondo
-    }
-  },
-  methods:{
-    ...mapMutations([
-      "cambiarFondo"
-    ])
-  },
-  mounted(){
-    this.cambiarFondo("/img/ciclos/fondo-eso.jpg");
   }
 }
 </script>
