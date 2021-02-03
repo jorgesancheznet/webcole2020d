@@ -126,8 +126,8 @@ export let submenuCabecera = [
       {
         enlaces: [
           {
-            texto: "ACTUALIDAD",
-            url: "/actualidad"
+            texto: "NOTICIAS",
+            url: "/noticias"
           }
         ]
       }
