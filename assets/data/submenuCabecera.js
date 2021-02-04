@@ -121,12 +121,12 @@ export let submenuCabecera = [
     ]
   },
   {
-    nombre: "ACTUALIDAD",
+    nombre: "NOTICIAS",
     secciones: [
       {
         enlaces: [
           {
-            texto: "NOTICIAS",
+            texto: "VER NOTICIAS",
             url: "/noticias"
           }
         ]
