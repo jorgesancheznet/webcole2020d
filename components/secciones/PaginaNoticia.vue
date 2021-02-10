@@ -26,6 +26,6 @@ export default {
 @import "~assets/estilos/mixins.scss";
 
 p{
-  @include letraNormal(normal,2em,$colorFicha);
+  @include  letraNormal(normal,2em,$colorFicha);
 }
 </style>
