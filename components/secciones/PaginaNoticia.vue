@@ -1,8 +1,11 @@
 <template>
   <main>
-    <TituloGrande :titulo="titulo" :subtitulo="subtitulo" imagen="imagen"/>
+    <TituloGrande :titulo="titulo" :subtitulo="subtitulo" imagen="/img/textura1.jpg"/>
     <SeccionOpaca>
       <slot />
+    </SeccionOpaca>
+    <SeccionOpaca>
+      <p>&nbsp;</p>
     </SeccionOpaca>
   </main>
 </template>
@@ -25,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
 
-p{
-  @include  letraNormal(normal,2em,$colorFicha);
+/deep/ p{
+  @include  letraNormal(normal,1.8em,black);
 }
 </style>
