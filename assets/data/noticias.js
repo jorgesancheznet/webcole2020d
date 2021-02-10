@@ -14,7 +14,7 @@ exports.noticias=[
     "fecha": {"dia": 31,"mes": 1,"año": 2021},
     "contenido": "Hoy, nuestros alumnos de los Ciclos Formativos de Telecomunicaciones, Electrónica, Carrocería y Automoción comienzan su período de FP Dual.",
     "imagen": null,
-    "url": null,
+    "url": "2021/01/fp-dual-grado-medio",
     "keywords": ["FP Dual","FP","Empresa"]
   }
 ]

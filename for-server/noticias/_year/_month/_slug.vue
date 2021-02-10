@@ -44,6 +44,8 @@ export default {
     this.contenido=html.querySelector(".contenido").innerHTML;
     this.titulo=html.querySelector("h1").textContent;
     this.subtitulo=html.querySelector(".fecha").textContent;
+
+    console.log(process.env.baseURL)
   },
   mounted(){
     this.$fetch();
@@ -51,7 +53,12 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "~assets/estilos/mixins.scss";
 
+.seccionOpaca{
+  p{
+    font-size:2em;
+  }
+}
 </style>
