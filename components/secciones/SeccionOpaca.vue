@@ -35,5 +35,9 @@ export default {
     @include letraNormal(normal,4em,$colorFicha);
     text-align: center;
   }
+  p {
+    @include letraNormal(normal, 1.8em, $colorFicha);
+    color: blue;
+  }
 }
 </style>

@@ -4,13 +4,15 @@
     <SeccionOpaca>
       <p><a href="/noticias/123">123</a> {{new Date()}}</p>
     </SeccionOpaca>
-  </main> 
+  </main>
 </template>
 
 <script>
 
 import TituloGrande from "@/components/secciones/TituloGrande";
 import SeccionOpaca from "@/components/secciones/SeccionOpaca";
+
+
 
 export default {
   name: "noticias.vue",
@@ -21,6 +23,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>
