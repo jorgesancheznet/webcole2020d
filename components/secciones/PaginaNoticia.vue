@@ -31,4 +31,8 @@ export default {
 /deep/ p{
   @include  letraNormal(normal,1.8em,black);
 }
+/deep/ iframe{
+  width:100%;
+  height:400px;
+}
 </style>

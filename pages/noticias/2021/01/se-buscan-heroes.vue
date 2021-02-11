@@ -1,10 +1,10 @@
 <template>
-  <PaginaNoticia titulo="Las funciones de la literatura" subtitulo="2 de febrero de 2021" imagen="/img/textura1.jpg">
+  <PaginaNoticia titulo="Se buscan héroes" subtitulo="19 de enero de 2021" imagen="/img/textura1.jpg">
     <FilaContenido>
       <ColumnaContenido>
         <TextoDetalle>
-        <p>Nuestr@s chic@s de 1° ESO nos explican y ejemplifican algunas de las funciones de la literatura utilizando la herramienta Croma.</p>
-        <p>En este proyecto han integrado y trabajado competencias como la Comunicación, Creatividad y Trabajo en Equipo. Enhorabuena!</p>
+          <p>Con la fiesta de DonBosco en el horizonte, llega la Campaña Vocacional de #Salesianos Santiago el Mayor: “Se Buscan #Héroes”</p>
+          <p>Este será el lema de la Campaña Vocacional para este mes de #DonBosco.</p>
         </TextoDetalle>
       </ColumnaContenido>
       <ColumnaContenido>
@@ -17,7 +17,6 @@
 </template>
 
 <script>
-
 import PaginaNoticia from "@/components/secciones/PaginaNoticia";
 import FilaContenido from "@/components/wrappers/FilaContenido";
 import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
