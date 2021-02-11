@@ -8,14 +8,14 @@
     <img :src="contenido.imagen" :alt="contenido.alt">
   </figure>
   <h3 v-if="contenido.titulo">
-    <a :href="contenido.urlMas" :target="(contenido.blank?'_blank':'_self')">{{contenido.titulo}}</a>
+    <a :href="contenido.url" :target="(contenido.blank?'_blank':'_self')">{{contenido.titulo}}</a>
   </h3>
   <p v-if="contenido.subtitulo" class="subtituloH3">
     {{contenido.subtitulo}}
   </p>
   <p v-if="contenido.contenido" v-html="contenido.contenido"></p>
   <p class="mas" v-if="!(contenido.noMas)">
-    <a a :href="contenido.urlMas" :target="(contenido.blank?'_blank':'_self')">Más información</a>
+    <a a :href="contenido.url" :target="(contenido.blank?'_blank':'_self')">Contenido completo</a>
   </p>
 </div>
 </template>

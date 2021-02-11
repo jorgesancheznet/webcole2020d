@@ -2,7 +2,7 @@
   <main>
     <TituloGrande imagen="/img/fondos/noticias.jpg" titulo="NOTICIAS" subtitulo="Listado de noticias de Salesianos de Villamuriel"/>
     <SeccionOpaca>
-      <p><a href="/noticias/123">123</a> {{new Date()}}</p>
+      <ContenedorFichas :fichas="noticias" />
     </SeccionOpaca>
   </main>
 </template>
@@ -11,14 +11,21 @@
 
 import TituloGrande from "@/components/secciones/TituloGrande";
 import SeccionOpaca from "@/components/secciones/SeccionOpaca";
+import ContenedorFichas from "@/components/wrappers/ContenedorFichas";
 
-
+import {noticias} from "@/assets/data/noticias"
 
 export default {
   name: "noticias.vue",
+  data(){
+    return{
+      noticias:noticias
+    }
+  },
   components:{
     TituloGrande,
-    SeccionOpaca
+    SeccionOpaca,
+    ContenedorFichas
   }
 }
 </script>
