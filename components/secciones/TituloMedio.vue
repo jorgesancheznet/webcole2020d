@@ -1,11 +1,13 @@
 <template>
-<section class="tituloGrande">
-  <h1>
-    {{titulo}}<br>
-    <small v-if="subtitulo" class="subtituloGrande">
+<section class="tituloMedio">
+  <header>
+    <h1>
+      {{titulo}}
+    </h1>
+    <p v-if="subtitulo" class="subtituloMedio">
       {{subtitulo}}
-    </small>
-  </h1>
+    </p>
+  </header>
 </section>
 </template>
 
@@ -40,26 +42,37 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
-.tituloGrande{
+.tituloMedio{
   position:relative;
-  height:70vh;
+  height:43vh;
   background-color: transparent;
   text-align: center;
-  h1{
-    @include letraNormal(bold,5em,white);
+  header{
     position:absolute;
+    bottom:0;
     width:100%;
     text-align: center;
-    bottom:0;
   }
-  .subtituloGrande{
-    @include letraNormal(normal,.5em,white);
+  h1{
+    @include letraNormal(bold,7vh,white);
+    width:100%;
+    text-align: center;
+    margin:0;
+  }
+  .subtituloMedio{
+    @include letraNormal(normal,4vh,white);
+    width:100%;
+    text-align: center;
+    margin:0 0 1em 0;
   }
 }
 @media  (max-width:800px) {
-  .tituloGrande {
+  .tituloMedio {
     h1 {
-      font-size: 2em;
+      font-size: 5vh;
+    }
+    .subtituloMedio{
+      font-size: 3vh;
     }
   }
 }

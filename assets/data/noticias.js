@@ -48,5 +48,17 @@ exports.noticias=[
     url: "/noticias/2021/01/se-buscan-heroes",
     keywords: ["Don Bosco","solidaridad"],
     blank:false
+  },
+  {
+    id: "n20201128",
+    titulo: "Somos centro de excelencia de alto nivel",
+    fecha: {day: 28,month: 11,year: 2020},
+    subtitulo:null,
+    contenido: "La Junta de Castilla y León nos ha reconocido como <strong>centro de excelencia</strong> de <strong>alto nivel </strong>en su orden de 13 de Octubre de 2020 ",
+    imagen: "/img/noticias/2020/11/FP_excelencia.jpeg",
+    alt:"Reconocimiento de excelencia",
+    url: "/noticias/2020/11/excelencia",
+    keywords: ["ESO","FP","Excelencia","Innovación","TIC"],
+    blank:false
   }
 ]
