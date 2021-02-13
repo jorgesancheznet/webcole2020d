@@ -3,7 +3,7 @@
          data-aos="fade-left" :data-aos-delay="tiempoAparicion" :data-aos-duration="tiempoTransicion" v-if="mostrarPanel">
     <h2>{{titulo}}</h2>
     <ul>
-      <li v-for="entrada in entradas"><a :href="entrada.url">{{entrada.titulo}}</a></li>
+      <li v-for="noticia in obtenerNoticias"><a :href="noticia.url">{{noticia.titulo}}</a></li>
     </ul>
   </aside>
 </template>
@@ -26,6 +26,11 @@ export default {
   data(){
     return{
       mostrarPanel:false
+    }
+  },
+  computed:{
+    obtenerNoticias(){
+      return this.entradas.slice(0,4);
     }
   },
   mounted(){

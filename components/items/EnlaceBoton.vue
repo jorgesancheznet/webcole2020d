@@ -11,7 +11,7 @@ export default {
     url:String,
     texto:String,
     blank:{
-      type:String,
+      type:Boolean,
       default:false
     }
   }

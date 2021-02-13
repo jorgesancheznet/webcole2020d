@@ -4,47 +4,53 @@ export let listaOfertaEducativa = [
         alt: "ESO",
         titulo: "ESO",
         subtitulo: "Educación Secundaria Obligatoria",
-        urlMas: "/estudios/eso",
-        id:"ofESO"
+        url: "/estudios/eso",
+        id:"ofESO",
+        blank:false
     },
     {
         imagen: "/img/oferta/info/fpb.jpg",
         alt: "FPB",
         titulo: "FP Básica",
         subtitulo: "Mantenimiento de vehículos",
-        urlMas: "/estudios/mantenimiento",
-        id:"ofFPB"
+        url: "/estudios/mantenimiento",
+        id:"ofFPB",
+        blank:false
     },
     {
         imagen: "/img/oferta/info/electromecanica.jpg",
         alt: "Electromecanica",
         titulo: "FP Grado Medio",
         subtitulo: "Electromecánica de vehículos",
-        urlMas: "/estudios/electromecanica",
-        id:"ofELEC"
+        url: "/estudios/electromecanica",
+        id:"ofELEC",
+        blank:false
     },
     {
         imagen: "/img/oferta/info/carroceria.jpg",
         alt: "Carrocería",
         titulo: "FP Grado Medio",
         subtitulo: "Carrocería",
-        urlMas: "/estudios/carroceria",
-        id:"ofCAR"
+        url: "/estudios/carroceria",
+        id:"ofCAR",
+        blank:false
     },
     {
         imagen: "/img/oferta/info/teleco.jpg",
         alt: "Telecomunicaciones",
         titulo: "FP Grado Medio",
         subtitulo: "Telecomunicaciones",
-        urlMas: "/estudios/telecomunicaciones",
-        id:"ofTELE"
+        url: "/estudios/telecomunicaciones",
+        id:"ofTELE",
+        blank:false
     },
     {
         imagen: "/img/oferta/info/asir.jpg",
         alt: "ASIR",
         titulo: "FP Grado Superior",
         subtitulo: "Administración de Sistemas Informáticos en Red",
-        urlMas: "/estudios/asir",
-        id:"ofASIR"
+        url: "/estudios/asir",
+        id:"ofASIR",
+        blank:false
     }
 ];

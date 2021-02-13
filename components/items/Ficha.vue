@@ -8,14 +8,14 @@
     <img :src="contenido.imagen" :alt="contenido.alt">
   </figure>
   <h3 v-if="contenido.titulo">
-    <a :href="contenido.url" :target="(contenido.blank?'_blank':'_self')">{{contenido.titulo}}</a>
+    <a class="contenidoCompleto" :href="contenido.url" :target="(contenido.blank?'_blank':'_self')">{{contenido.titulo}}</a>
   </h3>
   <p v-if="contenido.subtitulo" class="subtituloH3">
     {{contenido.subtitulo}}
   </p>
   <p v-if="contenido.contenido" v-html="contenido.contenido"></p>
   <p class="mas" v-if="!(contenido.noMas)">
-    <a a :href="contenido.url" :target="(contenido.blank?'_blank':'_self')">Contenido completo</a>
+    <a  class="contenidoCompleto"  :href="contenido.url" :target="(contenido.blank?'_blank':'_self')">Contenido completo</a>
   </p>
 </div>
 </template>
@@ -64,7 +64,7 @@ export default {
   },
   methods:{
     lanzarEnlace(e){
-      let enlace=e.target.querySelector(".mas a");
+      let enlace=e.currentTarget.querySelector(".contenidoCompleto");
       if(enlace){
         enlace.click();
       }
@@ -88,7 +88,7 @@ export default {
 .ficha{
   display:inline-block;
   width: $anchoFicha !important;
-  padding: $paddingFicha;
+  padding:$paddingFicha;
   border-radius: $radioFicha;
   margin: $margenFicha;
   height: auto;
@@ -109,12 +109,12 @@ export default {
     width: $anchoFicha;
     padding: 0;
     margin: 0 auto;
-    border-radius: $radioFicha;
+    border-radius: $radioFicha $radioFicha 0 0;
     overflow: hidden;
 
     img {
       width: $anchoFicha;
-      border-radius: $radioFicha;
+      border-radius: $radioFicha $radioFicha 0 0;
       filter: saturate(100%);
     }
   }
