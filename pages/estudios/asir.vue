@@ -19,6 +19,7 @@
       </FilaContenido>
     </SeccionOpaca>
 
+
     <SeccionTransparente titulo="RAMAS PROFESIONALES">
       <FilaIconos>
         <IconoRama nombre="Administración de Sistemas" :icono="server" />
