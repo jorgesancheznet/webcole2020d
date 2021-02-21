@@ -53,6 +53,7 @@ export default {
   color:$colorTenue;
   border:1px solid $colorFicha;
   font-size:1.5em;
+  background-color:rgba(0,0,0,.5);
   h2{
     @include letraNormal(light,1.2em,$colorGrisSalesiano);
     text-align: center;
