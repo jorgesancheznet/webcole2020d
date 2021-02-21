@@ -26,4 +26,12 @@ export default {
     text-align: center;
   }
 }
+
+@media  (max-width:800px) {
+  .tituloSticky {
+    h2 {
+      font-size: 3em;
+    }
+  }
+}
 </style>

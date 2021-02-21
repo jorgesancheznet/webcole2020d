@@ -27,4 +27,13 @@ name: "TextoSticky"
     background-color: transparentize($colorGrisSalesiano,.5);
   }
 }
+
+@media  (max-width:800px) {
+  .textoSticky {
+    p {
+      font-size: 1em;
+      margin:0 1em 1em 0;
+    }
+  }
+}
 </style>
