@@ -27,7 +27,7 @@ export default {
   h2{
     position: sticky;
     top:80px;
-    @include letraNormal(normal,3em,white);
+    @include letraNormal(light,5em,white);
     text-align: center;
   }
 }
