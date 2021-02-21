@@ -3,6 +3,7 @@
     <h1>{{informacion.titulo}}</h1>
     <FilaInfo v-for="fila in informacion.filas" :infoFila="fila"
     :key="fila.id"/>
+    <slot></slot>
   </section>
 </template>
 

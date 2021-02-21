@@ -10,7 +10,9 @@
       <EnlaceBoton url="/noticias" texto="VER TODAS LAS NOTICIAS" />
     </SeccionTransparente>
 
-    <SeccionInfo :informacion="listaInfoIndex"/>
+    <SeccionInfo :informacion="listaInfoIndex">
+      <EnlaceBoton url="/escuela/metodo" texto="VER MÁS SOBRE NUESTRO MÉTODO EDUCATIVO" />
+    </SeccionInfo>
 
     <SeccionTransparente id-seccion="seccionOfertaEducativa" titulo="OFERTA EDUCATIVA">
       <ContenedorFichas :fichas="listaOferta"/>

@@ -59,6 +59,10 @@ export let submenuCabecera = [
         id:"subEscuela",
         enlaces: [
           {
+            texto: "MÉTODO EDUCATIVO",
+            url: "/escuela/metodo"
+          },
+          {
             texto: "PROGRAMA ERASMUS",
             url: "/escuela/erasmus"
           },
