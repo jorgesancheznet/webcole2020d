@@ -31,6 +31,9 @@ export default {
   </div>
 </template>
 
-<style type="scss">
-
+<style type="scss" scoped>
+main{
+  background: transparent no-repeat center center fixed;
+  background-size: cover;
+}
 </style>

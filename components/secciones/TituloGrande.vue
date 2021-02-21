@@ -1,5 +1,5 @@
 <template>
-<section class="tituloGrande">
+<section class="tituloGrande" :style="`backgroundImage:url(${imagen})`">
   <h1>
     {{titulo}}<br>
     <small v-if="subtitulo" class="subtituloGrande">
@@ -22,7 +22,7 @@ export default {
       default:"/img/fondos/general.jpg"
     }
   },
-  computed: {
+  /*computed: {
     fondo() {
       return this.$store.state.fondo
     }
@@ -34,7 +34,7 @@ export default {
   },
   mounted(){
     this.cambiarFondo(this.imagen);
-  }
+  }*/
 }
 </script>
 
@@ -43,7 +43,8 @@ export default {
 .tituloGrande{
   position:relative;
   height:70vh;
-  background-color: transparent;
+  background: transparent center center no-repeat fixed;
+  background-size:cover;
   text-align: center;
   h1{
     @include letraNormal(bold,5em,white);

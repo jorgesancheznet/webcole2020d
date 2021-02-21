@@ -116,3 +116,8 @@ export default {
     ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, TituloGrande, SeccionOpaca}
 }
 </script>
+<style lang="scss" scoped>
+main{
+  background-image:url("/img/ciclos/fondo-electromecanica.jpg");
+}
+</style>

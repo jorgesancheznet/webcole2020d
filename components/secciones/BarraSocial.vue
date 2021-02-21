@@ -1,7 +1,10 @@
 <template>
   <aside id="social">
-    <a href="https://www.facebook.com/Salesianos-Villamuriel-Palencia-192952044069591/"><img src="/img/iconos/facebook.png" alt="facebook" @mouseover="cambia2" @mouseout="cambia"></a>
-    <a href="https://twitter.com/centrodonbosco"><img src="/img/iconos/twitter.png" alt="twitter" @mouseover="cambia2" @mouseout="cambia"></a>
+    <a href="https://www.facebook.com/Salesianos-Villamuriel-Palencia-192952044069591/"><img src="/img/iconos/facebook.svg" alt="facebook" @mouseover="cambia2" @mouseout="cambia"></a>
+    <a href="https://twitter.com/centrodonbosco"><img src="/img/iconos/twitter.svg" alt="twitter" @mouseover="cambia2" @mouseout="cambia"></a>
+    <a href="https://www.flickr.com/photos/58942531@N04/"><img src="/img/iconos/flickr.svg" alt="flickr" @mouseover="cambia2" @mouseout="cambia"></a>
+    <a href="https://twitter.com/centrodonbosco"><img src="/img/iconos/instagram.svg" alt="instagram" @mouseover="cambia2" @mouseout="cambia"></a>
+    <a href="https://www.youtube.com/user/donboscovillamuriel"><img src="/img/iconos/youtube.svg" alt="youtube" @mouseover="cambia2" @mouseout="cambia"></a>
   </aside>
 </template>
 
@@ -16,10 +19,10 @@ export default {
   },
   methods:{
     cambia(e){
-      e.target.src=`/img/iconos/${e.target.alt}.png`;
+      e.target.src=`/img/iconos/${e.target.alt}.svg`;
     },
     cambia2(e){
-      e.target.src=`/img/iconos/${e.target.alt}2.png`;
+      e.target.src=`/img/iconos/${e.target.alt}2.svg`;
     }
   }
 }
@@ -31,13 +34,18 @@ export default {
 #social{
   position:fixed;
   bottom:0;
-  right:0;
+  right:20px;
   transition:1s top;
-  background-color: rgba(0,0,0,.5);
   z-index:$zSociales;
   a{
     outline:none;
     border:none;
+    img{
+      width:40px;
+      &.doble {
+        width: 55px;
+      }
+    }
   }
 }
 

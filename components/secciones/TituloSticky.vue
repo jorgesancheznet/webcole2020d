@@ -19,7 +19,9 @@ export default {
 .tituloSticky{
   height:100vh;
   position:sticky;
-  top:80px;
+  top:0;
+  background-color: rgba(0,0,0,.5);
+  padding-top:60px;
   h2{
     position: sticky;
     @include letraNormal(light,5em,white);

@@ -6,7 +6,7 @@ export let listaInfoIndex = {
                 titulo: "CERCANOS",
                 descripcion: "Eliminamos la barrera profesor/alumno <br>" +
                     "Nos adelantamos a los problemas <br>" +
-                    "Siempre estamos disponible",
+                    "Siempre estamos disponibles",
                 image: "/img/index/cercanos.jpg",
                 alt: "Cercanos",
                 id:"info1"

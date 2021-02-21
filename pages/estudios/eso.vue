@@ -137,3 +137,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+main{
+  background-image:url("/img/ciclos/fondo-eso.jpg");
+}
+</style>
