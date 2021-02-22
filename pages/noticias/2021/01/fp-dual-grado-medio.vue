@@ -1,7 +1,7 @@
 <template>
-  <PaginaNoticia titulo="FP Dual en nuestros Ciclos de Grado Medio" subtitulo="31 de enero de 2021" imagen="/img/textura1.jpg">
+  <PaginaNoticia titulo="FP Dual en nuestros Ciclos de Grado Medio y FP básica" subtitulo="31 de enero de 2021" imagen="/img/textura1.jpg">
       <p>
-        Hoy, nuestros alumnos de los Ciclos Formativos de Telecomunicaciones, Electrónica, Carrocería y Automoción comienzan su periodo de FP Dual.
+        Hoy, nuestros alumnos de los Ciclos Formativos de Telecomunicaciones, Electrónica, Carrocería y Formación Profesional Básica en Mantenimiento de Vehículos comienzan su periodo de FP Dual.
       </p>
   </PaginaNoticia>
 </template>
