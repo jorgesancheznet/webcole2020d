@@ -9,7 +9,7 @@
       </ColumnaContenido>
       <ColumnaContenido>
         <TextoDetalle>
-          <iframe src="https://www.youtube.com/embed/E66oCbbmAKo" frameborder="0" width="460" height="215"></iframe>
+          <iframe src="https://www.youtube.com/embed/WuGBPMJCqKY" frameborder="0" width="460" height="215"></iframe>
         </TextoDetalle>
       </ColumnaContenido>
     </FilaContenido>
