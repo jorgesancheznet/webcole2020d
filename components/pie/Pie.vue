@@ -5,8 +5,8 @@
         <p>
           Pasaje Don Bosco 1,<br>
           34190, Villamuriel de Cerrato <br>
-          Tlfno: 979 77 72 70 <br>
-          <a href="mailto:colegio@salesianosvillamuriel.es">colegio@salesianosvillamuriel.es</a> <br> <br>
+          Tlfno: <a href="tel:979777270">979 77 72 70</a> <br>
+          <a href="mailto:direccioncolegio@salesianosvillamuriel.com">direccioncolegio@salesianosvillamuriel.com</a> <br> <br>
           Horario de atención: De 9:00 a 14:00
         </p>
         <div class="mapaContenedor">
@@ -24,7 +24,7 @@
       </ColumnaFooter>
       <ColumnaFooter :titulo="'PEDIR INFORMACIÓN'">
         <p class="bordePie">Si deseas información o nos quieres consultar algo, puedes utilizar este formulario.
-          Por favor, indica correctamente tu email para que la respuesta se envíe correctamente</p>
+          Por favor, indica un email válido para que la respuesta se envíe correctamente</p>
         <form id="formInfo">
           <p><label for="email">Email del remitente</label></p>
           <p><input type="email" id="email" name="email" required></p>

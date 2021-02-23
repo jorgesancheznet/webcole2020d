@@ -75,7 +75,7 @@
             <p>Nuestro centro se inspira en los valores salesianos que fomentan un método preventivo de educación. La
               educación en valores es la base de nuestro trabajo para conseguir personas cuyos valores sean
               inspiradores.</p>
-            <p>Trabajamos en conjunto con las familias para conseguir uhn apoyo educativo constante y un mejor
+            <p>Trabajamos en conjunto con las familias para conseguir un apoyo educativo constante y un mejor
               acompañamiento de nuestro alumnado</p>
           </TextoDetalle>
         </ColumnaContenido>
