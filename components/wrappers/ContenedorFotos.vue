@@ -6,6 +6,12 @@
         @click="mostrarPanel">
       </figure>
     </article>
+    <div class="precarga">
+      <!--Fotos ocultas para precarga -->
+      <figure v-for="foto in fotos">
+        <img :src="foto.ruta" :data-id="foto.id" :alt="foto.alt">
+      </figure>
+    </div>
     <ContenedorFotosGigante v-if="panelGiganteVisible" :fotoActual="fotoActual" :fotos="fotos"/>
   </div>
 </template>
@@ -64,6 +70,9 @@ figure {
   }
 }
 
+.precarga{
+  display:none;
+}
 
 @media (max-width: $anchoMedio) {
   figure {
