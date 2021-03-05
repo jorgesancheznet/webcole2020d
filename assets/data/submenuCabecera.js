@@ -53,33 +53,56 @@ export let submenuCabecera = [
     ]
   },
   {
-    nombre: "ESCUELA",
+    nombre: "CENTRO",
     secciones: [
       {
-        id:"subEscuela",
+        id:"subProgramas",
+        titulo:"PROGRAMAS",
         enlaces: [
-          {
-            texto: "MÉTODO EDUCATIVO",
-            url: "/escuela/metodo"
-          },
-          {
-            texto: "PROGRAMA ERASMUS",
-            url: "/escuela/erasmus"
-          },
-          {
-            texto: "DOCUMENTOS",
-            url: "/escuela/documentos"
-          },
           {
             texto: "FP DUAL",
             url: "/escuela/fp-dual"
           },
           {
-            texto: "SUGERENCIAS",
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSdUXOK-3Jdzzq0KaF2su2i-6E8nhK4b68k0tqSceIiw38x1_g/viewform"
+            texto: "PROGRAMA ERASMUS",
+            url: "/escuela/erasmus"
+          },
+        ]
+      },
+      {
+        id: "subEscuela",
+        titulo: "NUESTRA ESCUELA",
+        enlaces: [
+          {
+            texto: "NUESTRO MÉTODO EDUCATIVO",
+            url: "/escuela/metodo"
+          },
+          {
+            texto: "DOCUMENTOS",
+            url: "/escuela/documentos"
+          }
+        ],
+      },
+      {
+        id:"subValores",
+        titulo:"NUESTROS VALORES",
+        enlaces:[
+          {
+            texto:"ALGO NUEVO ESTÁ BROTANDO",
+            url:"/"
+          },
+
+          {
+            texto: "MISIÓN, VISIÓN Y VALORES",
+            url: "/"
+          },
+          {
+            texto: "PASTORAL",
+            url: "/"
           }
         ]
-      }
+      },
+
     ]
   },
   {
@@ -111,6 +134,10 @@ export let submenuCabecera = [
         id: "subExtra",
         titulo: "OTROS SERVICIOS",
         enlaces:[
+          {
+            texto: "SUGERENCIAS",
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSdUXOK-3Jdzzq0KaF2su2i-6E8nhK4b68k0tqSceIiw38x1_g/viewform"
+          },
           {
             texto:"AGENCIA DE COLOCACIÓN",
             url:"http://salesianosvillamuriel.redagenciadecolocacion.com/"
