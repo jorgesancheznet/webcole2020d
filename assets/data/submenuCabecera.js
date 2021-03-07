@@ -89,7 +89,7 @@ export let submenuCabecera = [
         enlaces:[
           {
             texto:"ALGO NUEVO ESTÁ BROTANDO",
-            url:"/"
+            url:"/pastoral/algo-nuevo"
           },
 
           {
