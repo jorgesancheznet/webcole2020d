@@ -91,14 +91,13 @@ export let submenuCabecera = [
             texto:"ALGO NUEVO ESTÁ BROTANDO",
             url:"/pastoral/algo-nuevo"
           },
-
           {
             texto: "MISIÓN, VISIÓN Y VALORES",
-            url: "/"
+            url: "/pastoral/mision"
           },
           {
             texto: "PASTORAL",
-            url: "/"
+            url: "/pastoral/pastoral"
           }
         ]
       },

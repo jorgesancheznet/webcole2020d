@@ -29,3 +29,8 @@
 @mixin bordeFinoResaltado(){
   border-bottom: 1px solid $colorRojoSalesiano;
 }
+
+@mixin negrita(){
+  font-family: "decima_nova_probold",sans-serif;
+  font-weight: bold;
+}

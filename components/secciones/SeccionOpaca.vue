@@ -1,7 +1,7 @@
 <template>
   <section :id="idSeccion" class="seccionOpaca" :style="{backgroundColor:colorFondo}">
     <br>
-    <h1 v-if="titulo" :style="{color:colorTitulo}">
+    <h1 v-if="titulo" :style="{color:colorTitulo}" :class="{sinMargen:sinMargen}">
       {{titulo}}
     </h1>
     <slot></slot>
@@ -21,6 +21,10 @@ export default {
     colorTitulo:{
       type:String,
       default:"#51626F"
+    },
+    sinMargen:{
+      type:Boolean,
+      default:false
     }
   }
 }
@@ -34,6 +38,10 @@ export default {
     margin:2em 0 1em;
     @include letraNormal(normal,4em,$colorFicha);
     text-align: center;
+    &.sinMargen{
+      margin-top:0.1em;
+    }
   }
+
 }
 </style>

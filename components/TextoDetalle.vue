@@ -1,5 +1,5 @@
 <template>
-<div class="textoDetalle">
+<div class="textoDetalle" :class="{fuenteMin:fuenteMin}">
   <h3 v-if="titulo">{{titulo}}</h3>
   <slot></slot>
 </div>
@@ -9,7 +9,11 @@
 export default {
   name: "TextoDetalle",
   props:{
-    titulo:String
+    titulo:String,
+    fuenteMin:{
+      type:Boolean,
+      default:false
+    }
   }
 }
 </script>
@@ -24,6 +28,13 @@ export default {
     text-align: center;
     margin:0;
   }
+  strong{
+    @include negrita;
+  }
+}
 
+.textoDetalle.fuenteMin p{
+  font-size:1.2em;
+  text-align: justify;
 }
 </style>
