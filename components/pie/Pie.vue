@@ -24,7 +24,7 @@
       </ColumnaFooter>
       <ColumnaFooter :titulo="'PEDIR INFORMACIÓN'">
         <p class="bordePie">Si deseas información o nos quieres consultar algo, puedes utilizar este formulario.
-          Por favor, indica un email válido para que la respuesta se envíe correctamente (<a href="/privacidad">leer nuestra
+          Por favor, indica un email válido para que la respuesta se envíe correctamente (<a href="/privacidad" target="_blank">leer nuestra
             política de privacidad</a>)</p>
         <form id="formInfo">
           <p><label for="email">Email del remitente</label></p>
