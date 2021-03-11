@@ -1,5 +1,17 @@
 exports.noticias=[
   {
+    id: "n20210311",
+    titulo: "Jornada de Puertas abiertas",
+    fecha: {day: 11,month: 3,year: 2021},
+    subtitulo:"Del 19 de marzo al 6 de abril",
+    contenido: "Hemos preparado un contenido especial para informarte sobre nuestro trabajo en Educación Secundaria",
+    imagen: "/img/noticias/2021/03/eso-puertas-abiertas.jpg",
+    alt:null,
+    url: "/noticias/2021/03/puertas-abiertas-eso",
+    keywords: ["ESO","Puertas abiertas"],
+    blank:false
+  },
+  {
     id: "n20210205",
     titulo: "Exámenes extraordinarios Febrero 2021",
     fecha: {day: 5,month: 2,year: 2021},

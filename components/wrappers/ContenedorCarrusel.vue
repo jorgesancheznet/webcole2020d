@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper-container">
+  <div class="swiper-container contenedorCarrusel">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
@@ -35,8 +35,10 @@ export default {
           clickable:true
         },
         slidesPerView:"auto",
-        keyboard:true
+        keyboard:true,
+        loop:true
       })
+
   }
 }
 </script>
@@ -44,6 +46,9 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
 @import "../../node_modules/swiper/swiper";
+.swiper-container{
+  overflow:hidden;
+}
 .swiper-button-next,.swiper-button-prev{
   color:$colorNaranja;
   text-shadow: black 0 0 10px;

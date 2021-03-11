@@ -1,6 +1,6 @@
 <template>
   <div class="enlaceBoton">
-    <a :href="url" :target="(blank?'_blank':'_self')">{{texto}}</a>
+    <a :href="url" :target="(blank?'_blank':'_self')"  :class="{mini:mini}">{{texto}}</a>
   </div>
 </template>
 
@@ -13,6 +13,10 @@ export default {
     blank:{
       type:Boolean,
       default:false
+    },
+    mini:{
+      type:Boolean,
+      default: false
     }
   }
 }
@@ -34,6 +38,17 @@ export default {
     background-color: $colorGrisSalesiano;
     &:hover{
       background-color: lighten($colorGrisSalesiano,20%);
+    }
+    &.mini{
+      font-size:1.5em;
+    }
+  }
+
+}
+@media (max-width: $anchoMovil) {
+  .enlaceBoton{
+    a{
+      font-size:1.4em;
     }
   }
 }
