@@ -1,6 +1,6 @@
 <template>
   <PaginaNoticia titulo="Jornada de puertas abiertas" subtitulo="Del 19 de marzo al 6 de abril" imagen="/img/textura1.jpg">
-    <div style="width: 80%;margin:auto">
+    <div style="width: 80%;margin:auto;z-index:2001">
       <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
         <iframe frameborder="0" width="1200" height="675"
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"

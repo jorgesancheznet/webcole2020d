@@ -25,7 +25,6 @@ export default {
   mounted() {
     var swiper = new this.$swiper('.swiper-container',
       {
-        cssMode:true,
         navigation:{
           nextEl:".swiper-button-next",
           prevEl:".swiper-button-prev",

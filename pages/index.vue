@@ -8,7 +8,7 @@
         </div>
     </SplashNoticia>
     <BarraSocial/>
-    <SplashPanel idSeccion="seccionPortada" imagen="/img/fondos/general.jpg"
+    <SplashPanel idSeccion="seccionPortada" imagen="/img/fondos/fondo2.jpg"
                  titulo="Excelencia adaptada<br>a cada estudiante"
                  subtitulo="En búsqueda permanente de nuevos caminos que permitan el éxito educativo">
       <PanelNovedades titulo="ÚLTIMAS NOTICIAS" :entradas="listaNovedades" tiempoTransicion="1000"
@@ -81,18 +81,12 @@ export default {
     }
   },
   methods: {
-    ...mapMutations([
-      "cambiarFondo"
-    ]),
     cerrarNoticiaSplash() {
       let splashNoticia = document.querySelector(".splashNoticia");
       if (splashNoticia) {
         document.body.removeChild(splashNoticia);
       }
     }
-  },
-  mounted() {
-    this.cambiarFondo("/img/fondo.jpg");
   }
 }
 
@@ -103,6 +97,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/estilos/mixins.scss";
+
+main{
+  background-image: url("/img/fondos/fondo3.jpg");
+}
 /*------------Clase Splash------------------*/
 .noticiaSplash{
   background-color:$colorRojoSalesiano;
