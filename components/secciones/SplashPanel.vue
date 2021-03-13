@@ -1,5 +1,5 @@
 <template>
-  <section :id="idSeccion">
+  <section :id="idSeccion" class="splashPanel">
     <div class="titulosPortada" v-if="mostrarTitulos"
     data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
       <h1 v-html="titulo"></h1>
@@ -35,7 +35,7 @@ export default {
 @import "~assets/estilos/mixins.scss";
 @import "~assets/estilos/transiciones.scss";
 
-section{
+.splashPanel{
   position:relative;
   width:100%;
   height:100vh;
@@ -55,11 +55,23 @@ section{
   color:white;
   h1{
     @include letraNormal(normal,4em,$colorCabecera);
-    font-size:4em;
   }
   p{
-    @include letraNormal(normal,4em,$colorCabecera);
-    font-size:2em;
+    @include letraNormal(normal,2em,$colorCabecera);
   }
 }
+
+@media (max-width: $anchoMovil) {
+  .titulosPortada{
+    bottom:1.5em;
+    left:1.5em;
+    h1{
+      @include letraNormal(normal,2.3em,$colorCabecera);
+    }
+    p{
+      @include letraNormal(normal,1.2em,$colorCabecera);
+    }
+  }
+}
+
 </style>

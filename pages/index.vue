@@ -1,6 +1,6 @@
 <template>
   <main>
-    <SplashNoticia @cerrando="cerrarNoticiaSplash">
+    <SplashNoticia v-if="esSafari" @cerrando="cerrarNoticiaSplash">
         <div class="noticiaSplash">
           <h4>JORNADA DE PUERTAS ABIERTAS</h4>
           <p>Del 19 de Marzo al 6 de abril</p>
@@ -77,7 +77,11 @@ export default {
       listaNovedades: noticias,
       listaInfoIndex: listaInfoIndex,
       listaOferta: listaOfertaEducativa,
-      listaServicios: listaServicios
+      listaServicios: listaServicios,
+      esSafari:{
+        default:false,
+        type:Boolean
+      }
     }
   },
   methods: {

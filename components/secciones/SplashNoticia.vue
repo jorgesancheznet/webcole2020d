@@ -1,5 +1,8 @@
 <template>
-  <section class="splashNoticia" @click="cerrarPanel">
+  <section class="splashNoticia" :class="{sinOpacidad:esSafari}" @click="cerrarPanel">
+    <aside @click="cerrarPanel" class="botonCerrar">
+      <IconoSVG :d="iconoCierre.d" :viewBox="iconoCierre.viewBox" :ancho="50" :enlace="true" :fill="'#AAAAAA'" />
+    </aside>
     <article>
       <slot/>
     </article>
@@ -16,9 +19,17 @@ export default {
   data() {
     return {
       iconoCierre: iconoCierre,
+      esSafari:{
+        type:Boolean,
+        default:false
+      }
     }
   },
   mounted() {
+    let chromeAgent = navigator.userAgent.indexOf("Chrome") > -1;
+    this.esSafari = navigator.userAgent.indexOf("Safari") > -1;
+    if ((chromeAgent) && (this.esSafari)) this.esSafari = false;
+
     document.body.insertBefore(this.$el, document.body.firstChild);
     setTimeout(() => {
       this.$el.style.display = "flex";
@@ -26,8 +37,8 @@ export default {
     //animación interior
     setTimeout(() => {
       let article=this.$el.querySelector("article");
-      article.style.opacity=1;
-      article.style.transform="translateX(0) rotateX(1440deg)";
+      //article.style.transform="translateX(0) rotateX(1440deg)";
+      article.classList.add("activada");
     }, 2500);
 
   },
@@ -53,10 +64,17 @@ export default {
   z-index: $zSplashNoticia;
   justify-content: center;
   align-items: center;
+  &.sinOpacidad{
+    background-color: transparent;
+  }
   article{
-    opacity:0;
-    transform:translateX(-100%);
-    transition: all 3s ease-out;
+    -webkit-transform:translateX(-200%);
+    transform:translateX(-200%);
+    transition: transform 1.5s ease-out;
+    &.activada{
+      -webkit-transform:translateX(0) rotateX(1440deg);
+      transform:translateX(0) rotateX(1440deg);
+    }
   }
 }
 
