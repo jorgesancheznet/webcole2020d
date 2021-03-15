@@ -56,6 +56,20 @@ export let submenuCabecera = [
     nombre: "CENTRO",
     secciones: [
       {
+        id:"subSecretarIa",
+        titulo:"SECRETARÍA",
+        enlaces: [
+          {
+            texto: "INFORMACIÓN SOBRE MATRICULACIÓN",
+            url: "/centro/matriculacion"
+          },
+          {
+            texto: "DOCUMENTOS DE SECRETARÍA",
+            url: "/centro/documentos-secretaria"
+          }
+        ]
+      },
+      {
         id:"subProgramas",
         titulo:"PROGRAMAS",
         enlaces: [

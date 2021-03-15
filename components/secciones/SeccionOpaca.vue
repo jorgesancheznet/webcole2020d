@@ -42,6 +42,20 @@ export default {
       margin-top:0.1em;
     }
   }
+  h2{
+    @include letraNormal(normal,2.5em,$colorGrisSalesiano);
+    text-align: center;
+  }
+}
 
+@media  (max-width:$anchoMovil) {
+  .seccionOpaca {
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.4em;
+    }
+  }
 }
 </style>

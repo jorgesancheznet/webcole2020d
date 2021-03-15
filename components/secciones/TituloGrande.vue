@@ -57,7 +57,7 @@ export default {
     @include letraNormal(normal,.5em,white);
   }
 }
-@media  (max-width:800px) {
+@media  (max-width:$anchoMovil) {
   .tituloGrande {
     h1 {
       font-size: 2em;

@@ -4,7 +4,8 @@
         <div class="noticiaSplash">
           <h4>JORNADA DE PUERTAS ABIERTAS</h4>
           <p>Del 19 de Marzo al 6 de abril</p>
-          <EnlaceBoton url="/noticias/2021/03/puertas-abiertas-eso" texto="MÁS INFORMACIÓN" :blank="true" :mini="true"/>
+          <EnlaceBoton url="/noticias/2021/03/puertas-abiertas-eso" texto="PRESENTACIÓN" :blank="true" :mini="true"/>
+          <a style="" href="/centro/matricula#matriculaESO">¿CÓMO MATRICULARME EN LA ESO?</a>
         </div>
     </SplashNoticia>
     <BarraSocial/>
@@ -124,6 +125,13 @@ main{
   p{
     @include letraNormal(normal,1.5em,white);
     margin:0;
+  }
+  a{
+    color:white;
+    font-size:1em;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 </style>

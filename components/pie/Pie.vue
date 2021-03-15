@@ -54,7 +54,7 @@ export default {
   components: {FilaLogos, IconoSVG, ColumnaFooter},
   data(){
     return{
-      link:link
+      link:link,
     }
   },
   beforeMount() {

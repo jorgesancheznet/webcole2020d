@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import TituloGrande from "@/components/secciones/TituloGrande";
+import TituloMedio from "@/components/secciones/TituloMedio";
 import SeccionOpaca from "@/components/secciones/SeccionOpaca";
 
 export default {
@@ -21,7 +21,7 @@ export default {
     subtitulo:String,
     imagen:String
   },
-  components: {SeccionOpaca, TituloGrande}
+  components: {SeccionOpaca, TituloMedio}
 }
 </script>
 
