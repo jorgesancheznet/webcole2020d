@@ -3,7 +3,7 @@
     <FilaContenido>
       <ColumnaContenido>
         <TextoDetalle titulo="MISIÓN" :fuenteMin="true">
-          <p>Nuestro Centro Salesianos Padre Aramburu tiene como misión la formación integral de los jóvenes, fundamentalmente a través de la Formación Profesional, haciendo posible la consecución de sus metas personales y la inserción laboral.</p>
+          <p>Nuestro centro tiene como misión la formación integral de los jóvenes, fundamentalmente a través de la Formación Profesional, haciendo posible la consecución de sus metas personales y la inserción laboral.</p>
             <p>Fieles a nuestro original estilo educativo salesiano, que denominamos “sistema preventivo”, cuidamos nuestras relaciones personales en un clima de familiaridad y confianza, de modo que son las personas el centro de nuestra acción educativa.</p>
             <p>Las relaciones humanas, la cualificación técnica, la inserción laboral, la mentalidad crítica y la visión cristiana de la realidad conforman la identidad de Salesianos Padre Aramburu.</p>
           <p>Nuestra Campaña no quiere evadirse de esta situación, sino que busca aprovecharla como una oportunidad para
