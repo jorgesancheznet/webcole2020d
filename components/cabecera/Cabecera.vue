@@ -33,7 +33,7 @@ import {submenuCabecera} from "~/assets/data/submenuCabecera";
 import IconoSVG from "@/components/items/IconoSVG";
 import SubmenuCabecera from "~/components/cabecera/SubmenuCabecera";
 
-const ALTO_CABECERA = 120;
+const ALTO_CABECERA = 100;
 const ALTO_CABECERA_MIN = 60
 const TRANSICION_CABECERA = 1;
 const ANCHO_MEDIO = 850;
@@ -169,13 +169,14 @@ header {
     padding:0;
     li{
       display:inline-block;
-      padding:0 .15em;
       a{
         @include letraNormal(light,1.3em,$colorTenue);
         transition:0.5s color;
+        padding:0 .35em;
         &:hover{
-          color:$colorTenueHover;
-          transition:0.5s color;
+          background-color: $colorRojoSalesiano;
+          color:white;
+          transition:0.5s color,background-color;
         }
       }
     }
