@@ -81,6 +81,10 @@ export let submenuCabecera = [
             texto: "PROGRAMA ERASMUS",
             url: "/escuela/erasmus"
           },
+          {
+            texto: "CENTRO DE EXCELENCIA DE ALTO NIVEL",
+            url: "/escuela/excelencia"
+          },
         ]
       },
       {

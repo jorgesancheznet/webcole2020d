@@ -31,6 +31,12 @@
     <SeccionOpaca idSeccion="seccionServicios" titulo="SERVICIOS">
       <ContenedorFichas :fichas="listaServicios" :mini="true"/>
     </SeccionOpaca>
+
+    <SeccionTransparente id-seccion="seccionMeritos" titulo="NUESTROS MÉRITOS">
+      <ContenedorFichas :fichas="listaMeritos" :mini="false"/>
+    </SeccionTransparente>
+
+
   </main>
 </template>
 
@@ -55,6 +61,7 @@ import {noticias} from "~/assets/data/noticias";
 import {listaInfoIndex} from "~/assets/data/panelInfoIndex";
 import {listaOfertaEducativa} from "~/assets/data/ofertaEducativa";
 import {listaServicios} from "~/assets/data/servicios";
+import {listaMeritos} from "~/assets/data/meritos";
 import BarraSocial from "../components/secciones/BarraSocial";
 import SplashNoticia from "../components/secciones/SplashNoticia";
 
@@ -78,6 +85,7 @@ export default {
       listaInfoIndex: listaInfoIndex,
       listaOferta: listaOfertaEducativa,
       listaServicios: listaServicios,
+      listaMeritos: listaMeritos,
       esSafari:{
         default:false,
         type:Boolean
