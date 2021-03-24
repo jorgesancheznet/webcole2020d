@@ -2,10 +2,9 @@
   <main>
     <SplashNoticia v-if="esSafari" @cerrando="cerrarNoticiaSplash">
         <div class="noticiaSplash">
-          <h4>JORNADA DE PUERTAS ABIERTAS</h4>
-          <p>Del 19 de Marzo al 6 de abril</p>
-          <EnlaceBoton url="/noticias/2021/03/puertas-abiertas-eso" texto="PRESENTACIÓN" :blank="true" :mini="true"/>
-          <a style="" href="/centro/matricula#matriculaESO">¿CÓMO MATRICULARME EN LA ESO?</a>
+          <h4>LA SECRETARÍA PERMANECE ABIERTA</h4>
+          <p>Durante la Semana Santa, la secretaría permanece abierta en horario de 9:30 a 13:30 <br>(excepto jueves y viernes santo)<br><br></p>
+          <button @cerrando="cerrarNoticiaSplash">DE ACUERDO</button>
         </div>
     </SplashNoticia>
     <BarraSocial/>
@@ -108,10 +107,10 @@ main{
 }
 /*------------Clase Splash------------------*/
 .noticiaSplash{
-  background-color:$colorRojoSalesiano;
+  background-color:$colorFondoServicios;
   padding:1em;
   text-align: center;
-  color:white;
+  color:black;
   display:flex;
   justify-content: center;
   flex-direction: column;
@@ -119,11 +118,11 @@ main{
   border-radius:1em;
 
   h4{
-    @include letraNormal(bold,3em,white);
+    @include letraNormal(bold,3em,black);
     margin:0;
   }
   p{
-    @include letraNormal(normal,1.5em,white);
+    @include letraNormal(normal,1.5em,black);
     margin:0;
   }
   a{
