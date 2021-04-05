@@ -1,13 +1,5 @@
 <template>
   <main>
-    <SplashNoticia v-if="esSafari" @cerrando="cerrarNoticiaSplash">
-        <div class="noticiaSplash">
-          <h4>EN SEMANA SANTA SEGUIMOS ABIERTOS</h4>
-          <p>Durante la Semana Santa, la secretaría mantiene la atención <strong style="color:blue">telefónica</strong> de 9:30 a 13:30 <br>(excepto jueves y viernes santo)<br>
-            <a href="tel:979777270" style="color:black">979 77 72 70</a><br><br></p>
-          <button @cerrando="cerrarNoticiaSplash">DE ACUERDO</button>
-        </div>
-    </SplashNoticia>
     <BarraSocial/>
     <SplashPanel idSeccion="seccionPortada" imagen="/img/fondos/fondo2.jpg"
                  titulo="Excelencia adaptada<br>a cada estudiante"
