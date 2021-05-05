@@ -1,5 +1,17 @@
 exports.noticias=[
   {
+    id: "n20210505",
+    titulo: "Libros para el curso 2021-22",
+    fecha: {day: 5,month: 5,year: 2021},
+    subtitulo:"Listado de ISBN",
+    contenido: "Ya están disponibles los libros para el curso que viene",
+    imagen: null,
+    alt:null,
+    url: "/noticias/2021/05/isbn-2021-2022",
+    keywords: ["ESO","Puertas abiertas"],
+    blank:false
+  },
+  {
     id: "n20210311",
     titulo: "Jornada de Puertas abiertas",
     fecha: {day: 11,month: 3,year: 2021},
