@@ -8,6 +8,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {"http-equiv":"Cache-Control", content:"no-cache, no-store, must-revalidate"},
+      {"http-equiv":"Pragma", content:"no-cache"},
+      {"http-equiv":"Expires", content:"0"},
       { hid: 'description', name: 'description', content: 'Salesianos Centro Don Bosco de Villamuriel de Cerrato, Centro de Formación Profesional y de Educación Secundaria' }
     ],
     link: [
