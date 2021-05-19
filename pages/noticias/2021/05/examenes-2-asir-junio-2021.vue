@@ -3,7 +3,7 @@
     <FilaContenido>
       <TextoDetalle>
         <p>Calendario de Exámenes Finales para los alumnos de 2º de ASIR, curso 2020-2021</p>
-        <p><a href="https://drive.google.com/file/d/1lIrLa2RDXo0lyOCeq10yvW0euc9eFX3X/view?usp=sharing" taget="_blank">Ver calendario
+        <p><a href="https://drive.google.com/file/d/1lIrLa2RDXo0lyOCeq10yvW0euc9eFX3X/view?usp=sharing" target="_blank">Ver calendario
           de exámenes</a></p>
       </TextoDetalle>
     </FilaContenido>
