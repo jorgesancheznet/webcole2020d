@@ -1,5 +1,17 @@
 exports.noticias=[
   {
+    id: "n20210519",
+    titulo: "Exámenes finales de 2º de ASIR",
+    fecha: {day: 5,month: 2,year: 2021},
+    subtitulo:"Junio de 2021",
+    contenido: "Calendario de Exámenes Finales para los alumnos y alumnas de 2º de ASIR para la convocatoria de Junio de 2021.",
+    imagen: null,
+    alt:null,
+    url: "/noticias/2021/05/examenes-2-asir-junio-2021",
+    keywords: ["ESO","FP","Exámenes"],
+    blank:false
+  },
+  {
     id: "n20210505",
     titulo: "Libros para el curso 2021-22",
     fecha: {day: 5,month: 5,year: 2021},
