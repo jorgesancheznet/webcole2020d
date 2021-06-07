@@ -1,5 +1,17 @@
 exports.noticias=[
   {
+    id: "n20210603",
+    titulo: "Presentación de Proyectos de ASIR",
+    fecha: {day: 3,month: 6,year: 2021},
+    subtitulo:"Junio de 2021",
+    contenido: "Los alumnos del ciclo de FP de grado superior en Administración de Sistemas Informáticos en Red presentan sus proyectos finales",
+    imagen: null,
+    alt:null,
+    url: "/noticias/2021/06/proyectos-junio-2021",
+    keywords: ["ASIR","FP","Proyectos"],
+    blank:false
+  },
+  {
     id: "n20210519",
     titulo: "Exámenes finales de 2º de ASIR",
     fecha: {day: 5,month: 2,year: 2021},

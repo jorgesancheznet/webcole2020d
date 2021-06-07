@@ -1,6 +1,7 @@
 <template>
   <figure class="imagenDetalle" :style="maxWidth">
     <img :src="src" :alt="alt">
+    <figcaption v-if="pie">{{pie}}</figcaption>
   </figure>
 </template>
 
@@ -13,7 +14,8 @@ export default {
     anchoMax:{
       type:String,
       default:"100%"
-    }
+    },
+    pie:String
   },
   computed:{
     maxWidth(){
@@ -34,6 +36,11 @@ export default {
   padding:1em 2em;
   img{
     width:100%;
+  }
+  figcaption{
+    color:$colorGrisSalesiano;
+    text-align: center;
+    font-size:1.1em;
   }
 }
 
