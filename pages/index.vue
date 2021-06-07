@@ -74,7 +74,7 @@ export default {
   },
   data() {
     return {
-      listaNovedades: noticias,
+      listaNovedades: noticias.slice(0,10),//ultimas 10 noticias
       listaInfoIndex: listaInfoIndex,
       listaOferta: listaOfertaEducativa,
       listaServicios: listaServicios,

@@ -30,7 +30,7 @@ export let listaMeritos = [
       id:"se3"
     },
     {
-      imagen: "/img/logos/flechas-excelencia-ancha.jpg",
+      imagen: "/img/logos/excelencia.svg",
       alt: "Logo Excelencia",
       titulo: "Centro de Excelencia de Alto Nivel",
       contenido: "Certificación más alta como centro de excelencia en FP",

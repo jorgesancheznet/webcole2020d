@@ -5,8 +5,8 @@ exports.noticias=[
     fecha: {day: 3,month: 6,year: 2021},
     subtitulo:"Junio de 2021",
     contenido: "Los alumnos del ciclo de FP de grado superior en Administración de Sistemas Informáticos en Red presentan sus proyectos finales",
-    imagen: null,
-    alt:null,
+    imagen: "/img/noticias/2021/06/Autoridades.jpg",
+    alt:"Autoridades en la presentación de proyectos",
     url: "/noticias/2021/06/proyectos-junio-2021",
     keywords: ["ASIR","FP","Proyectos"],
     blank:false
