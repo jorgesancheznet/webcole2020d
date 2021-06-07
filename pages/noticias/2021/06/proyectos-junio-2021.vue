@@ -41,27 +41,35 @@
     </FilaContenido>
     <FilaContenido>
       <ColumnaContenido>
-        <ImagenDetalle alt="Adrián Fitiu presentando su proyecto" src="/img/noticias/2021/06/Adrian_01.jpg" pie="Adrian Fitiu presentando 'Más Moneda'"/>
+        <ImagenDetalle alt="benjamin Gordo presentando su proyecto" src="/img/noticias/2021/06/Benjamin_01.jpg" pie="Benjamin Gordo presentando su proyecto sobre las vulnerabilidades OWASP Top 10"/>
       </ColumnaContenido>
       <ColumnaContenido>
         <TextoDetalle>
           <p>El proyecto de ciberseguridad en el que se analizaba las 10 vulnerabilidades web presentes en OWASP Top 10,
             presentado por <strong>Benjamín Gordo Cortés</strong> presentaba un análisis profundo y soluciones ante el
             creciente problema de la seguridad en las aplicaciones web</p>
-          <p>Hemos disfrutado de la aplicación web lúdica "Más Moneda" creada por <strong>Adrián Fitiu</strong></p>
         </TextoDetalle>
       </ColumnaContenido>
-
     </FilaContenido>
     <FilaContenido>
+      <ColumnaContenido>
+        <TextoDetalle>
+          <p>Hemos disfrutado de la aplicación web lúdica "Más Moneda" creada por <strong>Adrián Fitiu mediante la cual los participantes pudieron observar los juegos propuestos en la web para obtener monedas virtuales</strong></p>
+        </TextoDetalle>
+      </ColumnaContenido>
+      <ColumnaContenido>
+        <ImagenDetalle alt="Adrián Fitiu presentando su proyecto" src="/img/noticias/2021/06/Adrian_01.jpg" pie="Adrian Fitiu presentando 'Más Moneda'"/>
+      </ColumnaContenido>
+    </FilaContenido>
+    <FilaContenido>
+      <ColumnaContenido>
+        <ImagenDetalle alt="José Navarro presentando su proyecto" src="/img/noticias/2021/06/Pepe_01.jpg" pie="José Navarro exponiendo las virtudes de su proyecto de acceso seguro a redes WiFi"/>
+      </ColumnaContenido>
       <ColumnaContenido>
         <TextoDetalle>
           <p>El alumno <strong>José Navarro Roldán</strong> presentó una solución virtualizada para el control seguro de
             acceso a una red WiFi en un dominio controlado por servidores Windows Server y autentificado por Radius</p>
         </TextoDetalle>
-      </ColumnaContenido>
-      <ColumnaContenido>
-        <ImagenDetalle alt="José Navarro presentando su proyecto" src="/img/noticias/2021/06/Pepe_01.jpg" pie="José Navarro exponiendo las virtudes de su proyecto de acceso seguro a redes WiFi"/>
       </ColumnaContenido>
     </FilaContenido>
     <FilaContenido>
