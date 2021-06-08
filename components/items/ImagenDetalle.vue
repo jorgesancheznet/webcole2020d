@@ -1,6 +1,8 @@
 <template>
   <figure class="imagenDetalle" :style="maxWidth">
+    <a v-if="enlace" :href="enlace" :target="(blank)?'_blank':'_self'" >
     <img :src="src" :alt="alt">
+    </a>
     <figcaption v-if="pie">{{pie}}</figcaption>
   </figure>
 </template>
@@ -11,6 +13,11 @@ export default {
   props:{
     src:String,
     alt:String,
+    enlace:String,
+    blank:{
+      type:Boolean,
+      default:true
+    },
     anchoMax:{
       type:String,
       default:"100%"

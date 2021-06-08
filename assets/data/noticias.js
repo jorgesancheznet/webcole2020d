@@ -1,12 +1,24 @@
 exports.noticias=[
   {
+    id: "n20210608",
+    titulo: "Instrucciones para la admisión de FP",
+    fecha: {day: 8,month: 6,year: 2021},
+    subtitulo:"Matrícula 2021/22",
+    contenido: "Instrucciones para la admisión en FP en el Centro Salesianos Don Bosco para el curso 2021/22",
+    imagen: "/img/noticias/2021/06/fp-online.jpg",
+    alt:"Formulario de matrícula",
+    url: "/noticias/2021/06/matricula-fp-online",
+    keywords: ["FP","Matrícula"],
+    blank:false
+  },
+  {
     id: "n20210607",
-    titulo: "Premio al mejor centro VMWare Pue Academy 2020",
+    titulo: "Premio al mejor centro VMWare IT Academy 2020",
     fecha: {day: 7,month: 6,year: 2021},
     subtitulo:"PUE Academy Awards 2020",
     contenido: "Salesianos de Villamuriel de Cerrato ha sido elegido como el mejor centro VmWare Academy de 2020 en los PUE Academy Awards",
     imagen: "/img/noticias/2021/06/premio-vmware.jpg",
-    alt:"Autoridades en la presentación de proyectos",
+    alt:"Vídeo entrevista con Jorge Sánchez",
     url: "/noticias/2021/06/premio-vmware-academy",
     keywords: ["VMWare","Reconocimientos","TIC","ASIR"],
     blank:false

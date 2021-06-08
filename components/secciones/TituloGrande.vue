@@ -1,5 +1,5 @@
 <template>
-<section class="tituloGrande" :style="`backgroundImage:url(${imagen})`">
+<section class="tituloGrande" :style="(imagen?`backgroundImage:url(${imagen})`:`none`)+`;background-color:${colorFondo}`">
   <h1>
     {{titulo}}<br>
     <small v-if="subtitulo" class="subtituloGrande">
@@ -20,6 +20,12 @@ export default {
     imagen:{
       type:String,
       default:"/img/fondos/general.jpg"
+    },
+    colorFondo:{
+      colorFondo:{
+        type:String,
+        default:"gray"
+      },
     }
   },
   /*computed: {

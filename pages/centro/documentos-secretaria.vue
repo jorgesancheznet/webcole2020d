@@ -1,11 +1,8 @@
 <template>
   <main>
     <TituloMedio titulo="SECRETARÍA DEL CENTRO" imagen="/img/escuela/documentos.jpg" />
-    <SeccionOpaca>
-      <h2>ESTAMOS EN OBRAS</h2>
-      <p>En breve dispondrás de esta sección</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
+    <SeccionOpaca titulo="DOCUMENTOS PARA MATRICULACIÓN" :sin-margen="true">
+      <iframe src="https://drive.google.com/embeddedfolderview?id=1Yvhpdl00uyloG3UUx1wtXboNsK-cPYMa#grid"></iframe>
     </SeccionOpaca>
   </main>
 </template>
@@ -21,5 +18,11 @@ export default {
 </script>
 
 <style scoped>
-
+iframe{
+  width:100%;
+  height:400px;
+  overflow: auto;
+  border:none;
+  text-align: center;
+}
 </style>

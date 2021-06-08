@@ -15,7 +15,7 @@
 import {mapMutations} from "vuex";
 
 export default {
-  name: "TituloGrande",
+  name: "TituloMedio",
   props:{
     titulo:String,
     subtitulo:String,
