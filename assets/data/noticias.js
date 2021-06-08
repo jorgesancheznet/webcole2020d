@@ -1,5 +1,17 @@
 exports.noticias=[
   {
+    id: "n20210607",
+    titulo: "Premio al mejor centro VMWare Pue Academy 2020",
+    fecha: {day: 7,month: 6,year: 2021},
+    subtitulo:"PUE Academy Awards 2020",
+    contenido: "Salesianos de Villamuriel de Cerrato ha sido elegido como el mejor centro VmWare Academy de 2020 en los PUE Academy Awards",
+    imagen: "/img/noticias/2021/06/premio-vmware.jpg",
+    alt:"Autoridades en la presentación de proyectos",
+    url: "/noticias/2021/06/premio-vmware-academy",
+    keywords: ["VMWare","Reconocimientos","TIC","ASIR"],
+    blank:false
+  },
+  {
     id: "n20210603",
     titulo: "Presentación de Proyectos de ASIR",
     fecha: {day: 3,month: 6,year: 2021},
