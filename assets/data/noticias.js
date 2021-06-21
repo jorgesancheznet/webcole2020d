@@ -1,5 +1,17 @@
 exports.noticias=[
   {
+    id: "n20210621",
+    titulo: "Vídeo: FP Dual en Telecomunicaciones e Informática",
+    fecha: {day: 21,month: 6,year: 2021},
+    subtitulo:"Matrícula 2021/22",
+    contenido: "Los alumnos de telecomunicaciones comentan su experiencia cursando la FP Dual",
+    imagen: "/img/noticias/2021/06/fp-dual-video.jpg",
+    alt:"Formulario de matrícula",
+    url: "/noticias/2021/06/fp-dual",
+    keywords: ["FP","Fp Dual","Matrícula"],
+    blank:false
+  },
+  {
     id: "n20210608",
     titulo: "Instrucciones para la admisión de FP",
     fecha: {day: 8,month: 6,year: 2021},
