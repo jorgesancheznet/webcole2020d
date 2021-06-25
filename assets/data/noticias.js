@@ -1,5 +1,17 @@
 exports.noticias=[
   {
+    id: "n20210625",
+    titulo: "Vídeo: La evaluación como instrumento de aprendizaje",
+    fecha: {day: 24,month: 6,year: 2021},
+    subtitulo:"Matrícula 2021/22",
+    contenido: "Explicamos las estrategias que utilizamos en la evaluación para hacer de ella un ingrediente en favor de la excelencia educativa.",
+    imagen: "/img/noticias/2021/06/evaluacion.jpg",
+    alt:"Formulario de matrícula",
+    url: "/noticias/2021/06/instrumentos-aprendizaje",
+    keywords: ["Innovación","TICs","Evaluación"],
+    blank:false
+  },
+  {
     id: "n20210621",
     titulo: "Vídeo: FP Dual en Telecomunicaciones e Informática",
     fecha: {day: 21,month: 6,year: 2021},
