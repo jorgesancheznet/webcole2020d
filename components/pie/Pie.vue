@@ -26,12 +26,12 @@
         <p class="bordePie">Si deseas información o nos quieres consultar algo, puedes utilizar este formulario.
           Por favor, indica un email válido para que la respuesta se envíe correctamente (<a href="/privacidad" target="_blank">leer nuestra
             política de privacidad</a>)</p>
-        <form id="formInfo">
+        <form id="formInfo" method="POST">
           <p><label for="email">Email del remitente</label></p>
           <p><input type="email" id="email" name="email" required></p>
           <p><label for="texto">Texto de consulta</label></p>
           <p><textarea name="texto" id="texto" cols="30" rows="10" required></textarea></p>
-          <div class="g-recaptcha" data-sitekey="6LcZ5MUUAAAAAJM0YcMWOWt6p4T3sSL92GNGQrDP"></div>
+          <div class="g-recaptcha" data-sitekey="6Lc53aAbAAAAAA0CbcdL1D8XhLWIUXC8G0gwvmTD"></div>
           <button id="btInfoConsulta">ENVIAR CONSULTA</button>
         </form>
         <div class="infoConsulta"></div>
