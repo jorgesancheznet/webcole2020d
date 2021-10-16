@@ -3,7 +3,7 @@
     <a href="https://www.facebook.com/Salesianos-Villamuriel-Palencia-192952044069591/"><img src="/img/iconos/facebook.svg" alt="facebook" @mouseover="cambia2" @mouseout="cambia"></a>
     <a href="https://twitter.com/centrodonbosco"><img src="/img/iconos/twitter.svg" alt="twitter" @mouseover="cambia2" @mouseout="cambia"></a>
     <a href="https://www.flickr.com/photos/58942531@N04/"><img src="/img/iconos/flickr.svg" alt="flickr" @mouseover="cambia2" @mouseout="cambia"></a>
-    <a href="https://twitter.com/centrodonbosco"><img src="/img/iconos/instagram.svg" alt="instagram" @mouseover="cambia2" @mouseout="cambia"></a>
+    <a href="https://www.instagram.com/salesianosvillamuriel/"><img src="/img/iconos/instagram.svg" alt="instagram" @mouseover="cambia2" @mouseout="cambia"></a>
     <a href="https://www.youtube.com/user/donboscovillamuriel"><img src="/img/iconos/youtube.svg" alt="youtube" @mouseover="cambia2" @mouseout="cambia"></a>
   </aside>
 </template>
