@@ -1,5 +1,17 @@
 exports.noticias = [
   {
+    id: "n20211020",
+    titulo: "Información de ayuda para la FP Dual",
+    fecha: {day: 20, month: 10, year: 2021},
+    subtitulo: "Información para familias",
+    contenido: "Documento con toda la información sobre la FP Dual para el curso 2021/22",
+    imagen: "/img/noticias/2021/10/info-fpdual-blur.jpg",
+    alt: "Información FP Dual curso 2021 -2",
+    url: "/noticias/2021/10/fpdual-2021-22",
+    keywords: ["FP Dual"],
+    blank: false
+  },
+  {
     id: "n20210005",
     titulo: "Inicio de curso 2021/22",
     fecha: {day: 5, month: 9, year: 2021},
