@@ -1,5 +1,17 @@
 exports.noticias = [
   {
+    id: "n20211110",
+    titulo: "Listado de empresas de la FP Dual",
+    fecha: {day: 10, month: 11, year: 2021},
+    subtitulo: "Empresas colaboradoras",
+    contenido: "Documento con el listado de empresas colaboradoras de FP Dual para este curso 2021/22. ",
+    imagen: "/img/noticias/2021/11/listado-fpdual-blur.jpg",
+    alt: "Listado de empresas de FP Dual",
+    url: "/noticias/2021/11/listado-fpdual",
+    keywords: ["FP Dual"],
+    blank: false
+  },
+  {
     id: "n20211020",
     titulo: "Información de ayuda para la FP Dual",
     fecha: {day: 20, month: 10, year: 2021},

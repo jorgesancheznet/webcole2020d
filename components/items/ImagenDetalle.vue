@@ -1,8 +1,9 @@
 <template>
   <figure class="imagenDetalle" :style="maxWidth">
     <a v-if="enlace" :href="enlace" :target="(blank)?'_blank':'_self'" >
-    <img :src="src" :alt="alt">
+      <img :src="src" :alt="alt" >
     </a>
+    <img v-else :src="src" :alt="alt" >
     <figcaption v-if="pie">{{pie}}</figcaption>
   </figure>
 </template>

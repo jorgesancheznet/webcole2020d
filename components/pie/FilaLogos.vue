@@ -40,6 +40,7 @@ export default {
     &.logoCorto{
       height: $anchoLogoFinalCorto;
     }
+
   }
   &.inView{
     opacity:1;

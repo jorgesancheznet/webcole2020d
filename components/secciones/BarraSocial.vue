@@ -42,8 +42,13 @@ export default {
     border:none;
     img{
       width:40px;
+      transition:width .5s;
       &.doble {
         width: 55px;
+      }
+      &:hover{
+        width:70px;
+        transition:width .5s
       }
     }
   }

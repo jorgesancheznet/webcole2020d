@@ -47,10 +47,13 @@ export default {
 .inline{
   display:inline-block;
 }
+
 .icono {
   position: relative;
   display: inline-block;
+  transition:transform .5s;
 }
+
 .enlace{
   cursor:pointer;
 }

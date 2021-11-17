@@ -1,5 +1,5 @@
 <template>
-<div class="textoDetalle" :class="{fuenteMin:fuenteMin}">
+<div class="textoDetalle" :class="{fuenteMin:fuenteMin}" :style="{'width':ancho}">
   <h3 v-if="titulo">{{titulo}}</h3>
   <slot></slot>
 </div>
@@ -13,6 +13,10 @@ export default {
     fuenteMin:{
       type:Boolean,
       default:false
+    },
+    ancho:{
+      type:String,
+      default:"auto"
     }
   }
 }
