@@ -32,7 +32,7 @@ import TituloGrande from "../../components/secciones/TituloGrande";
 import SeccionOpaca from "../../components/secciones/SeccionOpaca";
 import FilaContenido from "../../components/wrappers/FilaContenido";
 import ColumnaContenido from "../../components/wrappers/ColumnaContenido";
-import TextoDetalle from "../../components/TextoDetalle";
+import TextoDetalle from "../../components/wrappers/TextoDetalle";
 import ImagenDetalle from "../../components/items/ImagenDetalle";
 export default {
   name: "fp-dual.vue",

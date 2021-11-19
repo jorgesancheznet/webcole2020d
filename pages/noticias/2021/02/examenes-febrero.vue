@@ -15,7 +15,7 @@
 import PaginaNoticia from "@/components/secciones/PaginaNoticia";
 import FilaContenido from "@/components/wrappers/FilaContenido";
 import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
-import TextoDetalle from "@/components/TextoDetalle";a
+import TextoDetalle from "@/components/wrappers/TextoDetalle";a
 
 export default {
   components: {PaginaNoticia,FilaContenido,ColumnaContenido,TextoDetalle}

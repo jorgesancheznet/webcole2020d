@@ -35,6 +35,9 @@ export default {
   strong{
     @include negrita;
   }
+  li{
+    @include letraNormal(normal,1.2em,$colorFondoPie);
+  }
 }
 
 .textoDetalle.fuenteMin p{

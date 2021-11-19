@@ -106,8 +106,8 @@ export let submenuCabecera = [
         titulo:"NUESTROS VALORES",
         enlaces:[
           {
-            texto:"ALGO NUEVO ESTÁ BROTANDO",
-            url:"/pastoral/algo-nuevo"
+            texto:"LEMA DEL CURSO",
+            url:"/pastoral/lema-curso"
           },
           {
             texto: "MISIÓN, VISIÓN Y VALORES",

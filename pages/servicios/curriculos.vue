@@ -30,7 +30,7 @@ import SeccionOpaca from "../../components/secciones/SeccionOpaca";
 import FilaContenido from "../../components/wrappers/FilaContenido";
 import ColumnaContenido from "../../components/wrappers/ColumnaContenido";
 import ImagenDetalle from "../../components/items/ImagenDetalle";
-import TextoDetalle from "../../components/TextoDetalle";
+import TextoDetalle from "../../components/wrappers/TextoDetalle";
 import TituloGrande from "../../components/secciones/TituloGrande";
 
 export default {

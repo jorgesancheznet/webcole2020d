@@ -14,6 +14,12 @@
       </ColumnaContenido>
 
     </FilaContenido>
+    <FilaContenido>
+      <TextoDetalle titulo="Lemas de Otros años">
+        <p>Lema de este curso 2021/22
+          <NuxtLink to="/pastoral/algo-nuevo">Curso 2020-20: Algo nuevo está brotando</NuxtLink></p>
+      </TextoDetalle>
+    </FilaContenido>
 
   </PaginaNoticia>
 </template>
@@ -21,7 +27,7 @@
 <script>
 import PaginaNoticia from "@/components/secciones/PaginaNoticia";
 import FilaContenido from "@/components/wrappers/FilaContenido";
-import TextoDetalle from "@/components/TextoDetalle";
+import TextoDetalle from "@/components/wrappers/TextoDetalle";
 import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
 
 export default {
