@@ -1,5 +1,17 @@
 exports.noticias = [
   {
+    id: "n20211215",
+    titulo: "Listado provisional de candidatos en FP Dual",
+    fecha: {day: 15, month: 12, year: 2021},
+    subtitulo: "FP Dual 2021/22",
+    contenido: "Documento con el listado provisional de alumnos candidatos a la FP Dual",
+    imagen: "/img/noticias/2021/12/listado-provisional.jpg",
+    alt: "Listado provisional de alumnos",
+    url: "/noticias/2021/12/listado-provisional",
+    keywords: ["FP Dual"],
+    blank: false
+  },
+  {
     id: "n20211110",
     titulo: "Listado de empresas de la FP Dual",
     fecha: {day: 10, month: 11, year: 2021},
