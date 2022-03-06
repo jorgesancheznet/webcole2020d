@@ -1,13 +1,25 @@
 exports.noticias = [
   {
-    id: "n20211215",
-    titulo: "Listado provisional de candidatos en FP Dual",
+    id: "n20220305",
+    titulo: "Jornada de puertas abiertas para ESO",
+    fecha: {day: 5, month: 3, year: 2022},
+    subtitulo: "Información para familias",
+    contenido: "Ven a conocernos. El jueves 10 de marzo tenemos la jornada de puertas abiertas",
+    imagen: "/img/noticias/2022/03/puertas-abiertas.jpg",
+    alt: "Puertas abiertas, ESO 2022",
+    url: "/noticias/2022/03/puertas-abiertas",
+    keywords: ["Puertas abiertas","ESO"],
+    blank: false
+  },
+  {
+    id: "n20211222",
+    titulo: "Listado definitivo de candidatos en FP Dual",
     fecha: {day: 15, month: 12, year: 2021},
     subtitulo: "FP Dual 2021/22",
     contenido: "Documento con el listado provisional de alumnos candidatos a la FP Dual",
-    imagen: "/img/noticias/2021/12/listado-provisional.jpg",
+    imagen: "/img/noticias/2021/12/listado-definitivo.jpg",
     alt: "Listado provisional de alumnos",
-    url: "/noticias/2021/12/listado-provisional",
+    url: "/noticias/2021/12/listado-definitivo",
     keywords: ["FP Dual"],
     blank: false
   },

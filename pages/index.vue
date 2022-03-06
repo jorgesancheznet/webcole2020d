@@ -40,6 +40,7 @@ import {mapMutations} from "vuex";
 //Componentes
 import Cabecera from "~/components/cabecera/Cabecera";
 import SplashPanel from "~/components/secciones/SplashPanel";
+import SplashNoticia from "~/components/secciones/SplashNoticia";
 import PanelNovedades from "@/components/items/PanelNovedades";
 import ContenedorCarrusel from "~/components/wrappers/ContenedorCarrusel";
 import SeccionTransparente from "~/components/secciones/SeccionTransparente";
@@ -56,7 +57,6 @@ import {listaOfertaEducativa} from "~/assets/data/ofertaEducativa";
 import {listaServicios} from "~/assets/data/servicios";
 import {listaMeritos} from "~/assets/data/meritos";
 import BarraSocial from "../components/secciones/BarraSocial";
-import SplashNoticia from "../components/secciones/SplashNoticia";
 
 
 export default {

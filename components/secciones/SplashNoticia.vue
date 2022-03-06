@@ -43,6 +43,7 @@ export default {
 
   },
   methods: {
+    //debe capturarse este evento en el padre
     cerrarPanel() {
       this.$emit("cerrando", "cerrando")
     }
@@ -71,9 +72,31 @@ export default {
     -webkit-transform:translateX(-200%);
     transform:translateX(-200%);
     transition: transform 1.5s ease-out;
+    background-color:$colorRojoSalesiano;
+    font-size:2em;
+    color:white;
+    text-align: center;
+    padding:1em;
+    border-radius: 1em;
     &.activada{
       -webkit-transform:translateX(0) rotateX(1440deg);
       transform:translateX(0) rotateX(1440deg);
+    }
+    h2{
+      color:white;
+      font-size:1em;
+    }
+    a{
+      font-size:.7em;
+      color:white;
+      border:2px solid white;
+      padding:.4em;
+      border-radius: .4em;
+      transition: .4s background-color;
+      &:hover{
+        background-color: darken($colorRojoSalesiano,20%);
+        transition: .4s background-color;
+      }
     }
   }
 }
