@@ -1,5 +1,17 @@
 exports.noticias = [
   {
+    id: "n20220309",
+    titulo: "Centro de Excelencia Profesional",
+    fecha: {day: 5, month: 3, year: 2022},
+    subtitulo: "Descubre nuestro modelo educativo",
+    contenido: "Vídeo que explica nuestras bases, fortalezas y valores educativos",
+    imagen: "/img/noticias/2022/03/video-excelencia.jpg",
+    alt: "Puertas abiertas, ESO 2022",
+    url: "/noticias/2022/03/centro-excelencia",
+    keywords: ["Educacion","Valores","Modelo","Promoción"],
+    blank: false
+  },
+  {
     id: "n20220305",
     titulo: "Jornada de puertas abiertas para ESO",
     fecha: {day: 5, month: 3, year: 2022},
