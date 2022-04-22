@@ -1,5 +1,33 @@
 exports.noticias = [
   {
+    id: "n20220422",
+    titulo: "Premio para nuestra «Operación Navidad»",
+    fecha: {day: 22, month: 4, year: 2022},
+    subtitulo: "XV Premio a la Innovación y Experimentación en Pastoral",
+    contenido: "Hemos obtenido el máximo galardón en la edición XV de los Premios a "+
+            "la Innovación y Experimentación en Pastoral, convocado por  "+
+            "las escuelas Católicas de Castilla y León.",
+    imagen: "/img/noticias/2022/04/premio-innovacion.jpg",
+    alt: "Premio de innovación",
+    url: "/noticias/2022/04/premio-innovacion-pastoral",
+    keywords: ["Pastoral","Premios","Navidad"],
+    blank: false
+  },
+  {
+    id: "n20220318",
+    titulo: "Periodo de admisiones ESO",
+    fecha: {day: 18, month: 3, year: 2022},
+    subtitulo: "Abierto periodo de admisiones",
+    contenido: "Abierto el periodo de admisiones para la ESO.\n" +
+      "Del 18 marzo al 6 de abril, en la Secretaría del Centro Don Bosco de 9:30h a 13:30h.\n" +
+      "<strong>Teléfono</strong>: 979777270",
+    imagen: "/img/noticias/2022/03/admisiones-ESO.jpeg",
+    alt: "Admisiones ESO",
+    url: "/noticias/2022/03/admisiones-ESO",
+    keywords: ["ESO","Matrículas","Admisión"],
+    blank: false
+  },
+  {
     id: "n20220309",
     titulo: "Centro de Excelencia Profesional",
     fecha: {day: 5, month: 3, year: 2022},

@@ -29,7 +29,17 @@ export default {
 @import "~assets/estilos/mixins.scss";
 
 /deep/ p{
-  @include  letraNormal(normal,1.8em,black);
+  @include  letraNormal(normal,$fuenteMax,black);
+  &.fuenteMed{
+    @include  letraNormal(normal,$fuenteMed,black);
+  }
+}
+/deep/ blockquote{
+  @include  letraNormal(normal,$fuenteMax - 0.2,black);
+  font-style: italic;
+  &.fuenteMed{
+    @include  letraNormal(normal,$fuenteMed,black);
+  }
 }
 /deep/ iframe{
   width:100%;
@@ -38,7 +48,16 @@ export default {
 
 @media  (max-width:800px) {
   /deep/ p{
-    @include  letraNormal(normal,1.2em,black);
+    @include  letraNormal(normal,$fuenteMin,black);
+    &.fuenteMed{
+      @include  letraNormal(normal,$fuenteMin,black);
+    }
+  }
+  /deep/ blockquote{
+    @include  letraNormal(normal,$fuenteMin - 0.1,black);
+    &.fuenteMed{
+      @include  letraNormal(normal,$fuenteMin,black);
+    }
   }
 }
 </style>
