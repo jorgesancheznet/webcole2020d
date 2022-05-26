@@ -6,14 +6,14 @@
     </FilaContenido>
     <FilaContenido>
 
-      <TextoDetalle anchoMax="800px">
-        <p class="fuenteMed">El día 22 de abril se ha hecho pública la resolución del <strong>XV Premio a la Innovación y Experimentación en Pastoral</strong>, convocado por <a href="https://www.eccastillayleon.org" target="_blank">Escuelas Católicas Castilla y León</a>, y patrocinado por la <a href="https://www.fundacionedelvives.org/es/index" target="_blank">Fundación Edelvives</a>.</p>
+      <TextoDetalle anchoMax="800px" :fuente-min="true">
+        <p >El día 22 de abril se ha hecho pública la resolución del <strong>XV Premio a la Innovación y Experimentación en Pastoral</strong>, convocado por <a href="https://www.eccastillayleon.org" target="_blank">Escuelas Católicas Castilla y León</a>, y patrocinado por la <a href="https://www.fundacionedelvives.org/es/index" target="_blank">Fundación Edelvives</a>.</p>
 
-        <p class="fuenteMed">Se trata de un reconocimiento que nos llena de  orgullo por la labor realizada y de agradecimiento al jurado del premio y que nos da un fuerte impulso motivador para todas las actividades, proyectos y campañas futuras que realicemos.</p>
+        <p>Se trata de un reconocimiento que nos llena de  orgullo por la labor realizada y de agradecimiento al jurado del premio y que nos da un fuerte impulso motivador para todas las actividades, proyectos y campañas futuras que realicemos.</p>
 
-        <p class="fuenteMed">Exponemos la comunicación que se nos ha transmitido desde la organización: </p>
-        <blockquote class="fuenteMed">El Jurado presidido por D. Leandro Roldán, secretario autonómico de Escuelas Católicas de Castilla y León, e integrado por:</blockquote>
-        <ul class="cita fuenteMed">
+        <p>Exponemos la comunicación que se nos ha transmitido desde la organización: </p>
+        <blockquote>El Jurado presidido por D. Leandro Roldán, secretario autonómico de Escuelas Católicas de Castilla y León, e integrado por:</blockquote>
+        <ul class="cita">
           <li><strong>Dª Leticia Carranza</strong>, coordinadora de Instituciones de la <strong>Fundación
             Edelvives</strong></li>
           <li><strong>Dª Dolors García</strong>, directora del Departamento Pastoral de <strong>Escuelas Católicas
@@ -27,8 +27,8 @@
             <strong>Pastoral Educativa de Escuelas
               Católicas Castilla y León</strong></li>
         </ul>
-        <blockquote class="fuenteMed">ha fallado de este modo el XV Premio de Innovación y Experimentación en Pastoral:</blockquote>
-        <ul class="cita fuenteMed">
+        <blockquote>ha fallado de este modo el XV Premio de Innovación y Experimentación en Pastoral:</blockquote>
+        <ul class="cita">
           <li><strong>Primer premio</strong>, dotado con 1.500 €<br>
             «Operación Navidad»<br>
             <strong>Centro Don Bosco de Villamuriel de Cerrato</strong>
@@ -50,7 +50,7 @@
           </li>
         </ul>
 
-        <blockquote class="fuenteMed">Las tres experiencias premiadas se expondrán en el transcurso de la XVIII Jornada Autonómica de
+        <blockquote>Las tres experiencias premiadas se expondrán en el transcurso de la XVIII Jornada Autonómica de
           Pastoral, que se celebrará en el primer cuatrimestre del curso 2022-2023. Tanto los trabajos ganadores como
           los finalistas formarán parte de la edición web y se subirán a la web de Escuelas Católicas Castilla y León.
         </blockquote>

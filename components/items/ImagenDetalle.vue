@@ -1,5 +1,5 @@
 <template>
-  <figure class="imagenDetalle" :style="maxWidth">
+  <figure class="imagenDetalle" :style="maxMin">
     <a v-if="enlace" :href="enlace" :target="(blank)?'_blank':'_self'" >
       <img :src="src" :alt="alt" >
     </a>
@@ -23,12 +23,17 @@ export default {
       type:String,
       default:"100%"
     },
+    anchoMin:{
+      type:String,
+      default:0
+    },
     pie:String
   },
   computed:{
-    maxWidth(){
+    maxMin(){
       return{
-        "max-width":this.anchoMax
+        "max-width":this.anchoMax,
+        "min-width":this.anchoMin
       }
     }
   }

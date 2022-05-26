@@ -1,5 +1,32 @@
 exports.noticias = [
   {
+    id: "n20220525",
+    titulo: "Jornadas de Innovación empresarial",
+    fecha: {day: 25, month: 4, year: 2022},
+    subtitulo: "25 de Mayo de 2022",
+    contenido: "Los días 25 y 26 de mayo hemos celebrado unas Jornadas Formativas "+
+    " de Innovación Empresarial para nuestros alumnos de Formación Profesional",
+    imagen: "/img/noticias/2022/05/cartel-jornadas-innovacion.jpg",
+    alt: "Jornadas de Innovación Empresarial",
+    url: "/noticias/2022/05/jornadas-innovacion-empresarial",
+    keywords: ["FP","Jornadas","Empresa"],
+    blank: false
+  },
+  {
+    id: "n20220426",
+    titulo: "XXXIX Peregrinación de Palencia a Villamuriel",
+    fecha: {day: 26, month: 4, year: 2022},
+    subtitulo: "1 de Mayo 2022",
+    contenido: "Después de estos dos años de pandemia retomamos con mucho"+
+              "cariño el Homenaje a María Auxiliadora el sábado 30 de abril y la"+
+              "XXXIX Fiesta-peregrinación el 1 de mayo",
+    imagen: "/img/noticias/2022/04/cartel-1-mayo.jpeg",
+    alt: "Premio de innovación",
+    url: "/noticias/2022/04/1-de-mayo",
+    keywords: ["Pastoral"],
+    blank: false
+  },
+  {
     id: "n20220422",
     titulo: "Premio para nuestra «Operación Navidad»",
     fecha: {day: 22, month: 4, year: 2022},

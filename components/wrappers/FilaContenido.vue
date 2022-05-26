@@ -19,6 +19,8 @@ export default {
 
 .filaContenido {
   display: flex;
+  margin:auto;
+  justify-content: center;
 
   h3 {
     @include letraNormal(bold, 2em, $colorFondoPie);

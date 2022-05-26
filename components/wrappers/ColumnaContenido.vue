@@ -34,6 +34,7 @@ h3{
 }
 .columnaContenido{
   width:50%;
+  max-width:800px;
 }
 
 @media (max-width: $anchoMedio) {
