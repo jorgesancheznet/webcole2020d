@@ -1,6 +1,6 @@
 <template>
   <main>
-    <TituloMedio :titulo="titulo" :subtitulo="subtitulo" imagen="/img/textura1.jpg"/>
+    <TituloMedio :titulo="titulo" :subtitulo="subtitulo" :imagen="imagen" />
     <SeccionOpaca>
       <slot/>
     </SeccionOpaca>
@@ -19,7 +19,10 @@ export default {
   props: {
     titulo: String,
     subtitulo: String,
-    imagen: String
+    imagen: {
+      type: String,
+      default:"/img/textura1.jpg"
+    }
   },
   components: {SeccionOpaca, TituloMedio}
 }

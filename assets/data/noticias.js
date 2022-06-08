@@ -1,5 +1,30 @@
 exports.noticias = [
   {
+    id: "n20220608",
+    titulo: "Libros para el curso 2022/23",
+    fecha: {day: 8, month: 6, year: 2022},
+    subtitulo: "Listado de ISBN",
+    contenido: "Ya están disponibles los libros para el curso que viene",
+    imagen: null,
+    alt: null,
+    url: "/noticias/2022/06/isbn-2022-2023",
+    keywords: ["ESO", "Puertas abiertas"],
+    blank: false
+  },
+  {
+    id: "n20220603",
+    titulo: "Graduación, curso 2021/22",
+    fecha: {day: 8, month: 6, year: 2022},
+    subtitulo: "Fiesta para celebrar la titulación",
+    contenido: "El pasado 3 de Junio celebramos la graduación de nuestro alumnado "+
+      "tanto de secundaria como de ciclos formativos",
+    imagen: "/img/noticias/2022/06/graduacion-22-00.jpg",
+    alt: null,
+    url: "/noticias/2022/06/graduacion-2021-22",
+    keywords: ["ESO", "Puertas abiertas"],
+    blank: false
+  },
+  {
     id: "n20220525",
     titulo: "Jornadas de Innovación empresarial",
     fecha: {day: 25, month: 4, year: 2022},
