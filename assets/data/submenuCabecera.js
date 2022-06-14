@@ -156,10 +156,6 @@ export let submenuCabecera = [
             url: "https://docs.google.com/forms/d/e/1FAIpQLSdUXOK-3Jdzzq0KaF2su2i-6E8nhK4b68k0tqSceIiw38x1_g/viewform"
           },
           {
-            texto:"AGENCIA DE COLOCACIÓN",
-            url:"http://salesianosvillamuriel.redagenciadecolocacion.com/"
-          },
-          {
             texto: "RECEPCIÓN DE CURRÍCULOS",
             url: "/servicios/curriculos"
           }
