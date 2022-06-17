@@ -1,5 +1,17 @@
 exports.noticias = [
   {
+    id: "n20220615",
+    titulo: "Solicitudes para ciclos de FP",
+    fecha: {day: 15, month: 6, year: 2022},
+    subtitulo: "Curso 2022/23",
+    contenido: "Te explicamos como realizar la solicitud para estudiar un ciclo formativo de FP con nosotros y el material que se necesita para estudiar",
+    imagen: "/img/noticias/2022/06/info-solicitudes-fp.jpg",
+    alt: null,
+    url: "/noticias/2022/06/solicitudes-fp-2022",
+    keywords: ["FP", "Información","Matrícula"],
+    blank: false
+  },
+  {
     id: "n20220608",
     titulo: "Libros para el curso 2022/23",
     fecha: {day: 8, month: 6, year: 2022},
