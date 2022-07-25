@@ -1,6 +1,18 @@
 exports.noticias = [
   {
     id: "n20220615",
+    titulo: "Listados con las admisiones en ciclos de FP",
+    fecha: {day: 21, month: 7, year: 2022},
+    subtitulo: "Curso 2022/23",
+    contenido: "Acceso a las admisiones (a fecha de 21 de julio) en los Ciclos Formativos de Formación Profesional",
+    imagen: "/img/noticias/2022/07/admision.jpg",
+    alt: null,
+    url: "/noticias/2022/07/listados-fp-2022",
+    keywords: ["FP", "Información","Matrícula"],
+    blank: false
+  },
+  {
+    id: "n20220615",
     titulo: "Solicitudes para ciclos de FP",
     fecha: {day: 15, month: 6, year: 2022},
     subtitulo: "Curso 2022/23",
