@@ -1,3 +1,13 @@
+<!-- Se requieren fotos de tamaño:
+  mini: 400x300
+  normal: 4000x3000
+  estructura foto:{
+    rutaMini:url,
+    ruta:url,
+    alt:txt
+    id:id/txt
+  }
+-->
 <template>
   <div>
     <article class="contenedorFotos">

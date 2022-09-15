@@ -1,6 +1,18 @@
 exports.noticias = [
   {
     id: "n20220615",
+    titulo: "Inicio de curso para las secciones de ESO y FPB",
+    fecha: {day: 14, month: 9, year: 2022},
+    subtitulo: "Curso 2022/23",
+    contenido: "Primer día de clase de nuestra sección de Educación Secundaria y Formación Profesional de Grado Básico",
+    imagen: "/img/noticias/2022/07/admision.jpg",
+    alt: null,
+    url: "/noticias/2022/09/inicio-curso-2022-23",
+    keywords: ["ESO","FPB","Inicio","Curso 2022/23"],
+    blank: false
+  },
+  {
+    id: "n20220615",
     titulo: "Listados con las admisiones en ciclos de FP",
     fecha: {day: 21, month: 7, year: 2022},
     subtitulo: "Curso 2022/23",
