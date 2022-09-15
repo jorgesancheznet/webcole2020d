@@ -1,6 +1,6 @@
 <template>
 <div class="textoDetalle" :class="{fuenteMin:fuenteMin, fuenteMed:fuenteMed}" :style="{'width':ancho,'max-width':anchoMax}">
-  <h3 v-if="titulo">{{titulo}}</h3>
+  <h3 v-if="titulo" :class="{tituloGrande:tituloGrande}">{{titulo}}</h3>
   <slot></slot>
 </div>
 </template>
@@ -10,6 +10,10 @@ export default {
   name: "TextoDetalle",
   props:{
     titulo:String,
+    tituloGrande:{
+      type:Boolean,
+      default:false
+    },
     fuenteMin:{
       type:Boolean,
       default:false
@@ -51,6 +55,18 @@ export default {
       }
     }
   }
+  h3{
+    text-align: center;
+    font-size:2.2em;
+    margin:.2em 0;
+    @include letraNormal(normal,2.2em,black);
+  }
+  h4{
+    text-align: left;
+    font-size:2em;
+    margin:.2em 0;
+  }
+
 }
 
 </style>

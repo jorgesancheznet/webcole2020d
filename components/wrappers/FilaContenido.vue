@@ -1,6 +1,6 @@
 <template>
   <article class="filaContenido">
-    <h3 v-if="titulo"></h3>
+    <h3 v-if="titulo">{{titulo}}</h3>
     <slot></slot>
   </article>
 </template>
@@ -26,6 +26,12 @@ export default {
     @include letraNormal(bold, 2em, $colorFondoPie);
     text-align: center;
     margin: 0;
+    &.resalte{
+      color:$colorRojoSalesiano;
+    };
+    &.grande{
+      font-size:3em;
+    }
   }
 }
 

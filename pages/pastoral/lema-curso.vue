@@ -1,56 +1,143 @@
 <template>
-  <PaginaNoticia titulo="Apasionados por la vida" subtitulo="Lema del curso 2021-22" imagen="/img/textura1.jpg">
-
+  <PaginaNoticia titulo="Abrimos Caminos" subtitulo="Lema del curso 2022-23" imagen="/img/textura1.jpg">
     <FilaContenido>
-      <ColumnaContenido>
-        <ImagenDetalle alt="Encuentro, apasionados por la vida" src="/img/pastoral/encuentro.jpg" ancho-max="300px"/>
-        <TextoDetalle>
-          <p><strong>APASIONADOS POR LA VIDA</strong> es el lema de nuestro curso 2021-22</p>
-          <p>Este vivir <strong><em>apasionados por la vida</em></strong> se llama <strong>ENCUENTRO</strong>,  es decir: familia, comunidad, fraternidad, amistad…</p>
+      <ImagenDetalle alt="Abrimos Caminos" src="/img/pastoral/lema-2022/abriendo-caminos.png" ancho-max="600px"/>
+    </FilaContenido>
+    <FilaContenido>
+      <iframe style="max-width:720px;margin:auto" width="560" height="315" src="https://www.youtube.com/embed/cl8BZZAMTcM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </FilaContenido>
+    <FilaContenido>
+      <p></p>
+    </FilaContenido>
+    <FilaContenido >
+      <ColumnaContenido >
+        <TextoDetalle  titulo="HACIA DENTRO" :tituloGrande="true">
+        <h4 style="text-align: center" class="resalte">Nuestra identidad<br><em class="resalte">«¿Quién soy?»</em></h4>
         </TextoDetalle>
       </ColumnaContenido>
+    </FilaContenido>
+    <FilaContenido>
+      <p></p>
+    </FilaContenido>
+    <FilaContenido>
       <ColumnaContenido>
-        <ImagenDetalle alt="Cuidado, apasionados por la vida" src="/img/pastoral/cuidado.jpg" ancho-max="300px"/>
-        <TextoDetalle>
-          <p>Esta actitud se traduce en <strong>CUIDADO</strong> de las personas, de la vida, de sus opciones específicas y vocacionales. Por eso se nos invita a “arriesgar la vida”, quien no arriesga es un perdedor, “a cuidar la vida” del planeta, de la familia, del propio corazón…, porque Dios piensa en nosotros,
-            <strong><em>“apasionados por la vida”</em></strong>, como bálsamo para este mundo herido por tantas contradicciones y desencuentros.</p>
+        <ImagenDetalle alt="Marcador" src="/img/pastoral/lema-2022/marcador-de-posicion.png" ancho-max="300px"/>
+      </ColumnaContenido>
+      <ColumnaContenido >
+        <TextoDetalle :fuente-med="true">
+         <h4 class="resalte">Antropología cristiana</h4>
+          <p>Favorecer conocimiento personal, la aceptación y la valoración de nuestras cualidades como don gratuito de Dios.</p>
+          <h4 class="resalte">Identidad salesiana</h4>
+          <p>Evidenciar y potenciar nuestros valores carismáticos en cada una de nuestras Comunidades
+            Educativo-Pastorales.</p>
+          <h4 class="resalte">Nueva oportunidad</h4>
+          <p>Seguir creciendo desde lo positivo, en clima de alegría, optimismo y esperanza, aprendiendo a agradecer todo
+            lo que Dios nos regala en el día a día.</p>
         </TextoDetalle>
       </ColumnaContenido>
     </FilaContenido>
 
+
+    <FilaContenido>
+      <p></p>
+    </FilaContenido>
+    <FilaContenido >
+      <ColumnaContenido >
+        <TextoDetalle  titulo="HACIA LOS DEMÁS" :tituloGrande="true">
+          <h4 style="text-align: center" class="resalte">La Comunidad<br><em class="resalte">«El espíritu de la familia»</em></h4>
+        </TextoDetalle>
+      </ColumnaContenido>
+    </FilaContenido>
+    <FilaContenido>
+      <p></p>
+    </FilaContenido>
     <FilaContenido>
       <ColumnaContenido>
-        <ImagenDetalle alt="Esperanza, apasionados por la vida" src="/img/pastoral/esperanza.jpg" ancho-max="300px"/>
-        <TextoDetalle>
-          <p>De la mano de la esperanza, caminamos adivinando el futuro en cada huella. La vida es el origen de la vida. Eso es lo que descubren, todos los días y en todas las circunstancias, los
-            <strong><em>“apasionados por la vida”</em></strong>. Es hora de construir puentes, de reactivar patios, de recuperar la sonrisa oculta tras infinidad de “mascarillas”, porque estamos llamados a llenar la vida de Vida</p>
+        <ImagenDetalle alt="Marcador" src="/img/pastoral/lema-2022/marcador-de-posicion.png" ancho-max="300px"/>
+      </ColumnaContenido>
+      <ColumnaContenido >
+        <TextoDetalle :fuente-med="true">
+          <h4 class="resalte">Sacramento de la presencia</h4>
+          <p>Cuidar y potenciar la espiritualidad del Sistema Preventivo y nuestra “asistencia salesiana”, consolidando nuestras Casas como ambientes seguros.</p>
+          <h4 class="resalte">Cuidado de los “espacios verdes”</h4>
+          <p>Favorecer tiempos, espacios, personas y experiencias que nos ayuden a compartir, convivir, celebrar y crecer como personas y creyentes.</p>
+
+          <h4 class="resalte">Experiencia de Sinodalidad</h4>
+          <p>Hacer camino juntos”, cuidando y acompañando nuestras CEP y sus equipos, proyectando el nuevo PEPS en clave de discernimiento.</p>
         </TextoDetalle>
       </ColumnaContenido>
+    </FilaContenido>
+
+
+    <FilaContenido>
+      <p></p>
+    </FilaContenido>
+    <FilaContenido >
+      <ColumnaContenido >
+        <TextoDetalle  titulo="HACIA DIOS" :tituloGrande="true">
+          <h4 style="text-align: center" class="resalte">El Primer Anuncio<br><em class="resalte">«Jesús, el Señor»</em></h4>
+        </TextoDetalle>
+      </ColumnaContenido>
+    </FilaContenido>
+    <FilaContenido>
+      <p></p>
+    </FilaContenido>
+    <FilaContenido>
       <ColumnaContenido>
-        <ImagenDetalle ancho-max="500px" alt="Apasionados por la vida" src="/img/pastoral/apasionados.png" />
-        <TextoDetalle>
-          <p>He aquí la historia del presente curso. Vacunados contra la nostalgia y contra el pesimismo, alcanzaremos la inmunidad de grupo contra todo lo que no sea vida.
-          <strong><em>“Apasionados por la vida”</em></strong>, la vida es nuestra opción, nuestra tarea, nuestra determinación, nuestro <strong>reto:
-          vívela, siéntela, ama, ríe, llora, juega, gana, pierde, tropieza, pero sobre todo, levántate siempre,… y
-              sigue</strong>. ¡Vive la vida!</p>
+        <ImagenDetalle alt="Marcador" src="/img/pastoral/lema-2022/marcador-de-posicion.png" ancho-max="300px"/>
+      </ColumnaContenido>
+      <ColumnaContenido >
+        <TextoDetalle :fuente-med="true">
+          <h4 class="resalte">Sacramento de la presencia</h4>
+          <p>Cuidar y potenciar la espiritualidad del Sistema Preventivo y nuestra “asistencia salesiana”, consolidando nuestras Casas como ambientes seguros.</p>
+          <h4 class="resalte">Cuidado de los “espacios verdes”</h4>
+          <p>Favorecer tiempos, espacios, personas y experiencias que nos ayuden a compartir, convivir, celebrar y crecer como personas y creyentes.</p>
+
+          <h4 class="resalte">Experiencia de Sinodalidad</h4>
+          <p>Hacer camino juntos”, cuidando y acompañando nuestras CEP y sus equipos, proyectando el nuevo PEPS en clave de discernimiento.</p>
         </TextoDetalle>
       </ColumnaContenido>
+    </FilaContenido>
+
+
+
+
+    <FilaContenido>
+      <p></p>
+      <p></p>
+    </FilaContenido>
+    <FilaContenido>
+      <h3 class="resalte grande" style="text-align: center">Campaña Pastoral  2022-2023<br>Salesianos España</h3>
+    </FilaContenido>
+    <FilaContenido>
+      <EnlaceBoton url="https://drive.google.com/file/d/1SXl1h1rWV91fjn-pPKCaJ0DK_UwyHbCx/view?usp=sharing"
+                   :blank="true" texto="MÁS INFORMACIÓN SOBRE LA CAMPAÑA" :mini="true" />
+    </FilaContenido>
+    <FilaContenido>
+      <ImagenDetalle alt="Abrimos Caminos" src="/img/pastoral/lema-2022/abriendo-caminos.png" ancho-max="600px"/>
+    </FilaContenido>
+    <FilaContenido>
+      <ImagenDetalle alt="Logo Salesianos" src="/img/logos/logo-institucional.png" ancho-max="600px"/>
     </FilaContenido>
 
   </PaginaNoticia>
 </template>
 
+
 <script>
 import PaginaNoticia from "@/components/secciones/PaginaNoticia";
 import FilaContenido from "@/components/wrappers/FilaContenido";
 import TextoDetalle from "@/components/wrappers/TextoDetalle";
+import ImagenDetalle from "@/components/items/ImagenDetalle";
 import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
+import EnlaceBoton from "~/components/items/EnlaceBoton";
 
 export default {
-  components: {PaginaNoticia,FilaContenido,TextoDetalle,ColumnaContenido},
+  components: {PaginaNoticia,FilaContenido,TextoDetalle,ColumnaContenido,ImagenDetalle,EnlaceBoton},
 }
 </script>
 
 <style scoped>
+
 
 </style>
