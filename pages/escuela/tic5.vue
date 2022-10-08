@@ -21,6 +21,7 @@
         </ColumnaContenido>
         <ColumnaContenido>
           <ImagenDetalle ancho-max="400px" alt="Logo Codice TIC 5" src="/img/logos/tic5-grande.png" />
+          <EnlaceBoton texto="Descarga el Plan TIC del Centro" url="/docs/plan-codice-tic.pdf" />
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>
@@ -34,9 +35,10 @@ import FilaContenido from "../../components/wrappers/FilaContenido";
 import ColumnaContenido from "../../components/wrappers/ColumnaContenido";
 import TextoDetalle from "../../components/wrappers/TextoDetalle";
 import ImagenDetalle from "../../components/items/ImagenDetalle";
+import EnlaceBoton from "@/components/items/EnlaceBoton";
 export default {
   name: "fp-dual.vue",
-  components: {ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, SeccionOpaca, TituloGrande}
+  components: {EnlaceBoton, ImagenDetalle, TextoDetalle, ColumnaContenido, FilaContenido, SeccionOpaca, TituloGrande}
 }
 </script>
 

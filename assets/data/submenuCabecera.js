@@ -85,6 +85,10 @@ export let submenuCabecera = [
             texto: "CENTRO DE EXCELENCIA DE ALTO NIVEL",
             url: "/escuela/excelencia"
           },
+          {
+            texto:"CÓDICE TIC",
+            url:"/escuela/tic5"
+          }
         ]
       },
       {

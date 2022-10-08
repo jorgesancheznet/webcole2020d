@@ -25,9 +25,9 @@
         <h3 style="margin-top:2em;"></h3>
       </ColumnaContenido>
     </FilaContenido>
-  <TituloIndependiente titulo="FOTOS" id="t1" />
+    <TituloIndependiente titulo="FOTOS" id="t1"/>
     <SeccionOpaca colorFondo="#999999">
-      <ContenedorFotos :fotos="fotos" />
+      <ContenedorFotos :fotos="fotos"/>
     </SeccionOpaca>
   </PaginaNoticia>
 </template>
@@ -56,7 +56,7 @@ export default {
   },
   data() {
     return {
-      fotos:[
+      fotos: [
         {
           rutaMini: "/img/noticias/2022/09/inicio-foto1-mini.jpg",
           ruta: "/img/noticias/2022/09/inicio-foto1.jpg",

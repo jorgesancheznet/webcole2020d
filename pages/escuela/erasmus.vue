@@ -1,5 +1,6 @@
 <template>
   <main>
+
     <TituloGrande titulo="Servicio Erasmus+" subtitulo="Fomento de la educación en Europa"
                   imagen="/img/escuela/europa.jpg"/>
     <SeccionOpaca>
@@ -20,8 +21,15 @@
 </template>
 
 <script>
+import SeccionOpaca from "@/components/secciones/SeccionOpaca";
+import FilaContenido from "@/components/wrappers/FilaContenido";
+import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
+import TextoDetalle from "@/components/wrappers/TextoDetalle";
+import ImagenDetalle from "@/components/items/ImagenDetalle";
+import TituloGrande from "@/components/secciones/TituloGrande";
 export default {
-  name: "erasmus"
+  name: "erasmus",
+  components:{SeccionOpaca,FilaContenido,ColumnaContenido,TextoDetalle,ImagenDetalle,TituloGrande}
 }
 </script>
 

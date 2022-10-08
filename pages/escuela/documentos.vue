@@ -23,9 +23,10 @@
 import TituloGrande from "@/components/secciones/TituloGrande";
 import SeccionOpaca from "@/components/secciones/SeccionOpaca";
 import CarpetaDrive from "@/components/items/CarpetaDrive";
+
 export default {
   name: "documentos",
-  computed:{SeccionOpaca,TituloGrande,CarpetaDrive}
+  components:{SeccionOpaca,TituloGrande,CarpetaDrive}
 }
 </script>
 
