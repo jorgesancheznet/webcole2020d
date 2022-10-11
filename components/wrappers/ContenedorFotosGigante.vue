@@ -1,3 +1,7 @@
+<!--
+El contenedor usa una mutación,
+además requiere de un array de fotos donde el id de cada foto se numera: 1,2,3....
+-->
 <template>
   <section class="contenedorFotosGigante">
     <div class="botonCerrar" @click="cerrarPanel">

@@ -1,5 +1,17 @@
 exports.noticias = [
   {
+    id: "n20221008",
+    titulo: "Convivencias de inicio de curso",
+    fecha: {day: 8, month: 10, year: 2022},
+    subtitulo: "Abrimos el camino al curso 2022/23",
+    contenido: "Nuestros alumnos disfrutan de un día de convivencia especial para iniciar el curso",
+    imagen: "/img/noticias/2022/10/convivencias-06-mini.jpg",
+    alt: null,
+    url: "/noticias/2022/10/convivencia-inicial-2022",
+    keywords: ["Pastoral","Convivencia"],
+    blank: false
+  },
+  {
     id: "n20220615",
     titulo: "Inicio de curso para las secciones de ESO y FPB",
     fecha: {day: 14, month: 9, year: 2022},
