@@ -1,5 +1,29 @@
 exports.noticias = [
   {
+    id: "n20221213",
+    titulo: "Candidatos para realizar la FP Dual en el curso 2022-23",
+    fecha: {day: 13, month: 12, year: 2022},
+    subtitulo: "Listado provisional",
+    contenido: "Lista provisional de candidatos para hacer la FP Dual en este curso 2022-23",
+    imagen: "/noticias/2022/12/fp-dual-provisional.jpg",
+    alt: null,
+    url: "/noticias/2022/12/fp-dual-provisional",
+    keywords: ["FP","Dual","FP Dual"],
+    blank: false
+  },
+  {
+    id: "n20221030",
+    titulo: "Disponible la información sobre la FP Dual",
+    fecha: {day: 30, month: 10, year: 2022},
+    subtitulo: "Información para familia y alumnos",
+    contenido: "Ya está disponible la información sobre la FP Dual para este curso 2022/23",
+    imagen: "/img/noticias/2022/10/info-dual-2022.jpg",
+    alt: null,
+    url: "/noticias/2022/10/info-dual-2022-23",
+    keywords: ["FP","Dual","FP Dual"],
+    blank: false
+  },
+  {
     id: "n20221008",
     titulo: "Convivencias de inicio de curso",
     fecha: {day: 8, month: 10, year: 2022},

@@ -18,6 +18,8 @@ $colorTenue: #999999;
 $colorTenueHover:#333;
 $colorTenueBrillo:white;
 $colorVelo:rgba(0,0,0,.95);
+$colorEnlace:#4a8089;
+$colorEnlaceHover:lighten(#4a8089,20%);
 //posición
 $zMain:100;
 $zCabecera:950;
@@ -54,7 +56,7 @@ $colorFicha:white;
 $colorLuz: #f1f1d0;
 $radioFicha:10px;
 $radioFichaMin:5px;
-$colorMas: #4a8089;
+$colorMas: $colorEnlace;
 $colorFondoOpacidadNegro:rgba(0,0,0,.8);
 
 //ficha servicios

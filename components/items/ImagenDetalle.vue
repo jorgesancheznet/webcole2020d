@@ -47,6 +47,9 @@ export default {
   width:100%;
   margin:0 auto;
   padding:1em 2em;
+  a:hover{
+    outline: 10px solid $colorEnlaceHover;
+  }
   img{
     width:100%;
   }

@@ -22,7 +22,7 @@ export default {
 @import "~assets/estilos/mixins.scss";
 
 .seccionInfo {
-  position:relative;
+  position:relative   ;
   padding: 2em 0;
   background-color: $colorFondoInfo;
   h1 {

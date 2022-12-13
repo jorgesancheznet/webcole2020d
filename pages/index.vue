@@ -20,7 +20,7 @@
     <SeccionTransparente id-seccion="seccionOfertaEducativa" titulo="OFERTA EDUCATIVA">
       <ContenedorFichas :fichas="listaOferta"/>
     </SeccionTransparente>
-
+º
     <SeccionOpaca idSeccion="seccionServicios" titulo="SERVICIOS">
       <ContenedorFichas :fichas="listaServicios" :mini="true"/>
     </SeccionOpaca>
