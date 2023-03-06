@@ -21,7 +21,7 @@
         </ColumnaContenido>
         <ColumnaContenido>
           <ImagenDetalle ancho-max="400px" alt="Logo Codice TIC 5" src="/img/logos/tic5-grande.png" />
-          <EnlaceBoton texto="Descarga el Plan TIC del Centro" url="/docs/plan-codice-tic.pdf" />
+          <EnlaceBoton texto="Descarga el Plan TIC del Centro" url="https://drive.google.com/file/d/1G0jkjvMvWIzXzcT6Oc7dNvXVCdQ_-6mr/view?usp=sharing" />
         </ColumnaContenido>
       </FilaContenido>
     </SeccionOpaca>

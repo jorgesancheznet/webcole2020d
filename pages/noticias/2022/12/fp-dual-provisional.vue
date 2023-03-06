@@ -18,11 +18,11 @@
 
 <script>
 
-import PaginaNoticia from "@/components/secciones/PaginaNoticia";
-import FilaContenido from "@/components/wrappers/FilaContenido";
-import ColumnaContenido from "@/components/wrappers/ColumnaContenido";
-import TextoDetalle from "@/components/wrappers/TextoDetalle";
-import ImagenDetalle from "@/components/items/ImagenDetalle";
+import PaginaNoticia from "~/components/secciones/PaginaNoticia";
+import FilaContenido from "~/components/wrappers/FilaContenido";
+import ColumnaContenido from "~/components/wrappers/ColumnaContenido";
+import TextoDetalle from "~/components/wrappers/TextoDetalle";
+import ImagenDetalle from "~/components/items/ImagenDetalle";
 
 export default {
   components: {PaginaNoticia, FilaContenido, ColumnaContenido, TextoDetalle, ImagenDetalle}

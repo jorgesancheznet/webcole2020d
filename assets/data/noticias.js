@@ -1,5 +1,41 @@
 exports.noticias = [
   {
+    id: "n20230120",
+    titulo: "II Concentración de Coches Clásicos Don Bosco",
+    fecha: {day: 20, month: 1, year: 2023},
+    subtitulo: "5 de febrero de 2023",
+    contenido: "Este 5 de febrero se realizará, dentro de los eventos de la fiesta de Don Bosco, la segunda concentración de coches clásicos. Ya está disponible la información y la ficha de inscripción ",
+    imagen: "/noticias/2023/01/coches-clasicos.jpg",
+    alt: "II Concentración de Coches Clásicos Don Bosco",
+    url: "https://centrodonbosco.es/coches-clasicos",
+    keywords: ["Don Bosco","fiesta","evento","coches"],
+    blank: true
+  },
+  {
+    id: "n20230111",
+    titulo: "Relación definitiva de alumnos para realizar la FP Dual en el curso 2022-23",
+    fecha: {day: 11, month: 1, year: 2023},
+    subtitulo: "Listado definitivo de alumnos y empresas",
+    contenido: "Relación definitiva de alumnos y empresas colaboradoras que van a desarrollar el programa de FpDual durante el curso 2022/23, en los diferentes ciclos formativos.",
+    imagen: "/noticias/2022/01/fp-dual-definitivo.jpg",
+    alt: null,
+    url: "/noticias/2023/01/fp-dual-definitiva",
+    keywords: ["FP","Dual","FP Dual"],
+    blank: false
+  },
+  {
+    id: "n20230109",
+    titulo: "Operacion Navidad 2022/23",
+    fecha: {day: 9, month: 1, year: 2023},
+    subtitulo: "Abriendo Caminos",
+    contenido: "Vídeo de La Operación Navidad de 2022",
+    imagen: "/noticias/2023/01/operacion-navidad.jpg",
+    alt: null,
+    url: "/noticias/2023/01/operacion-navidad",
+    keywords: ["FP","Dual","FP Dual"],
+    blank: false
+  },
+  {
     id: "n20221213",
     titulo: "Candidatos para realizar la FP Dual en el curso 2022-23",
     fecha: {day: 13, month: 12, year: 2022},
