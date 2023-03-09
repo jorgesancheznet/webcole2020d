@@ -4,7 +4,7 @@
     <FilaContenido>
       <ColumnaContenido>
         <TextoDetalle>
-          <p>El próximo día 17 de marzo se abre el plazo de admisiones. Todo el proceso, plazos e instrucciones está dispinible , todo el proceso está disponible en el un documento al que puedes acceder a través del siguiente enlace.</p>
+          <p>El próximo día 17 de marzo se abre el plazo de admisiones. Todo el proceso, plazos e instrucciones está disponible , todo el proceso está disponible en el un documento al que puedes acceder a través del siguiente enlace.</p>
           <EnlaceBoton url="https://drive.google.com/file/d/1j0g09ogTeCN_mkIPdNVTc3OPJ6XIVDwd/view?usp=sharing"
                        texto="Acceder a toda la información" blank="blank"/>
         </TextoDetalle>
