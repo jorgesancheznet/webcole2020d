@@ -36,8 +36,11 @@ export default {
     text-decoration: none;
     @include letraNormal(normal, 2em, $colorFondoClaro);
     background-color: $colorGrisSalesiano;
+    transition: background-color 0.5s ease-in-out;
     &:hover{
       background-color: lighten($colorGrisSalesiano,20%);
+      outline:3px solid $colorGrisSalesiano;
+      transition: background-color 0.5s ease-in-out;
     }
     &.mini{
       font-size:1.5em;

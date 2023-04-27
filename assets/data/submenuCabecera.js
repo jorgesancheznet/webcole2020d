@@ -100,6 +100,10 @@ export let submenuCabecera = [
             url: "/escuela/metodo"
           },
           {
+            texto: "AMBIENTE SEGURO",
+            url: "/escuela/ambiente-seguro"
+          },
+          {
             texto: "DOCUMENTOS",
             url: "/escuela/documentos"
           }
