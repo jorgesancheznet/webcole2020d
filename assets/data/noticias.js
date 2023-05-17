@@ -1,6 +1,32 @@
 exports.noticias = [
   {
-    id: "n20220318",
+    id: "n20230517",
+    titulo: "II Jornadas de Innovación empresarial",
+    fecha: {day: 17, month: 5, year: 2023},
+    subtitulo: "17 de Mayo de 2023",
+    contenido: "El día 17 de mayo hemos celebrado nuestras segundas jornadas de innovación empresarial. " +
+      "en las que empresas del sector de la tecnología se han acercado a nuestro centro",
+    imagen: "/img/noticias/2023/05/ii-jornadas-innovacion-corto.jpg",
+    alt: "Jornadas de Innovación Empresarial",
+    url: "/noticias/2023/05/jornadas-innovacion-empresarial",
+    keywords: ["FP","Jornadas","Empresa"],
+    blank: false
+  },
+  {
+    id: "n20230515",
+    titulo: "Expo Motor Centro Don Bosco",
+    fecha: {day: 15, month: 5, year: 2023},
+    subtitulo: "Nueva edición, los días 20 y 21 Mayo",
+    contenido: "Expo Motor Centro Don Bosco se celebrará los días 20 y 21 de Mayo " +
+      "Consulta el horario de actividades y el precio de inscripción.",
+    imagen: "/img/noticias/2023/05/expo-motor.jpg",
+    alt: "Expo Motor Centro Don Bosco",
+    url: "/noticias/2023/05/expo-motor",
+    keywords: ["Motor","Exposición","Expo Motor"],
+    blank: false
+  },
+  {
+    id: "n20230318",
     titulo: "Periodo de admisiones ESO",
     fecha: {day: 17, month: 3, year: 2023},
     subtitulo: "Abierto periodo de admisiones",
