@@ -1,11 +1,10 @@
 <template>
   <div class="filaLogos" data-aos="zoom-in-up" data-aos-delay="300"
        data-aos-duration="500" data-aos-easing="ease-out-cubic">
-    <img src="/img/logos/tic5.png" alt="Cisco NetWorking Academy" >
+    <img src="/img/logos/tic5.png" alt="CoDiCe TIC 5" >
     <img src="/img/logos/excelencia-marco.svg" alt="Centro de Excelencia de alto nivel" class="logoMuyAlto">
-    <img class="logoAlto" src="/img/logos/calidad.png" alt="Cisco NetWorking Academy">
+    <img class="logoAlto" src="/img/logos/calidad.png" alt="Calidad">
     <img class="logoAlto" src="/img/logos/cisco.png" alt="Cisco NetWorking Academy">
-    <img src="/img/logos/ms-reverse.png" class="logoLargo" alt="Microsoft Imagine Academy">
     <img src="/img/logos/oracle-reverse.png" alt="Oracle Academy">
     <img class="logoCorto" src="/img/logos/vmware.png" alt="VMWare Academy">
   </div>
