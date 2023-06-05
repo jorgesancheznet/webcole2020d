@@ -24,8 +24,8 @@
           académicos como los valores humanos</p>
           <p>Hemos podido contar con la presencia de:</p>
           <ul>
-            <li><strong><strong>Juan Carlos ??</strong> de la empresa <a href="https://t.co/Ok9QSbAEzr">Elgosa Energía</a></strong></li>
-            <li><strong>Eduardo Gutiérrez</strong> de la empresa <a href="https://solariaenergia.com/">Solaria Energía</a></li>
+            <li><strong><strong>Juan Carlos Gómez Pérez</strong> Gerente de la empresa <a href="https://t.co/Ok9QSbAEzr">Elgosa Energía</a></strong></li>
+            <li><strong>Eduardo Gutiérrez</strong> Coordinador O&M de la empresa <a href="https://solariaenergia.com/">Solaria Energía</a></li>
             <li><strong>Alfonso Fernández Campo </strong>, de la empresa <a href="https://www.informaticapochy.com/">Informática Pochy</a></li>
             <li><strong>Samuel García</strong> y <strong>Robert Rodríguez</strong> de la empresa <a href="https://www.tecnologiaypersonas.es/">Tecnología y Personas</a></li>
           </ul>
@@ -37,7 +37,7 @@
     <FilaContenido>
       <ColumnaContenido>
         <TextoDetalle :fuenteMed="true">
-          <p>La primera ponencia se realizó por parte de <strong>Juan Carlos ??</strong> de la empresa <a href="https://t.co/Ok9QSbAEzr">Elgosa Energía</a>,
+          <p>La primera ponencia se realizó por parte de <strong>Juan Carlos Gómez Pérez</strong> de la empresa <a href="https://t.co/Ok9QSbAEzr">Elgosa Energía</a>,
           empresa Palentina fundada en 1995 que se ha convertido en un referente en la gestión y realización de instalaciones
           eléctricas.</p>
           <p>Desde la empresa se ha puesto de manifiesto la importancia del sector energético, especialmente el
