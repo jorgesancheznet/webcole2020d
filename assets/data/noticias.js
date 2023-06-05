@@ -1,5 +1,17 @@
 exports.noticias = [
   {
+    id: "n20230608",
+    titulo: "Libros para el curso 2023/24",
+    fecha: {day: 5, month: 6, year: 2023},
+    subtitulo: "Listado de ISBN",
+    contenido: "Ya están disponibles los libros para el curso que viene",
+    imagen: null,
+    alt: null,
+    url: "/noticias/2023/06/isbn-2023-2024",
+    keywords: ["Libros", "ISBN"],
+    blank: false
+  },
+  {
     id: "n20230517",
     titulo: "II Jornadas de Innovación empresarial",
     fecha: {day: 17, month: 5, year: 2023},
