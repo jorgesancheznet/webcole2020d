@@ -1,5 +1,17 @@
 exports.noticias = [
   {
+    id: "n20230613",
+    titulo: "Semana de puertas abiertas",
+    fecha: {day: 13, month: 6, year: 2023},
+    subtitulo: "Conoce nuestro centro",
+    contenido: "La semana del 13 al 17 de junio celebramos la semana de puertas abiertas",
+    imagen: null,
+    alt: null,
+    url: "/noticias/2023/06/puertas-abiertas",
+    keywords: ["Puertas abiertas"],
+    blank: false
+  },
+  {
     id: "n20230608",
     titulo: "Libros para el curso 2023/24",
     fecha: {day: 5, month: 6, year: 2023},

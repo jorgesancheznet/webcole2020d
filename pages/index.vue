@@ -6,6 +6,7 @@
                  subtitulo="En búsqueda permanente de nuevos caminos que permitan el éxito educativo">
       <PanelNovedades titulo="ÚLTIMAS NOTICIAS" :entradas="listaNovedades" tiempoTransicion="1000"
                       tiempoAparicion="300"/>
+
     </SplashPanel>
 
     <SeccionTransparente idSeccion="seccionNovedades" titulo="NOTICIAS">
